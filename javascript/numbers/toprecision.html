@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Number Methods</title>
+</head>
+<body>
+    <h2>JavaScript Number Methods</h2>
+    <p>The toPrecision() method returns a string, with a number written with a specified length:</p>
+    <p id="box3"></p>
+    <script>
+        var x = 9.656;
+        document.getElementById("box3").innerHTML = 
+        x.toPrecision() + "<br>" +
+        x.toPrecision(2) + "<br>" +
+        x.toPrecision(4) +"<br>" +
+        x.toPrecision(6);
+
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript program to create a new string of 4 copies of the last 3 characters of a given original string. The length of the given string must be 3 and above.</title>
+</head>
+<body>
+    <script>
+        function newstring(str)
+{
+  if (str.length >= 3) {
+    result_str = str.substring(str.length - 3);
+    return result_str + result_str + result_str + result_str;
+  }
+  else
+    return false;
+}
+console.log(newstring("Python 3.0"));
+console.log(newstring("JS"));
+console.log(newstring("JavaScript"));
+    </script>
+</body>
+</html>

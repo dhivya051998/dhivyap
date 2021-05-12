@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript program to replace every character in a given string with the character following it in the alphabet.</title>
+</head>
+<body>
+    <script>
+        function LetterChanges(text) {
+  //https://goo.gl/R8gn7u
+    var s = text.split('');
+    for (var i = 0; i < s.length; i++) {
+        // Caesar cipher
+        switch(s[i]) {
+          case ' ':
+            break;
+          case 'z':
+            s[i] = 'a';
+            break;
+          case 'Z':     
+            s[i] = 'A';
+            break;
+          default:
+            s[i] = String.fromCharCode(1 + s[i].charCodeAt(0));
+        }
+
+        // Upper-case vowels
+        switch(s[i]) {
+          case 'a': case 'e': case 'i': case 'o': case 'u':
+            s[i] = s[i].toUpperCase();
+        }
+    }
+    return s.join('');
+}
+console.log(LetterChanges("PYTHON"));
+console.log(LetterChanges("W3R"));
+console.log(LetterChanges("php"));
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript program to convert a given number to hours and minutes.</title>
+</head>
+<body>
+    <script>
+        function time_convert(num)
+ { 
+  var hours = Math.floor(num / 60);  
+  var minutes = num % 60;
+  return hours + ":" + minutes;         
+}
+
+console.log(time_convert(71));
+console.log(time_convert(450));
+console.log(time_convert(1441));
+    </script>
+</body>
+</html>

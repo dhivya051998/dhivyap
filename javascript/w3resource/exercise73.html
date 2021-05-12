@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript program to reverse the elements of a given array of integers length 3.</title>
+</head>
+<body>
+    <script>
+        function reverse3(array) {
+    return array.map((element, idx, arr) => arr[(arr.length - 1) - idx]);
+}
+
+console.log(reverse3([5, 4, 3])); 
+console.log(reverse3([1, 0, -1]));  
+console.log(reverse3([2, 3, 1]));
+    </script>
+    
+</body>
+</html>

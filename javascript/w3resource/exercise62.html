@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript program to move last three character to the start of a given string. The string length must be 3.</title>
+</head>
+<body>
+    <script>
+        function right_three(str) {
+     if (str.length > 1)
+       {
+         return str.slice(-3) + str.slice(0, -3);
+       }
+  return str;
+}
+console.log(right_three("Python"));
+console.log(right_three("JavaScript"));
+console.log(right_three("Hi"));
+    </script>
+</body>
+</html>

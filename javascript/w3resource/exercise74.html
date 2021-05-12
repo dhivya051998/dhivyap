@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript program to find the larger value between the first or last and set all the other elements with that value.  Display the new array.</title>
+</head>
+<body>
+    <script>
+        function all_max(nums) 
+ {
+    var max_val = nums[0] > nums[2] ? nums[0] : nums[2];
+
+    nums[0] = max_val;
+    nums[1] = max_val;
+    nums[2] = max_val;
+
+    return nums;
+}
+console.log(all_max([20, 30, 40]));
+console.log(all_max([-7, -9, 0]));
+console.log(all_max([12, 10, 3]));
+    </script>
+</body>
+</html>

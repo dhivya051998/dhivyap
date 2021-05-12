@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <script>
+        var myDate = new Date();
+  //  document.write(myDate);
+  // document.write("<br>");
+   
+      var myDay = myDate.getDay();
+      // document.write(myDay);
+      // document.write("<br>");
+     
+      
+      // Array of days.
+      var weekday = ['Sunday', 'Monday', 'Tuesday',
+          'Wednesday', 'Thursday', 'Friday', 'Saturday'
+      ];
+      document.write("Today is : " + weekday[myDay]);
+      document.write("<br/>");
+      
+      // get hour value.
+      var hours = myDate.getHours();
+
+      // document.write(hours);
+      // document.write("<br>");
+
+      var ampm = hours >= 12 ? 'PM' : 'AM';
+
+      hours = hours % 12;
+      // document.write(hours);
+      hours = hours ? hours : 12;
+      //  document.write(hours);
+      var minutes = myDate.getMinutes();
+      document.write(minutes);
+
+      minutes = minutes < 10 ? '0' + minutes : minutes;
+      
+      var myTime = hours + " " + ampm + " : " + minutes + 
+          " : " + myDate.getMilliseconds();
+          
+      document.write("\tCurrent time is : " + myTime);
+  </script>
+</body>
+</html>

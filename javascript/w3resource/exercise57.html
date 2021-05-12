@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript program to create a new string of specified copies of a given string.</title>
+</head>
+<body>
+    <script>
+        function string_copies (str, n) 
+{
+  if (n < 0)
+    return false;
+  else
+  return str.repeat(n);
+}
+console.log(string_copies("abc", 5));
+console.log(string_copies("abc", 0));
+console.log(string_copies("abc", -2));
+    </script>
+</body>
+</html>

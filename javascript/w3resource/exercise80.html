@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript program to swap the first and last elements of a given array of integers. The array length should be  at least 1.</title>
+</head>
+<body>
+    <script>
+        function swap(arra) {
+    [arra[0], arra[arra.length - 1]] = [arra[arra.length - 1], arra[0]];
+    return arra;
+}
+document.write(swap([1, 2, 3, 4])); 
+document.write("<br>"); 
+document.write(swap([0, 2, 1])); 
+document.write("<br>"); 
+document.write(swap([3])); 
+    </script>
+</body>
+</html>

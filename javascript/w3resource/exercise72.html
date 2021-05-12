@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript program to check whether the first and last elements are equal of a given array of integers length 3</title>
+</head>
+<body>
+    <script>
+        function first_last_same(nums)
+   {
+    var end = nums.length - 1;
+    if (nums.length >= 1){
+       return nums[0] == nums[end];
+    } else {return false;}
+}
+
+console.log(first_last_same([10, 20, 30])); 
+console.log(first_last_same([10, 20, 30, 10])); 
+console.log(first_last_same([20, 20, 20])); 
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript String Methods</title>
+</head>
+<body>
+    <p>Click "Try it" to display the first array element, after a string split.</p>
+    <button onclick="myFunction()">Try it</button>
+    <p id="q"></p>
+    <script>
+        function myFunction() {
+            var str = "a,b,c,d,e,f";
+            var arr = str.split("");
+            document.getElementById("q").innerHTML = arr[0];
+                }
+    </script>
+</body>
+</html>

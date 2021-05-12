@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript program to create a new string using the first and last n characters from a given string. The string length must be greater or equal to n.</title>
+</head>
+<body>
+    <script>
+        function two_string(str, n)
+  {
+    first_part = str.substring(0, n);
+    last_part = str.substring(str.length - n);
+    return first_part + last_part;
+ }
+
+console.log(two_string("JavaScript", 2));
+console.log(two_string("JavaScript", 3));
+    </script>
+</body>
+</html>

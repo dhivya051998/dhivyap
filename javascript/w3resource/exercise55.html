@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>check whether a given string contains equal number of p's and t's</title>
+</head>
+<body>
+    <script>
+        function equal_pt(str)
+{ 
+  var str_p = str.replace(/[^p]/g, "");
+
+  var str_t = str.replace(/[^t]/g, "");
+
+  var p_num = str_p.length;
+  var s_num = str_t.length;
+
+  return p_num === s_num;
+         
+}
+console.log(equal_pt("paatpss"));
+console.log(equal_pt("paatps"));
+    </script>
+</body>
+</html>

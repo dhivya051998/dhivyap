@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <script>
+        // Get a random integer from 1 to 10 inclusive
+     const num = Math.ceil(Math.random() * 10);
+    document.write(num);
+     const gnum = prompt('Guess the number between 1 and 10 inclusive');
+       if (gnum == num)
+    document.write('Matched');
+       else
+    document.write('Not matched, the number was '+gnum);
+    </script>
+</body>
+</html>

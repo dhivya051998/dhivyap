@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+   <script>
+       var today = new Date();
+       var dd = today.getDate();
+
+       var mm = today.getMonth()+1; 
+       var yyyy = today.getFullYear();
+       if(dd<10) 
+       {
+           dd='0'+dd;
+       } 
+
+      if(mm<10) 
+      {
+           mm='0'+mm;
+      } 
+      today = mm+'-'+dd+'-'+yyyy;
+      document.write(today);
+      today = mm+'/'+dd+'/'+yyyy;
+      document.write(today);
+      today = dd+'-'+mm+'-'+yyyy;
+      document.write(today);
+      today = dd+'/'+mm+'/'+yyyy;
+      document.write(today);
+
+   </script>
+</body>
+</html>
