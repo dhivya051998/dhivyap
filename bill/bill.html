@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="market.css">
+    <title>Billing</title>
+</head>
+<body>
+    <div class="container">
+    <h1> Rajalakshmi Super Market </h1>
+    <label>Customer ID</label>
+    <input id="cid" type="number"><br><br>
+    <label>Customer Name</label>
+    <input id="cname" type="text"><br><br><br><br>
+    <input id="code" type="text" placeholder="Product Code" oninput = "getItemCode(event)">
+    <input id="name" type="text" placeholder="Product Name" oninput = "getItemName(event)">
+    <input id="quantity" type="number" placeholder="Quantity" oninput = "getQuantity(event)">
+    <input id="per_piece_price" type="numer" placeholder="Per_Unit_Price" oninput = "getPrice(event)">
+    <input id="amount" type="number" placeholder="Total Amount" disabled>
+    <button onclick="addItem()">Add Item</button>
+<table>
+    <tbody id="output"></tbody>   
+</table>
+</div>
+<script>
+    let item = {
+          code:0,
+          name:"",
+          quantity :0,
+          per_unit_price: 0,
+          amount:0,
+}
+// let total_amount = 0;
+
+
+
+let items = [];
+function getItemCode(e){
+    item.code = e.target.value;
+    console.log("code is ------ ", e.target.value);
+}
+
+function getItemName(e){
+  item.name = e.target.value;
+  console.log("name is ------ ", e.target.value);
+}
+function getQuantity(e){
+  item.quantity = e.target.value;
+    console.log("Quantity  is ------ ", e.target.value);
+}
+function getPrice(e){
+  item.per_unit_price = e.target.value; 
+  document.getElementById("amount").value = item.per_unit_price* item.quantity;
+  item.amount = item.per_unit_price* item.quantity;
+}
+function addItem(){
+    items.push(item);
+    item = {
+        code:0,
+        name:"",
+        quantity :0,
+        per_unit_price: 0,
+        amount:0,
+    };
+    
+   
+    document.getElementById('code').value="";
+    document.getElementById('name').value="";
+    document.getElementById('quantity').value="";
+    document.getElementById('per_piece_price').value="";
+    document.getElementById('amount').value="";  
+    updateItems();
+}
+function deleteItem(i){
+    items.splice(i,1);
+    updateItems();
+}
+function updateItems(){
+    total_amount =0;
+    let table = "<tr><th>code</th><th>item</th><th>Quantity</th><th>per_piece_price</th><th>Amount</th><th></th></tr>";
+    for(let i =0; i< items.length; i++){
+        table+=`<tr> <td>${items[i].code}</td><td>${items[i].name}</td><td>${items[i].quantity}</td><td>${items[i].per_unit_price}</td><td>Rs ${items[i].amount}</td><td><button onclick="deleteItem(${i})">delete</button></td></tr>`
+        total_amount+= items[i].amount;
+    }
+         table+=`<tr><td>Total mount without GST</td><td>Rs ${total_amount}</td></tr><tr><td>GST</td><td>Rs ${(total_amount/100)*12}</td></tr><tr><td>Total amount with GST</td><td>Rs ${total_amount+(total_amount/100)*12}</td></tr>`;
+        document.getElementById('output').innerHTML = table;  
+}
+</script>
+</body>
+</html>
