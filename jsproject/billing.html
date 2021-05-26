@@ -14,34 +14,47 @@
     <div class="frm"> 
     <h1> Rajalakshmi Super Market </h1>
     </div>
+    <form  action="/action_page.php" method="post">
     <label>Customer ID</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <input id="cid" type="number"><br><br>
+    <input id="cid" type="number" required /><br><br>
+   
     <label>Customer Name</label>&nbsp;&nbsp;&nbsp;
-    <input id="cname" type="text"><br><br><br><br>
+    <input id="cname" type="text" required /><br><br><br><br>
+  
     <label>Product Code</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <input id="code" type="text" placeholder="Product Code" oninput = "getItemCode(event)"><br><br><br>
+    <input id="code" type="text"  oninput = "getItemCode(event)" required /><br><br><br>
+   
     <label>Product Name</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <input id="name" type="text" placeholder="Product Name" oninput = "getItemName(event)"><br><br><br>
+    <input id="name" type="text"  oninput = "getItemName(event)" required /><br><br><br>
+    
     <label>Quantity</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <input id="quantity" type="number" placeholder="Quantity" oninput = "getQuantity(event)"><br><br><br>
+    <input id="quantity" type="number"  oninput = "getQuantity(event)" required /><br><br><br>
+  
     <label>Per_Unit_Price</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <input id="per_piece_price" type="numer" placeholder="Per_Unit_Price" oninput = "getPrice(event)"><br><br><br>
+    <input id="per_piece_price" type="numer"  oninput = "getPrice(event)" required /><br><br><br>
+   
     <label>Total Amount</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <input id="amount" type="number" placeholder="Total Amount" disabled><br><br>
+    <input id="amount" type="number" disabled><br><br>
+   
     <button onclick="addItem()">Add Item</button>
+   
+    </form>
 </div>
 <div class="grid">
     <div class="frm">
         <h1> Rajalakshmi Super Market </h1><br>
-    <h1>Invoice</h1>
+        <h1>Invoice</h1>
     </div><br><br><br><br>
     <table>
-        <tbody id="output"></tbody>   
+        <tbody id="output">
+        </tbody>   
     </table>
 </div>
 </div>
 </div>
 <script>
+
+    
     let item = {
           code:0,
           name:"",
@@ -83,6 +96,8 @@ function addItem(){
     };
     
    
+       
+
     document.getElementById('code').value="";
     document.getElementById('name').value="";
     document.getElementById('quantity').value="";
