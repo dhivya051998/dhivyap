@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:cursive;
+}
+.container{
+    height: 400px;
+    width: 400px;
+    margin: auto;
+    background-image: url(image/calendar-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 30px;
+    
+}
+label{
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 120PX;
+    
+}
+input{
+    padding: 5px;
+    margin-top: 30px;
+    border: none;
+    height: 40px;
+    width: 120px;
+    padding: 5px;
+    font-size: 16px;
+    background-color: white;
+    text-align: center;
+    border-radius: 5px;
+
+   
+    
+}
+input:hover{
+    cursor: pointer;
+    border: none;
+    background: rgba(255, 255, 255, .5);
+    transition: 500ms; 
+    
+}
