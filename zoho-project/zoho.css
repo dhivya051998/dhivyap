@@ -1,0 +1,1667 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+	font-size: inherit;
+    font-family: Roboto;
+	
+}
+.zoho25{
+	display: flex;
+	width: 100%;
+	background-color: #fcefd8;
+	position: relative;
+	text-align: center;
+	padding: 20px;
+	font-size: 25px;
+	cursor: pointer;
+
+}
+.zoho-header{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin-top: 20px;
+
+
+}
+.zoho-logo{
+	height: 40px;
+	width: 104px;
+	background-image: url(images/zone-sprite.png);
+
+	
+}
+.zoho-user{
+	display: flex;
+	padding: 10px;
+	font-size: 18px;
+	font-family: 'Roboto', sans-serif;
+	cursor: pointer;
+
+	
+}
+.zoho-user a{
+	margin-left: 25px;
+	text-decoration: none;
+	color: black;
+}
+.zoho{
+	display: flex;
+}
+.zoho-select{
+	height: 26px;
+	width: 22px;
+	background-image: url(images/zgheader-footer-sprite.png);
+	background-repeat: no-repeat;
+	margin-left: 25px;
+	background-position: -108px 2px;
+	box-sizing: border-box;
+	background-size: auto 91px;
+}
+.search{
+	height: 27px;
+	width: 24px;
+	box-sizing: border-box;
+	background-image:url(images/zgheader-footer-sprite.png);
+	background-repeat: no-repeat;
+	margin-left: 25px;
+	background-position: -120px 2px;
+	background-size: auto 120px;
+}
+.content{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 45px;
+	
+
+}
+.content>h1{
+	font-size: 40px;
+	font-family: 'Roboto', sans-serif;
+}
+.content>p{
+	font-size: 18px;
+	margin-top: 10px;
+	width: 710px;
+	text-align: center;
+	line-height: 30px;
+	font-family: 'Roboto', sans-serif;
+}
+.crm{
+	width: 1200px;
+	height: 350px;
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+	grid-template-rows: repeat(2,1fr);
+	
+	
+}
+
+.box1{
+	grid-column: 1/3;
+	grid-row: 1/3;
+	background-image: linear-gradient(to right, lightblue, white);
+	
+
+}
+.child{
+	display: flex;
+	flex-wrap:nowrap;
+	align-items: center;
+}
+
+.child1{
+	width: 85px;
+	height: 60px;
+	box-sizing: border-box;
+	background-size: auto 100px;
+	background-image: url(images/zh-sprite-2x-new.png);
+	background-position: -867px 0;
+	background-repeat: no-repeat;
+	margin-top: 100px;
+	margin-left: 25px;
+	cursor: pointer;
+}
+.child2>h1{
+	font-size: 28px;
+	margin-left: 20px;
+}
+.child2>p{
+	line-height: 20px;
+	padding: 20px;
+	width: 360px;
+}
+.child2{
+	margin-top: 90px;
+	padding: 15px;
+	line-height: 20px;
+	cursor: pointer;
+}
+.child5{
+	background-color:#f0483e;
+	padding: 10px;
+	margin-left: 20px;
+	color: white;
+	font-size: 10px;
+}
+.crm-platform{
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: center;
+	margin-top: 20px;
+}
+.child3{
+	width: 80px;
+	height: 66px;
+	box-sizing: border-box;
+	background-size: auto 320px;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-repeat: no-repeat;
+	background-position: -285px -5px;
+	cursor: pointer;
+	
+}
+.child4{
+	margin-left: 15px;
+}
+button{
+	border: 1px solid #75d0fc;
+	background-color: white;
+	font-size: 10px;
+	padding: 8px;
+	margin-top: 15px;
+}
+.head{
+	font-size: 20px;
+
+}
+.para{
+	font-size: 15px;
+}
+.child6{
+	width: 80px;
+	height: 66px;
+	box-sizing: border-box;
+	background-size: auto 320px;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-repeat: no-repeat;
+	background-position: -497px -5px;
+	cursor: pointer;
+	
+}
+.child7{
+	width: 67px;
+	height: 66px;
+	box-sizing: border-box;
+	background-size: auto 296px;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-repeat: no-repeat;
+	background-position: -196px -165px;
+	margin-left: 30px;
+	cursor: pointer;
+}
+.child8{
+	width: 70px;
+	height: 68px;
+	box-sizing: border-box;
+	background-size: auto 300px;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-repeat: no-repeat;
+	background-position: -201px 0;
+	margin-left: 30px;
+	cursor: pointer;
+}
+.child9{
+	margin-left: 30px;
+}
+.remote{
+	width: 90px;
+	height: 89px;
+	box-sizing: border-box;
+	background-size: auto 415px;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-position: -1106px -2px;
+	background-repeat: no-repeat;
+	margin-top: 100px;
+	margin-left: 25px;
+	cursor: pointer;
+}
+.assist{
+	width: 74px;
+	height: 70px;
+	box-sizing: border-box;
+	background-size: auto 325px;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-repeat: no-repeat;
+	background-position: -72px -182px;
+	cursor: pointer;
+}
+.meeting{
+	width: 80px;
+	height: 66px;
+	box-sizing: border-box;
+	background-size: auto 320px;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-repeat: no-repeat;
+	background-position: -918px -1px;
+	cursor: pointer;
+}
+.workdrive{
+	width: 67px;
+	height: 66px;
+	box-sizing: border-box;
+	background-size: auto 320px;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-repeat: no-repeat;
+	background-position: -786px -1px;
+	margin-left: 30px;
+}
+.cliq{
+	width: 70px;
+	height: 70px;
+	box-sizing: border-box;
+	background-size: auto 320px;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-repeat: no-repeat;
+	background-position: -998px 2px;
+	
+}
+.box11{
+	grid-column: 1/3;
+	grid-row: 1/3;
+	background-image: linear-gradient(to right, #ffefef, white);
+	
+
+}
+.crm1{
+	width: 1200px;
+	height: 350px;
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+	grid-template-rows: repeat(2,1fr);
+	
+	
+}
+.bundels{
+	width: 1200px;
+	height: 200px;
+	display: grid;
+	border: 1px solid #efefef;
+	grid-template-rows: 1fr;
+	grid-template-columns: repeat(4,1fr);
+	
+}
+ .zoho-one1{
+	width: 90px;
+	height: 96px;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+	background-position:-1094px -205px ;
+	background-size: auto 380px;
+	margin-top: 60px;
+	align-self: center;
+	justify-self: center;
+}
+
+.bundels1{
+	grid-column: 1/2;
+	grid-row: 1/2;
+	
+}
+.bundels2{
+	grid-column:2/5 ;
+	grid-row: 1/2;
+	
+}
+.zoho-one{
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: center;
+	margin-top: -26px;
+}
+.content-wrap{
+	height: 560px;
+	width: 1200px;
+	display: grid;
+	box-sizing: border-box;
+	border: 1px solid #efefef;
+	grid-template-columns: repeat(3,1fr);
+	grid-template-rows: repeat(2,1fr);
+	
+}
+/* .content-wrap div{
+	border: 1px solid black;
+} */
+.item1{
+	display: flex;
+	flex-direction: column;
+}
+.crmplus{
+	width: 78px;
+	height: 87px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-position: -642px -197px;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-size: auto 360px;
+	margin-left: 60px;
+	margin-top: 40px;
+	
+}
+.bundle-crmplus{
+	align-self: center;
+	margin-top: 10px;
+	margin-right: 95px;
+
+}
+.workplace{
+	width: 78px;
+	height: 87px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-position: -723px -197px;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-size: auto 360px;
+	margin-left: 60px;
+	margin-top: 40px;
+}
+.bundle-workplace{
+	align-self: center;
+	margin-top: 10px;
+	margin-left: 60px;
+}
+.financeplus{
+	width: 78px;
+	height: 87px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-position: -804px -197px;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-size: auto 360px;
+	margin-left: 60px;
+	margin-top: 40px;
+}
+.bundle-financeplus{
+	align-self: center;
+	margin-top: 10px;
+	margin-left: 60px;
+}
+.creatorplus{
+	width: 78px;
+	height: 87px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-position: -81px -278px;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-size: auto 360px;
+	margin-left: 60px;
+	margin-top: 40px;
+}
+.bundle-creatorplus{
+	align-self: center;
+	margin-top: 10px;
+	margin-left: 56px;
+}
+.peopleplus{
+	width: 78px;
+	height: 87px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-position: -963px -197px;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-size: auto 360px;
+	margin-left: 60px;
+	margin-top: 40px;
+}
+.bundle-people{
+	align-self: center;
+	margin-top: 10px;
+	margin-left: 60px;
+}
+.IT-manage{
+	width: 78px;
+	height: 87px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-position: -883px -197px;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-size: auto 360px;
+	margin-left: 60px;
+	margin-top: 40px;
+}
+.bundle-IT{
+	align-self: center;
+	margin-top: 10px;
+	margin-left: 60px;
+}
+.zoho-apps{
+	height: 1000px;
+	width:1200px ;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-template-areas: "category1  category2";
+	box-sizing: border-box;
+	
+}
+.category1{
+	display: grid;
+	grid-area: category1;
+	width: 100%;
+	height: 1000px;
+	grid-template-columns:repeat(6,1fr) ;
+	grid-template-rows:repeat(8,1fr) ;
+	grid-template-areas:
+	"item1 item1 item1 item2 item2 item2"
+	"item3 item3 item4 item5 item5 item6"
+	"item7 item8 item9 item10 item11 item12"
+	"item13 item14 item15 item16 item17 item18"
+	"item19 item20 item21 item22 item23 item24"
+	"item25 item26 item27 item28 item29 item30"
+	"item31 .      .      item32 item33 item34"
+	".      .      .      item35 .        .";
+}
+/* .category1 div{
+	border: 1px solid black;
+} */
+
+.category2{
+	display: grid;
+	grid-area: category2;
+	grid-template-rows: repeat(8,1fr);
+	grid-template-columns: repeat(3,1fr);
+	grid-template-areas: 
+	"item36 item36 item36"
+	"item37 item37 item38"
+	"item39 item40 item41"
+	"item42 item43 .    "
+	"item44 item44 item44"
+	"item44 item44 item44"
+	"item45 item45 item46"
+	"item47 item48 .    "
+	;
+}
+.all-app1{
+	grid-area: item1;
+	justify-self: center;
+	
+}
+.all-app2{
+	grid-area: item2;
+	justify-self: center;
+}
+.all-app3{
+	grid-area: item3;
+	justify-self: center;
+	width: 64px;
+    height: 64px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-size: 960px auto;
+	background-position: -128px 0;
+}
+
+.all-app4{
+	grid-area: item4;
+	height: 32px;
+    width: 32px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-size: 960px auto;
+	background-position: 0 -126px;
+	margin-top: 32px;
+
+}
+
+.all-app5{
+
+	grid-area: item5;
+	justify-self: center;
+	width: 64px;
+    height: 64px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-size: 960px auto;
+	background-position: -256px 0;
+}
+
+.all-app6{
+	grid-area: item6;
+	justify-self: center;
+	height: 32px;
+    width: 32px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-size: 960px auto;
+	background-position: -672px -64px;
+	margin-top: 32px;
+
+}
+
+.all-app7{
+	grid-area: item7;
+	height: 32px;
+    width: 32px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-size: 960px auto;
+	background-position: -320px -64px;
+	margin-top: 32px;
+	justify-self: center;
+	
+}
+.all-app8{
+	grid-area: item8;
+	justify-self: center;
+	height: 32px;
+    width: 32px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-size: 960px auto;
+	background-position: -128px -64px;
+	margin-top: 32px;
+
+}
+.all-app9{
+	grid-area: item9;
+	justify-self: center;
+	height: 32px;
+    width: 32px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-size: 960px auto;
+	background-position: -160px -64px;
+	margin-top: 32px;
+
+}
+.all-app10{
+	grid-area: item10;
+	justify-self: center;
+	height: 32px;
+    width: 32px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-size:960px auto;
+	background-position:-768px -96px;
+	margin-top: 32px;
+
+
+}
+.all-app11{
+	grid-area: item11;
+	background-position: -704px -64px;
+	justify-self: center;
+	height: 32px;
+    width: 32px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-size: 960px auto;
+	margin-top: 32px;
+
+}
+.all-app12{
+	grid-area: item12;
+	background-position: -736px -64px;
+	justify-self: center;
+	height: 32px;
+    width: 32px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-size: 960px auto;
+	margin-top: 32px;
+
+
+}
+.all-app13{
+	grid-area: item13;
+	background-position: -192px -64px;
+	justify-self: center;
+	height: 32px;
+    width: 32px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-size: 960px auto;
+	margin-top: 32px;
+
+}
+.all-app14{
+	grid-area: item14;
+	background-position: -224px -64px;
+	justify-self: center;
+	height: 32px;
+    width: 32px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-size: 960px auto;
+	margin-top: 32px;
+
+
+}
+.all-app15{
+	grid-area: item15;
+	background-position: -256px -64px;
+	justify-self: center;
+	height: 32px;
+    width: 32px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-size: 960px auto;
+	margin-top: 32px;
+
+
+}
+.all-app16{
+	grid-area: item16;
+	background-position: -768px -64px;
+	justify-self: center;
+	height: 32px;
+    width: 32px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-size: 960px auto;
+	margin-top: 32px;
+
+
+}
+.all-app17{
+	grid-area: item17;
+	background-position: -800px -64px;
+	justify-self: center;
+	height: 32px;
+    width: 32px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-size: 960px auto;
+	margin-top: 32px;
+
+
+}
+.all-app18{
+	grid-area: item18;
+	background-position: -832px -64px;
+	justify-self: center;
+	height: 32px;
+    width: 32px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-size: 960px auto;
+	margin-top: 32px;
+
+	
+}
+.all-app19{
+	grid-area: item19;
+	background-position: -288px -64px;
+	justify-self: center;
+	height: 32px;
+    width: 32px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-size: 960px auto;
+	margin-top: 32px;
+
+}
+.all-app20{
+	grid-area: item20;
+	background-position: -352px -64px;
+	justify-self: center;
+	height: 32px;
+    width: 32px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-size: 960px auto;
+	margin-top: 32px;
+
+}
+.all-app21{
+	grid-area: item21;
+	background-position: -96px -64px;
+	justify-self: center;
+	height: 32px;
+    width: 32px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-size: 960px auto;
+	margin-top: 32px;
+	
+}
+.all-app22{
+	grid-area: item22;
+	background-position: -864px -64px;
+	justify-self: center;
+	height: 32px;
+    width: 32px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-size: 960px auto;
+	margin-top: 32px;
+
+}
+.all-app23{
+	grid-area: item23;
+	background-position: -896px -64px;
+	justify-self: center;
+	height: 32px;
+    width: 32px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-size: 960px auto;
+	margin-top: 32px;
+
+}
+.all-app24{
+	grid-area: item24;
+	background-position: -928px -64px;
+	justify-self: center;
+	height: 32px;
+    width: 32px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-size: 960px auto;
+	margin-top: 32px;
+
+}
+.all-app25{
+	grid-area: item25;
+	background-position: -512px -96px;
+	justify-self: center;
+	height: 32px;
+    width: 32px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-size: 960px auto;
+	margin-top: 32px;
+
+}
+.all-app26{
+	grid-area: item26;
+	background-position: -481px -96px;
+	justify-self: center;
+	height: 32px;
+    width: 32px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-size: 960px auto;
+	margin-top: 32px;
+
+}
+.all-app27{
+	grid-area: item27;
+	background-position: -704px -96px;
+	justify-self: center;
+	height: 32px;
+    width: 32px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-size: 960px auto;
+	margin-top: 32px;
+
+}
+.all-app28{
+	grid-area: item28;
+	background-position: 0 -96px;
+	justify-self: center;
+	height: 32px;
+    width: 32px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-size: 960px auto;
+	margin-top: 32px;
+
+}
+.all-app29{
+	grid-area: item29;
+	background-position: -32px -96px;
+	justify-self: center;
+	height: 32px;
+    width: 32px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-size: 960px auto;
+	margin-top: 32px;
+
+}
+.all-app30{
+	grid-area: item30;
+	background-position: -64px -96px;
+	justify-self: center;
+	height: 32px;
+    width: 32px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-size: 960px auto;
+	margin-top: 32px;
+
+}
+.all-app31{
+	grid-area: item31;
+	background-position: -735px -96px;
+	justify-self: center;
+	height: 32px;
+    width: 32px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-size: 960px auto;
+	margin-top: 32px;
+
+}
+.all-app32{
+	grid-area: item32;
+	background-position: -96px -96px;
+	justify-self: center;
+	height: 32px;
+    width: 32px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-size: 960px auto;
+	margin-top: 32px;
+
+
+}
+.all-app33{
+	grid-area: item33;
+	background-position: -128px -96px;
+	justify-self: center;
+	height: 32px;
+    width: 32px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-size: 960px auto;
+	margin-top: 32px;
+
+
+}
+.all-app34{
+	grid-area: item34;
+	background-position: -256px -128px;
+	justify-self: center;
+	height: 32px;
+    width: 32px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-size: 960px auto;
+	margin-top: 32px;
+
+
+
+
+}
+.all-app35{
+	grid-area: item35;
+	background-position: -289px -128px;
+	justify-self: center;
+	height: 32px;
+    width: 32px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-size: 960px auto;
+	margin-top: 32px;
+
+
+}
+.finance-group1{
+	grid-area: item36;
+	justify-self: center;
+
+
+}
+.finance-group2{
+	grid-area: item37;
+	justify-self: center;
+	width: 64px;
+    height: 64px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-size: 960px auto;
+	background-position: -64px 0;
+
+}
+.finance-group3{
+	grid-area: item38;
+	background-position: -448px -64px;
+	justify-self: center;
+	height: 32px;
+    width: 32px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-size: 960px auto;
+	margin-top: 32px;
+
+}
+.finance-group4{
+	grid-area: item39;
+	background-position: -480px -64px;
+	justify-self: center;
+	height: 32px;
+    width: 32px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-size: 960px auto;
+	margin-top: 32px;
+
+}
+.finance-group5{
+	grid-area: item40;
+	background-position: -512px -64px;
+	justify-self: center;
+	height: 32px;
+    width: 32px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-size: 960px auto;
+	margin-top: 32px;
+
+
+}
+.finance-group6{
+	grid-area: item41;
+	background-position: -544px -64px;
+	justify-self: center;
+	height: 32px;
+    width: 32px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-size: 960px auto;
+	margin-top: 32px;
+
+}
+.finance-group7{
+	grid-area: item42;
+	background-position: -576px -64px;
+	justify-self: center;
+	height: 32px;
+    width: 32px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-size: 960px auto;
+	margin-top: 32px;
+
+}
+.finance-group8{
+	grid-area: item43;
+	background-position: -672px -96px;
+	justify-self: center;
+	height: 32px;
+    width: 32px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-size: 960px auto;
+	margin-top: 32px;
+
+}
+.finance-group9{
+	grid-area: item44;
+	justify-self: center;
+}
+.finance-group10{
+	grid-area: item45;
+	justify-self: center;
+	width: 64px;
+    height: 64px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-size: 960px auto;
+	background-position: -384px 0;
+
+}
+.finance-group11{
+	grid-area: item46;
+	background-position: -352px -96px;
+	justify-self: center;
+	height: 32px;
+    width: 32px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-size: 960px auto;
+	margin-top: 32px;
+
+}
+.finance-group12{
+	grid-area: item47;
+	background-position: -640px -96px;
+	justify-self: center;
+	height: 32px;
+    width: 32px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-size: 960px auto;
+	margin-top: 32px;
+
+}
+.finance-group13{
+	grid-area: item48;
+	background-position: -160px -127px;
+	justify-self: center;
+	height: 32px;
+    width: 32px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-size: 960px auto;
+	margin-top: 32px;
+
+}
+.zoho-apps-category{
+	height: 680px;
+	width:1200px ;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-template-areas: category3 category4;
+	box-sizing: border-box;
+	
+}
+.category3{
+	display: grid;
+	width: 100%;
+	height: 680px;
+	grid-template-columns:repeat(6,1fr) ;
+	grid-template-rows:repeat(6,1fr) ;
+	grid-template-areas:
+	"div1 div1 div1 div2 div2 div2"
+	"div3 div3 div4 div5 div5 div6"
+	"div7 div8 div9 div10 .   .   "
+	"div11 div12 div13 div14 div14 div14"
+	"div15 .     .     div14 div14 div14"
+	".     .     .     .     div16 .    "
+	 ;
+}
+.col-group1{
+	grid-area: div1;
+}
+.col-group2{
+	grid-area: div2;
+}
+.col-group3{
+	grid-area: div3;
+	justify-self: center;
+	width: 64px;
+    height: 64px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-size: 960px auto;
+	background-position: -510px 0;
+}
+.col-group4{
+	grid-area: div4;
+	background-position: -224px -96px;
+	justify-self: center;
+	height: 32px;
+    width: 32px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-size: 960px auto;
+	margin-top: 32px;
+
+}
+.col-group5{
+	grid-area: div5;
+	justify-self: center;
+	width: 64px;
+    height: 64px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-size: 960px auto;
+	background-position: -320px 0;
+}
+.col-group6{
+	grid-area: div6;
+	background-position: -192px -96px;
+	justify-self: center;
+	height: 32px;
+    width: 32px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-size: 960px auto;
+	margin-top: 32px;
+}
+.col-group7{
+	grid-area: div7;
+	background-position: -256px -96px;
+	justify-self: center;
+	height: 32px;
+    width: 32px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-size: 960px auto;
+	margin-top: 32px;
+	
+}
+.col-group8{
+	grid-area: div8;
+	background-position: -576px -96px;
+	justify-self: center;
+	height: 32px;
+    width: 32px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-size: 960px auto;
+	margin-top: 32px;
+	
+}
+.col-group9{
+	grid-area: div9;
+	background-position: -65px -127px;
+	justify-self: center;
+	height: 32px;
+    width: 32px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-size: 960px auto;
+	margin-top: 32px;
+	
+
+}
+.col-group10{
+	grid-area: div10;
+	background-position: -32px -127px;
+	justify-self: center;
+	height: 32px;
+    width: 32px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-size: 960px auto;
+	margin-top: 32px;
+}
+.col-group11{
+	grid-area: div11;
+	background-position: -288px -96px;
+	justify-self: center;
+	height: 32px;
+    width: 32px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-size: 960px auto;
+	margin-top: 32px;
+}
+.col-group12{
+	grid-area: div12;
+	background-position: -832px -96px;
+	justify-self: center;
+	height: 32px;
+    width: 32px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-size: 960px auto;
+	margin-top: 32px;
+}
+.col-group13{
+	grid-area: div13;
+	background-position: -864px -96px;
+	justify-self: center;
+	height: 32px;
+    width: 32px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-size: 960px auto;
+	margin-top: 32px;
+}
+.col-group14{
+	grid-area: div14;
+}
+.col-group15{
+	grid-area: div15;
+	background-position: -192px -128px;
+	justify-self: center;
+	height: 32px;
+    width: 32px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-size: 960px auto;
+	margin-top: 32px;
+}
+.col-group16{
+	grid-area: div16;
+	justify-self: center;
+	width: 64px;
+    height: 64px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-size: 960px auto;
+	background-position: -641px 0;
+
+}
+.category4{
+	display: grid;
+	width: 100%;
+	height: 680px;
+	grid-template-columns:repeat(3,1fr) ;
+	grid-template-rows:repeat(6,1fr) ;
+	grid-template-areas:
+	"div17 div17 div17"
+	"div18 div18 div19"
+	"div20 div21 .    "
+	".     .     .    "
+	".     .     .    "
+	".     .     .    "
+	;
+}
+.zh-group1{
+	grid-area: div17;
+
+	
+}
+.zh-group2{
+	grid-area: div18;
+	justify-self: center;
+	width: 64px;
+    height: 64px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-size: 960px auto;
+	background-position: -192px 0;
+}
+.zh-group3{
+	grid-area: div19;
+	background-position: -416px -96px;
+	justify-self: center;
+	height: 32px;
+    width: 32px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-size: 960px auto;
+	margin-top: 32px;
+}
+.zh-group4{
+	grid-area: div20;
+	background-position: -544px -96px;
+	justify-self: center;
+	height: 32px;
+    width: 32px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-size: 960px auto;
+	margin-top: 32px;
+}
+.zh-group5{
+	grid-area: div21;
+	background-position: -609px -96px;
+	justify-self: center;
+	height: 32px;
+    width: 32px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-image: url(images/zp-global-icon-sprite-2x.png);
+	background-size: 960px auto;
+	margin-top: 32px;
+}
+.privacy{
+	height: 250px;
+	width: 100%;
+	display: flex;
+	margin: auto;
+	margin-top: 120px;
+	justify-content: space-around;
+
+}
+.privacy1{
+	height: 202px;
+	width: 530px;
+	display: flex;
+	flex-direction: column;
+    margin-right: 5%;
+    text-align: center;
+	background-image: url(images/gmq-bg.jpg);
+	background-size: 520px auto;
+    background-repeat: no-repeat;
+    padding: 25px 0;
+	margin-top: 25px;
+}
+.privacy2{
+	height:202px;
+	width: 530px;
+	display: flex;
+	flex-direction: column;
+	background-image: url(images/privacy-shield-bg.jpg);
+	text-align: center;
+	background-size: 520px auto;
+    background-repeat: no-repeat;
+    padding: 25px 0;
+	margin-top: 25px;
+	justify-content: center;
+	
+}
+.zh-wrap{
+	height: 400px;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	padding: 50px;
+
+}
+.zh-wrap-a{
+	height: 250px;
+	width: 40%;
+	background-image: url(images/zoho-home-testimonial-nicolas-2x.jpg);
+	background-repeat: no-repeat;
+	background-size: 520px auto;
+}
+.zh-wrap-b{
+	height: 250px;
+	width: 40%;
+	display: flex;
+	
+}
+.z-trust-brands1{
+	display: inline-block;
+	align-self: center;
+	flex-direction: column;
+}
+.hyatt{
+	display: inline-block;
+	height: 40px;
+	width: 108px;
+	background-image: url(images/zoho-customers-top-brands.png);
+	background-position: -937px 0;
+	background-size: 1045px auto;
+	margin: 0 0 25px 0;
+	text-align: center;
+
+}
+
+.mahindra{
+	display: inline-block;
+	width: 122px;
+    background-position: -112px -40px;
+	background-image: url(images/zoho-customers-top-brands.png);
+	background-size: 1045px auto;
+    height: 40px;
+}
+.z-trust-brands2{
+	display: inline-block;
+	align-self: center;
+	flex-direction: column;
+	margin-top: -25px;
+	padding: 30px;
+}
+.kpmg{
+	display: inline-block;
+	height: 40px;
+	width: 67px;
+    background-position: -144px 0;
+	background-image: url(images/zoho-customers-top-brands.png);
+	background-repeat: no-repeat;
+	background-size: 1045px auto;
+	text-align: center;
+	margin: 0 0 25px 0;
+}
+.tata{
+	display: inline-block;
+	width: 133px;
+	background-repeat: no-repeat;
+    background-position: -112px -80px;
+	background-image: url(images/zoho-customers-top-brands.png);
+	background-size: 1045px auto;
+    height: 40px;
+}
+
+.z-trust-brands3{
+	display: inline-block;
+	align-self: center;
+	flex-direction: column;
+	margin-top: -50px;
+}
+.loreal{
+	display: inline-block;
+	height: 40px;
+	width: 105px;
+    background-position: -431px -40px;
+	background-image: url(images/zoho-customers-top-brands.png);
+	background-repeat: no-repeat;
+	background-size: 1045px auto;
+	text-align: center;
+	margin: 0 0 25px 0;
+	
+
+}
+.suzuki{
+	display: inline-block;
+	width: 31px;
+    background-position: -420px 0;
+	background-repeat: no-repeat;
+	background-image: url(images/zoho-customers-top-brands.png);
+	background-size: 1045px auto;
+    height: 40px;
+}
+.zh-bottom-section{
+	height: 200px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 50px;
+}
+.bottom-section-30{
+	height: 33px;
+	width: 39px;
+	background-image: url(images/zh-sprite-2x-new.png);
+	background-position:-577px -66px ;
+	background-repeat: no-repeat;
+	background-size: 1870px auto;
+	font-size: 20px;
+}
+.bottom-section-33{
+	height: 33px;
+	width: 39px;
+	background-image: url(images/zh-sprite-2x-new.png);
+	background-position:-613px -64px ;
+	background-repeat: no-repeat;
+	background-size: 1870px auto;
+	font-size: 20px;
+}
+.footer-wrap{
+	height: 500px;
+	width: 100%;
+	display: flex;
+	background-color: #333333;
+	color: white;
+	justify-content: space-around;
+	padding: 10px;
+	
+}
+ul li{
+	list-style-type: none;
+	margin-top: 10px;
+
+}
+.footer-search-action{
+	height: 200px;
+	width: 100%;
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	background-color: #333333;
+	color: white;
+	padding: 30px;
+}
+.footer-search-icon{
+	background: #f7f7f7 url(images/help-new-sprite.png) no-repeat -5px -5px/auto 40px;
+    display: inline-block;
+    width: 43px;
+	top: -83px;
+	right: 350px;
+    height: 32px;
+	border:none;
+	position: absolute;
+	background-color: transparent;
+    background-position: -111px -15px;
+    /* vertical-align: middle; */
+}
+input{
+	height: 35px;
+    font-size: 15px;
+    margin: auto;
+	margin-top: -100px;
+    max-width: 100%;
+	text-indent: 0;
+    width:55%;
+    font-family: var(--zf-primary-regular);
+	background-color: black;
+	border: 1px solid white;
+	opacity: 0.2;
+
+}
+.zh-list{
+	display: flex;
+	font-size: 14px;
+    margin: auto;
+
+	
+}
+.zh-list li{
+	padding: 7px;
+	border-right: 1px solid white;
+	line-height: 0px;
+}
+.twitter{
+	width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin: 0 5px;
+    overflow: hidden;
+    text-indent: -999px;
+	background-position: -737px -76px;
+    border: 0;
+    padding: 0;
+    background-image: url(images/zh-sprite-2x-new.png);
+    background-size: auto 110px;
+    background-repeat: no-repeat;
+}
+.facebook{
+	width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin: 0 5px;
+    overflow: hidden;
+    text-indent: -999px;
+    border: 0;
+    padding: 0;
+	background-position: -678px -76px;
+    background-image: url(images/zh-sprite-2x-new.png);
+    background-size: auto 110px;
+    background-repeat: no-repeat;
+}
+.youtube{
+	width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin: 0 5px;
+    overflow: hidden;
+    text-indent: -999px;
+	background-position: -708px -76px;
+    border: 0;
+    padding: 0;
+    background-image: url(images/zh-sprite-2x-new.png);
+    background-size: auto 110px;
+    background-repeat: no-repeat;
+}
+.linked{
+	width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin: 0 5px;
+    overflow: hidden;
+    text-indent: -999px;
+	background-position: -767px -76px;
+    border: 0;
+    padding: 0;
+    background-image: url(images/zh-sprite-2x-new.png);
+    background-size: auto 110px;
+    background-repeat: no-repeat;
+}
+.instagram{
+	width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin: 0 5px;
+    overflow: hidden;
+    text-indent: -999px;
+	background-position: -797px -76px;
+    border: 0;
+    padding: 0;
+    background-image: url(images/zh-sprite-2x-new.png);
+    background-size: auto 110px;
+    background-repeat: no-repeat;
+}
+.zoho-select-22{
+	height: 26px;
+	width: 25px;
+	background-image: url(images/zone-sprite.png);
+	background-repeat: no-repeat;
+	margin-left: 25px;
+	background-position: -328px 2px;
+	box-sizing: border-box;
+	background-size: 510px auto;
+}
+	
+
+	
+
+
+
+
+
