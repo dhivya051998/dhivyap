@@ -17,7 +17,7 @@
            <div class="a" id="z-1" onclick="myFunction()"></div>
            <div class="a" id="z-2" onclick="myFunction()"></div>
            <div class="a" id="z-3" onclick="myFunction()"></div>
-           <div class="sbar-1" id="field-4"></div>
+            <div class="nav-2" id="field-10"></div>
 
             <div class="nav" id="field-1">
                 <div style="display: flex; gap: 10px; margin-top: 40px;">
@@ -130,7 +130,7 @@
             
             </div>
 
-
+            <div class="sbar-1" id="field-4" onclick="clear()"></div>
         <div class="footer">
             <span class="material-icons ic-1">
                 perm_identity
@@ -309,6 +309,8 @@
         function myFunction(){
             document.getElementById("field-1").style.display = "block";
             document.getElementById("field-4").style.display = "block";
+            document.getElementById("field-10").style.display = "block";
+            document.getElementById("ans").style.display = "none";
            
             
 
@@ -326,6 +328,12 @@
             
             
 
+        }
+         function clear(){
+            document.getElementById("field-1").style.display = "none";
+            document.getElementById("field-4").style.display = "none";
+            document.getElementById("field-10").style.display = "none";
+           
         }
         
        
