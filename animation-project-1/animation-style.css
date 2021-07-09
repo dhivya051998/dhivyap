@@ -39,17 +39,38 @@ body{
     background-color:#553783c7;
     display: none;
 }
+.nav-2{
+  height: 36px;
+  width:230px;
+  border-radius: 15px;
+  background-color:#fff;
+  position: absolute;
+  margin-top: -20px;
+  z-index: 3;
+  display: none;
+}
 
 .nav{
-    height: 570px;
+    height: 605px;
     width: 170px;
     position: absolute;
     z-index: 1;
-    top: 30px;
+    top: 20px;
     right: 10px;
     overflow-x: hidden;
     transition: 0.5s;
     background-color:white;
+    display: none;
+}
+.sbar-1{
+    height: 590px;
+    width:300px;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    border-radius: 30px;
+    background-color:#00005070;
+    cursor: pointer;
     display: none;
 }
 .payment-image{
