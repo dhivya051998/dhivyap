@@ -388,16 +388,25 @@ body{
     background: #44B3C2;
   }
 
-  @media screen and (max-width:900px) {
+ @media screen and (max-width:900px) {
     #like{
       margin-right: 280px ;
+      margin-top: -46px;
+    }
+    .container{
+      margin-top: 0px;
     }
   }
 
   @media screen and (max-width:600px) {
     #like{
       margin-right: 130px ;
+      margin-top: -48px;
     }
+    .container{
+      margin-top: 0px;
+    }
+    
   }
 
 
