@@ -394,7 +394,7 @@ body{
     }
   }
 
-  @media screen and (max-width:900px) {
+  @media screen and (max-width:600px) {
     #like{
       margin-right: 130px ;
     }
