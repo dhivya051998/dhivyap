@@ -1,5 +1,6 @@
 package mainproject;
 
+import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
 
 
@@ -22,16 +23,17 @@ public class Drop_down {
 
 		
 		    WebDriver driver = new ChromeDriver();
-//URL check//
+		    
+//--------------------------------------------URL check------------------------------------------------//
 		
 			String dhivya = "https://www.testandquiz.com/selenium/testing.html";
 			driver.get(dhivya);
-            driver.manage().window().maximize();
+                        driver.manage().window().maximize();
 			
-//Link check//
+//-------------------------------------------Link check-------------------------------------------//
             try { 
             	
-                WebElement link = driver.findElement(By.xpath("/html/body/div/div[4]/div/p/a"));
+                            WebElement link = driver.findElement(By.xpath("/html/body/div/div[4]/div/p/a"));
 			    driver.manage().timeouts().implicitlyWait(3000, TimeUnit.MILLISECONDS);
 			
 			    link.click();
@@ -39,7 +41,7 @@ public class Drop_down {
 			    Thread.sleep(500);
 		 
 			    String ExpectedLink = "https://www.javatpoint.com/";
-    			String ActualLink =driver.getCurrentUrl();  		
+    			     String ActualLink =driver.getCurrentUrl();  		
     			
     			Assert.assertEquals(ActualLink,ExpectedLink);
     			System.out.println("pass");
@@ -51,88 +53,161 @@ public class Drop_down {
 			    
             	driver.navigate().back();
             	
- //Text box check//
-		
-		       try { 
-			    WebElement text_box = driver.findElement(By.cssSelector("#fname"));
+ //-------------------------------------Text box check---------------------------------------------//
+            	
+            	try {
+			        WebElement text_box = driver.findElement(By.cssSelector("#fname"));
 				
 				driver.manage().timeouts().implicitlyWait(3000, TimeUnit.MILLISECONDS);
+				
+			         boolean text_enabled = text_box.isEnabled();
+				 
+				 System.out.println(text_enabled);
+	              
+	              if( text_enabled==true )
+	              {
+	                 System.out.println("Element is enabled");
+	              }
+	              else
+	                 System.out.println("Element is not enabled");
+	              
+	              
 				
 				 text_box.click();
 				 text_box.clear();
 				 text_box.sendKeys("amdkjjf3857#$");
-			       
-			        Thread.sleep(500);
+				
+				 Thread.sleep(500);
 				 String expected = "amdkjjf3857#$";
 				 String actual= text_box.getAttribute("value");
  
 				 Assert.assertEquals(actual,expected);
 				 System.out.println("pass");
             	}
-		
-		catch(AssertionError e){
+            	catch(AssertionError e){
             		
             		System.out.println("fail");	
             	}
+				
 				 
 				 
-//Button check//				 
+//-------------------------------------Button check----------------------------------------------//
+            	
+            	try {
 				 WebElement button = driver.findElement(By.cssSelector("#idOfButton"));
 				 
 				 driver.manage().timeouts().implicitlyWait(3000, TimeUnit.MILLISECONDS);
 				 
+				 boolean b_enable = button.isEnabled();
+				 
+				  System.out.println(b_enable);
+	              
+	              if( b_enable==true )
+	              {
+	                 System.out.println("Button is enabled");
+	              }
+	              else
+	                 System.out.println("Button is not enabled");
+				 
 				 button.click();
 				 
 				 
-//Radio button check// 
+				
+				 Thread.sleep(500);
+				 String exp_btn = "background: green;";
+				 String act_btn= button.getAttribute("style");
+				 
+ 
+				 Assert.assertEquals(act_btn,exp_btn);
+				 System.out.println("pass");
+            	}
+            	catch(AssertionError e){
+            		
+            		System.out.println("fail");	
+            	}
+				
+            	
+            	
+
+				 
+//----------------------------------Radio button is not selected----------------------------------------// 
+				 
+				 
 				 WebElement radio_button = driver.findElement(By.cssSelector("#female"));
-					
-					
-			     driver.manage().timeouts().implicitlyWait(3000, TimeUnit.MILLISECONDS);
-					
-				 radio_button.click();
+						
+			         driver.manage().timeouts().implicitlyWait(3000, TimeUnit.MILLISECONDS);
+			     
+			         boolean but_enabled = radio_button .isEnabled();
 				 
+				 System.out.println( but_enabled);
+	              
+	              if(  but_enabled==true )
+	              {
+	                 System.out.println("Radio button is enabled");
+	              }
+	              else
+	                 System.out.println("Radio button is not enabled");
+	              
+					
+//				 radio_button.click();
 				 
-				 if (radio_button.isSelected()) {					
-			            System.out.println("pass");					
+				  boolean buttonDisplayed = radio_button.isSelected();
+				  System.out.println(buttonDisplayed);
+	              
+	              if( buttonDisplayed==true )
+	              {
+	                 System.out.println("female is selected");
+	              }
+	              else
+	                 System.out.println("female is not selected");
+	              
+	              
+//-------------------------------Radio button is selected----------------------------------------------//
+					 	
+	                             WebElement radio_but = driver.findElement(By.cssSelector("#female"));
+					
+				     driver.manage().timeouts().implicitlyWait(3000, TimeUnit.MILLISECONDS);
+						
+					 radio_but.click();
+					 
+					  boolean select = radio_button.isSelected();
+					  System.out.println(select);
+		              
+		              if( select==true )
+		              {
+		                 System.out.println("female is selected");
+		              }
+		              else
+		                 System.out.println("female is not selected");
+						 	     
 
-			        } else {			
-			            System.out.println("fail");					
-			        }		
 				 
-				 WebElement radio_but = driver.findElement(By.cssSelector("#male"));
-					
-					
-			     driver.manage().timeouts().implicitlyWait(3000, TimeUnit.MILLISECONDS);
-					
-				 radio_but.click();
+//--------------------------------------------Check_box is selected check------------------------------------------//			 
 				 
-				 
-				 if (radio_but.isSelected()) {					
-			            System.out.println("pass");					
-
-			        } else {			
-			            System.out.println("fail");					
-			        }		
-				 
-//Check_box check//			        
+				  
 				 WebElement check_box = driver.findElement(By.cssSelector(".Automation "));
 					
 					
-			     driver.manage().timeouts().implicitlyWait(3000, TimeUnit.MILLISECONDS);
+			         driver.manage().timeouts().implicitlyWait(3000, TimeUnit.MILLISECONDS);
 					
 				 check_box.click();
 				 
-				 if(check_box.isSelected())
-				 { 
-				     System.out.println("pass"); 
-				 } 
-				 else 
-				 {
-				     System.out.println("fail"); 
-				  } 
+				 boolean value = radio_button.isSelected();
 				 
-//Drop_down check//				 
+				 System.out.println(value);
+				 if( value==true )
+	              {
+	                 System.out.println("Automation Testing is selected");
+	              }
+	              else
+	                 System.out.println("Performance Testing is not selected");
+				 
+				 
+				
+				 
+				 
+//---------------------------------------Drop_down check--------------------------------------//	
+				 
 				 WebElement dropdown = driver.findElement(By.id("testingDropdown")); 
 				 
 				driver.manage().timeouts().implicitlyWait(3000, TimeUnit.MILLISECONDS);
@@ -147,15 +222,15 @@ public class Drop_down {
 			    manual.click();
 				
 			    
-			    if(manual.isSelected())
-				 { 
-				     System.out.println("pass"); 
-				 } 
-				 else 
-				 {
-				     System.out.println("fail"); 
-				  } 
-//Double-click to generate alert box check//			 
+//			    if(manual.isSelected())
+//				 { 
+//				     System.out.println("pass"); 
+//				 } 
+//				 else 
+//				 {
+//				     System.out.println("fail"); 
+//				  } 
+//-----------------------------------Double-click to generate alert box check---------------------------------//			 
 				
 				Actions action = new Actions(driver);
 				
@@ -180,4 +255,4 @@ public class Drop_down {
 
 	}
 
-}
+	}
