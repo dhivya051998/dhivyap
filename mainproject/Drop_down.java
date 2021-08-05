@@ -52,6 +52,8 @@ public class Drop_down {
             	driver.navigate().back();
             	
  //Text box check//
+		
+		       try { 
 			    WebElement text_box = driver.findElement(By.cssSelector("#fname"));
 				
 				driver.manage().timeouts().implicitlyWait(3000, TimeUnit.MILLISECONDS);
@@ -59,6 +61,19 @@ public class Drop_down {
 				 text_box.click();
 				 text_box.clear();
 				 text_box.sendKeys("amdkjjf3857#$");
+			       
+			        Thread.sleep(500);
+				 String expected = "amdkjjf3857#$";
+				 String actual= text_box.getAttribute("value");
+ 
+				 Assert.assertEquals(actual,expected);
+				 System.out.println("pass");
+            	}
+		
+		catch(AssertionError e){
+            		
+            		System.out.println("fail");	
+            	}
 				 
 				 
 //Button check//				 
