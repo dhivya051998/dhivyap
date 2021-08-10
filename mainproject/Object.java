@@ -18,6 +18,9 @@ public class Object {
 	            System.out.println("false");
 	        }
 		    
+		     Object s1 = new Object();
+	        System.out.println(s1.age);
+		    
 		    for (int i = 0; i < age; i++) {
 	            System.out.println(i);
 	        }
