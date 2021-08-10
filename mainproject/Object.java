@@ -7,16 +7,19 @@ public class Object {
 
 	    public static void main(String[] args) {
 	    	
-	        System.out.println(age);
-	        for (int i = 0; i < age; i++) {
-	            System.out.println(i);
-	        }
+	      
+	       Object s1 = new Object();
+	        System.out.println(s1.name);
 
 	        if (name.equals("hi")){
 	            System.out.println("true");
 	        }
 	        else{
 	            System.out.println("false");
+	        }
+		    
+		    for (int i = 0; i < age; i++) {
+	            System.out.println(i);
 	        }
 	        
 	        if(age<=18) {
