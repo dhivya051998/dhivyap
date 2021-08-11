@@ -7,21 +7,20 @@ public class Object {
 
 	    public static void main(String[] args) {
 	    	
-	      
-	       Object s1 = new Object();
+	   // object creation method// 	
+	    	Object s1 = new Object();
 	        System.out.println(s1.name);
-
-	        if (name.equals("hi")){
+	        
+	        if (name==("hi")){
 	            System.out.println("true");
 	        }
 	        else{
 	            System.out.println("false");
 	        }
-		    
-		     Object s1 = new Object();
+	        
 	        System.out.println(s1.age);
-		    
-		    for (int i = 0; i < age; i++) {
+	        
+	        for (int i = 0; i < age; i++) {
 	            System.out.println(i);
 	        }
 	        
