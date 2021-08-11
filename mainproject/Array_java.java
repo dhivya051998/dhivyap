@@ -24,7 +24,25 @@ public class Array_java {
 		}
 		
 		
-		
+		String[][][] myString = {
+					{{"test1","test2","test3"},{"test1","test2","test3"}},
+					{{"test1","test4","test2"},{"test1","test2","test3"}},
+					{{"test1","test8","test9"},{"test1","test2","test3"}},
+					{{"test1","test2","test3"},{"test1","test2","test3"}},
+					{{"test1","test4","test2"},{"test1","test2","test3"}},
+					{{"test1","test8","test9"},{"test1","test2","test3"}}
+				};
+
+		for(int i=0; i<myString.length; i++) {
+			for(int j=0; j<myString[i].length; j++) {
+				for(int k=0; k<myString[i][j].length; k++) {
+					System.out.println(myString[i][j][k]);
+					
+				}
+				
+			}
+			
+		}
 		
 
 		
