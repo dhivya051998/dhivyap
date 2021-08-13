@@ -136,26 +136,26 @@ public class WebPage {
 	                              System.out.println("Radio button is disabled");
 	                             }
 //----------------------------------------------check box Testcase-1---------------------------------------------// 
-			     WebElement check_box1 = driver.findElement(By.cssSelector(".Automation "));
-				 WebElement check_box2 = driver.findElement(By.cssSelector(".Performance "));	
-			     driver.manage().timeouts().implicitlyWait(3000, TimeUnit.MILLISECONDS);
+			    WebElement check_box1 = driver.findElement(By.cssSelector(".Automation "));
+			    WebElement check_box2 = driver.findElement(By.cssSelector(".Performance "));	
+			    driver.manage().timeouts().implicitlyWait(3000, TimeUnit.MILLISECONDS);
 	              
-	              if(  check_box1.isEnabled() ) {
-	                 System.out.println("Check box is enabled");
-	                 check_box1.click();
-					 Thread.sleep(500);
+	                        if(  check_box1.isEnabled() ) {
+	                             System.out.println("Check box is enabled");
+	                             check_box1.click();
+				     Thread.sleep(500);
 					 
 					 if( check_box1.isSelected() && (!check_box2.isSelected())  )
-		              {
+		                   {
 		                 System.out.println("Automation Testing checkbox is selected");
-		              }
+		                   }
 		              else {
 		                 System.out.println("Automation Testing checkbox is not selected");
 		              }
-	              }
-	              else {
-	                 System.out.println("Check box is disabled");
-	              }
+	                         }
+	                   else {
+	                         System.out.println("Check box is disabled");
+	                        }
 //-------------------------------------------------Testcase-2.......................................//
 				     WebElement automation_box1 = driver.findElement(By.cssSelector(".Automation "));
 					 WebElement performance_box2 = driver.findElement(By.cssSelector(".Performance "));	
