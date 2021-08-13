@@ -22,19 +22,19 @@ public class WebPage {
 	public static void main(String arg[]) throws InterruptedException {
 		
                  System.setProperty("webdriver.chrome.driver",  "C:\\Users\\Admin\\Downloads\\chromedriver.exe");
-		         WebDriver driver = new ChromeDriver();
+	         WebDriver driver = new ChromeDriver();
 //--------------------------------------------URL check------------------------------------------------//
-			     String dhivya = "https://www.testandquiz.com/selenium/testing.html";
-			     driver.get(dhivya);
-                 driver.manage().window().maximize();
+	        String dhivya = "https://www.testandquiz.com/selenium/testing.html";
+	        driver.get(dhivya);
+                driver.manage().window().maximize();
 //-------------------------------------------Link check-------------------------------------------//
-                 try { 
+                try { 
                     WebElement link = driver.findElement(By.xpath("/html/body/div/div[4]/div/p/a"));
-			        driver.manage().timeouts().implicitlyWait(3000, TimeUnit.MILLISECONDS);
-			        link.click();
-			        Thread.sleep(500);
+	            driver.manage().timeouts().implicitlyWait(3000, TimeUnit.MILLISECONDS);
+	            link.click();
+		    Thread.sleep(500);
 		 
-			        String ExpectedLink = "https://www.javatpoint.com/";
+			    String ExpectedLink = "https://www.javatpoint.com/";
     			    String ActualLink =driver.getCurrentUrl();  		
     			
     			    Assert.assertEquals(ActualLink,ExpectedLink);
@@ -43,11 +43,11 @@ public class WebPage {
     		     catch(AssertionError e){			
     			      System.out.println("Link testcase is fail");			
     		        }  
-            	driver.navigate().back();
+            	    driver.navigate().back();
  //-------------------------------------Text box check---------------------------------------------//
             	try {
-			      WebElement text_box = driver.findElement(By.cssSelector("#fname"));
-				  driver.manage().timeouts().implicitlyWait(3000, TimeUnit.MILLISECONDS);
+			 WebElement text_box = driver.findElement(By.cssSelector("#fname"));
+		         driver.manage().timeouts().implicitlyWait(3000, TimeUnit.MILLISECONDS);
 	              if( text_box.isEnabled() ) {
 	                 System.out.println("Input text box is enabled");
 	                 text_box.click();
@@ -64,20 +64,20 @@ public class WebPage {
  
 				     Assert.assertEquals(actual,expected);
 				     System.out.println("Input text testcase is pass");
-            	 }
-            	 catch(AssertionError e){
+            	      }
+              catch(AssertionError e){
             		
             		 System.out.println("Input text testcase is fail");	
-            	 }			 
+            	     }			 
 //-------------------------------------Button check----------------------------------------------//
             	try {
-				   WebElement button = driver.findElement(By.cssSelector("#idOfButton"));
-				   driver.manage().timeouts().implicitlyWait(3000, TimeUnit.MILLISECONDS);
+		     WebElement button = driver.findElement(By.cssSelector("#idOfButton"));
+		    driver.manage().timeouts().implicitlyWait(3000, TimeUnit.MILLISECONDS);
 	              
 	              if( button.isEnabled() ) {
 	                 System.out.println("Submit button is enabled");
 	                 button.click();
-					 Thread.sleep(500);
+			 Thread.sleep(500);
 	              }
 	              else {
 	                 System.out.println("Submit button is disabled");
@@ -87,20 +87,20 @@ public class WebPage {
 				
 				  Assert.assertEquals(act_btn,exp_btn);
 				  System.out.println("Submit button test case is pass");
-            	  }
+            	     }
             	 catch(AssertionError e){
             		
             		System.out.println("Submit button test case is fail");	
             	 } 
 //----------------------------------Radio button male is check----------------------------------------// 
-				 WebElement male_button = driver.findElement(By.cssSelector("#male"));
-				 WebElement female_button = driver.findElement(By.cssSelector("#female"));
-			     driver.manage().timeouts().implicitlyWait(5000, TimeUnit.MILLISECONDS);
+		     WebElement male_button = driver.findElement(By.cssSelector("#male"));
+		     WebElement female_button = driver.findElement(By.cssSelector("#female"));
+	             driver.manage().timeouts().implicitlyWait(5000, TimeUnit.MILLISECONDS);
 			     
 			     if( male_button.isEnabled() ) {
-	                 System.out.println("Radio button is enabled");
-	                 male_button.click();
-					 Thread.sleep(500);
+	                         System.out.println("Radio button is enabled");
+	                         male_button.click();
+		         	 Thread.sleep(500);
 					 
 				     if( male_button.isSelected() && ( !female_button.isSelected())) {
 		              
@@ -109,32 +109,32 @@ public class WebPage {
 		              else {
 		                 System.out.println("Female button  is not selected");
 		              }
-	              }
-	              else {
-	                 System.out.println("Radio button is disabled");
-	              }
+	                    }
+	                    else {
+	                          System.out.println("Radio button is disabled");
+	                     }
 //------------------------------------------Radio button female is check------------------------------------//
-				 WebElement male_but = driver.findElement(By.cssSelector("#male"));
-				 WebElement female_but = driver.findElement(By.cssSelector("#female"));
-			     driver.manage().timeouts().implicitlyWait(5000, TimeUnit.MILLISECONDS);
+			 WebElement male_but = driver.findElement(By.cssSelector("#male"));
+			 WebElement female_but = driver.findElement(By.cssSelector("#female"));
+			 driver.manage().timeouts().implicitlyWait(5000, TimeUnit.MILLISECONDS);
 			     
 				 if( female_but.isEnabled() ) {
-	                 System.out.println("Radio button is enabled");
-	                 female_but .click();
-					 Thread.sleep(500);
+	                              System.out.println("Radio button is enabled");
+	                              female_but .click();
+				      Thread.sleep(500);
 					 
 					 if(  female_but.isSelected() && ( !male_but.isSelected())  )
-		              {
-		                 System.out.println("female button is selected");
-		              }
-		              else {
-		                 System.out.println("male button is not selected");
-		              }
+		                    {
+		                       System.out.println("female button is selected");
+		                     }
+		                   else {
+		                       System.out.println("male button is not selected");
+		                        }
 				   		
-	              }
-	              else {
-	                 System.out.println("Radio button is disabled");
-	              }
+	                            }
+	                        else {
+	                              System.out.println("Radio button is disabled");
+	                             }
 //----------------------------------------------check box Testcase-1---------------------------------------------// 
 			     WebElement check_box1 = driver.findElement(By.cssSelector(".Automation "));
 				 WebElement check_box2 = driver.findElement(By.cssSelector(".Performance "));	
