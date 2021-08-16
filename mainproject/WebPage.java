@@ -157,16 +157,16 @@ public class WebPage {
 	                         System.out.println("Check box is disabled");
 	                        }
 //-------------------------------------------------Testcase-2.......................................//
-				     WebElement automation_box1 = driver.findElement(By.cssSelector(".Automation "));
-					 WebElement performance_box2 = driver.findElement(By.cssSelector(".Performance "));	
-				     driver.manage().timeouts().implicitlyWait(3000, TimeUnit.MILLISECONDS);
+		          WebElement automation_box1 = driver.findElement(By.cssSelector(".Automation "));
+			  WebElement performance_box2 = driver.findElement(By.cssSelector(".Performance "));	
+		          driver.manage().timeouts().implicitlyWait(3000, TimeUnit.MILLISECONDS);
 		              
 		              if(performance_box2.isEnabled()) {
 		                 System.out.println("Check box is enabled");
 		                 performance_box2.click();
-						 Thread.sleep(500);
+				 Thread.sleep(500);
 						 
-						 if( performance_box2.isSelected() && (!automation_box1.isSelected())  )
+				      if( performance_box2.isSelected() && (!automation_box1.isSelected())  )
 			              {
 			                 System.out.println("Performance Testing checkbox is selected");
 			              }
@@ -178,17 +178,17 @@ public class WebPage {
 		                 System.out.println("Check box is disabled");
 		              }
 //--------------------------------------------Testcase-3-----------------------------------//	
-				     WebElement automation = driver.findElement(By.cssSelector(".Automation "));
-					 WebElement performance = driver.findElement(By.cssSelector(".Performance "));	
-				     driver.manage().timeouts().implicitlyWait(3000, TimeUnit.MILLISECONDS);
-		             if( (automation.isEnabled()) && (performance.isEnabled()))
-		              {
+			    WebElement automation = driver.findElement(By.cssSelector(".Automation "));
+			    WebElement performance = driver.findElement(By.cssSelector(".Performance "));	
+		            driver.manage().timeouts().implicitlyWait(3000, TimeUnit.MILLISECONDS);
+		                if( (automation.isEnabled()) && (performance.isEnabled()))
+		                {
 		                 System.out.println("Check box is enabled");
 		                 automation.click();
 		                 performance.click();
-						 Thread.sleep(500);
+				 Thread.sleep(500);
 						 
-						 if( performance.isSelected() && (automation.isSelected()))
+				     if( performance.isSelected() && (automation.isSelected()))
 			              {
 			                 System.out.println("Automation and Performance check box is selected");
 			              }
@@ -200,66 +200,66 @@ public class WebPage {
 		                 System.out.println("Check box is disabled");
 		              }
 //-----------------------------------------------Testcase-4----------------------------------------//	
-				     WebElement automation_1 = driver.findElement(By.cssSelector(".Automation "));
-					 WebElement performance_2 = driver.findElement(By.cssSelector(".Performance "));	
-				     driver.manage().timeouts().implicitlyWait(3000, TimeUnit.MILLISECONDS);
-				     if( (automation_1.isEnabled()) && (performance_2.isEnabled())) {
-		                 System.out.println("Check box is enabled");
-		                 automation.click();
-		                 performance.click();
-						 Thread.sleep(500);
+		             WebElement automation_1 = driver.findElement(By.cssSelector(".Automation "));
+			     WebElement performance_2 = driver.findElement(By.cssSelector(".Performance "));	
+			     driver.manage().timeouts().implicitlyWait(3000, TimeUnit.MILLISECONDS);
+				 if( (automation_1.isEnabled()) && (performance_2.isEnabled())) {
+		                      System.out.println("Check box is enabled");
+		                      automation.click();
+		                      performance.click();
+				      Thread.sleep(500);
 						 
-						 if((!automation_1.isSelected()) && (!performance_2.isSelected()))
-			              {
+				       if((!automation_1.isSelected()) && (!performance_2.isSelected()))
+			                 {
 			                 System.out.println("Automation and Performance check box is not selected");
-			              }
-			              else {
+			                 }
+			               else {
 			                 System.out.println("Performance and performance check box is  selected");
-			              }
-		              }
-		              else {
-		                 System.out.println("Check box is disabled");
+			                    }
+		                 }
+		                   else {
+		                      System.out.println("Check box is disabled");
 		              
-		              }
+		                        }
 //---------------------------------------Drop_down manual testing check--------------------------------------//	
-				   WebElement dropdown_4 = driver.findElement(By.id("testingDropdown")); 
-				   Thread.sleep(500);
-				   WebElement dropdown_manual = driver.findElement(By.xpath("//*[@id=\"manual\"]")); 
-				   Thread.sleep(500);
-				   driver.manage().timeouts().implicitlyWait(3000, TimeUnit.MILLISECONDS);
+			      WebElement dropdown_4 = driver.findElement(By.id("testingDropdown")); 
+			      Thread.sleep(500);
+			      WebElement dropdown_manual = driver.findElement(By.xpath("//*[@id=\"manual\"]")); 
+			      Thread.sleep(500);
+			      driver.manage().timeouts().implicitlyWait(3000, TimeUnit.MILLISECONDS);
 				   if( dropdown_4.isEnabled() ) {
-		                 System.out.println("Drop down button is enabled");
-		                 dropdown_4.click();
-		                 dropdown_manual.click();
-						 Thread.sleep(500);
-						 if(dropdown_manual.isSelected()) {
-							 String Exp_1 ="Manual Testing";
-							 String Act_1 =dropdown_manual.getText();
-							 dropdown_manual.click();
-							 if(Exp_1.equals(Act_1)) {
-								 System.out.println("Drop down manual testing text  is selected");
+		                       System.out.println("Drop down button is enabled");
+		                       dropdown_4.click();
+		                       dropdown_manual.click();
+				       Thread.sleep(500);
+					  if(dropdown_manual.isSelected()) {
+					      String Exp_1 ="Manual Testing";
+					      String Act_1 =dropdown_manual.getText();
+					      dropdown_manual.click();
+						 if(Exp_1.equals(Act_1)) {
+							System.out.println("Drop down manual testing text  is selected");
 								 
-							 }
-							 else {
-								 System.out.println("Drop down manual testing  is fail");
-							 }
+						}
+						else {
+					        	 System.out.println("Drop down manual testing  is fail");
+						}
 						 }
 				        else {
 						System.out.println("Drop down is not selected");
 						 }
 						 
 						
-		              }
-		             else {
-		                 System.out.println("Drop down button  is disabled");
-		              }							   				   
+		                        }
+		                       else {
+		                        System.out.println("Drop down button  is disabled");
+		                            }							   				   
 //-----------------------------------Double-click to generate alert box check---------------------------------//			 
 				Actions action = new Actions(driver);
 				WebElement btn = driver.findElement(By.id("dblClkBtn"));
 				driver.manage().timeouts().implicitlyWait(3000, TimeUnit.MILLISECONDS);
-	              if( btn.isEnabled()){ 
-	            	 System.out.println("Double click to generate alert box button is enabled");
-	                 action.doubleClick(btn).perform();
+	                        if( btn.isEnabled()){ 
+	            	                 System.out.println("Double click to generate alert box button is enabled");
+	                                 action.doubleClick(btn).perform();
 					 Thread.sleep(500);
 					 String ext_2 ="hi, JavaTpoint Testing";
 					 String act_2 = driver.switchTo().alert().getText();
@@ -268,19 +268,19 @@ public class WebPage {
 					 Assert.assertEquals(ext_2, act_2);
 					 System.out.println("Double click the button to generate alert box message is verified");    
 						
-	              }
-	              else {
-	                 System.out.println("Double click to generate alert box button is disabled");
+	                                 }
+	                        else {
+	                                 System.out.println("Double click to generate alert box button is disabled");
 				    
-	              }        	     
+	                              }        	     
 //-------------------------------------Generate alert box check------------------------------------------//				
-	            Thread.sleep(500);
-                Actions act = new Actions(driver);
-		WebElement box = driver.findElement(By.xpath("/html/body/div/div[11]/div/p/button"));
-		driver.manage().timeouts().implicitlyWait(3000, TimeUnit.MILLISECONDS);
-	              if( box.isEnabled() ) {
-	            	 System.out.println("Generate alert box button is enabled");
-	                 action.click(box).perform();
+	                        Thread.sleep(500);
+                                Actions act = new Actions(driver);
+		                WebElement box = driver.findElement(By.xpath("/html/body/div/div[11]/div/p/button"));
+		                driver.manage().timeouts().implicitlyWait(3000, TimeUnit.MILLISECONDS);
+	                        if( box.isEnabled() ) {
+	            	                 System.out.println("Generate alert box button is enabled");
+	                                 action.click(box).perform();
 					 Thread.sleep(500);
 					 String ext_3 ="hi, JavaTpoint Testing";
 					 String act_3 = driver.switchTo().alert().getText();
@@ -290,63 +290,51 @@ public class WebPage {
 					 driver.switchTo().alert().accept();
 					 
 					
-	              }
-	              else {
-	                 System.out.println("Generate alert box button is disabled");
+	                            }
+	                      else {
+	                                 System.out.println("Generate alert box button is disabled");
 				     
-	              }          		     		    
+	                           }          		     		    
 //-----------------------------------Generate confirm box check----------------------------------------//
-                         WebElement confirm_alert_1 = driver.findElement(By.xpath("/html/body/div/div[12]/div/p[1]/button"));
-	                 driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		         WebElement text    = driver.findElement(By.cssSelector("#demo"));
-			
-				Thread.sleep(200);
-			
-						if (confirm_alert_1.isEnabled()) {
-								confirm_alert_1.click();
-								String actualAlert   = driver.switchTo().alert().getText();
-								String expectedAlert = "Press a button!";
-								Assert.assertEquals(expectedAlert,actualAlert);
-								driver.switchTo().alert().accept();
-								System.out.println("Alert message verified");
-								
-								String text_1 = "You pressed OK!";
-								String message_1 = text.getText();
-								Assert.assertEquals(text_1, message_1);
-								Thread.sleep(500);
-								System.out.println("Confirm Alert message has been accepted");
-								
-							
+                              WebElement confirm_alert_1 = driver.findElement(By.xpath("/html/body/div/div[12]/div/p[1]/button"));
+	                      driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		              WebElement text    = driver.findElement(By.cssSelector("#demo"));
+			      Thread.sleep(500);
+			     if (confirm_alert_1.isEnabled()) {
+						confirm_alert_1.click();
+						String actualAlert   = driver.switchTo().alert().getText();
+						String expectedAlert = "Press a button!";
+						Assert.assertEquals(expectedAlert,actualAlert);
+						driver.switchTo().alert().accept();
+						System.out.println("Alert message verified");		
+						String text_1 = "You pressed OK!";
+						String message_1 = text.getText();
+						Assert.assertEquals(text_1, message_1);
+						Thread.sleep(500);
+						System.out.println("Confirm Alert message has been accepted");			
 						}else {
-			
-								System.out.println("button is disabled");
-								}
+						    System.out.println("button is disabled");
+							}
 						
-						
-						
-						WebElement confirm_alert_2 = driver.findElement(By.xpath("/html/body/div/div[12]/div/p[1]/button"));
-						text    = driver.findElement(By.cssSelector("#demo"));
-						Thread.sleep(200);
-						
-								if (confirm_alert_2.isEnabled()) {
-										confirm_alert_2.click();
-										String actualAlert   = driver.switchTo().alert().getText();								
-										String expectedAlert = "Press a button!";
-										Assert.assertEquals(expectedAlert,actualAlert);
-										System.out.println("Alert message verified");
-										driver.switchTo().alert().dismiss();
+				WebElement confirm_alert_2 = driver.findElement(By.xpath("/html/body/div/div[12]/div/p[1]/button"));
+				text    = driver.findElement(By.cssSelector("#demo"));
+				Thread.sleep(500);	
+				if (confirm_alert_2.isEnabled()) {
+						confirm_alert_2.click();
+						String actualAlert   = driver.switchTo().alert().getText();								
+						String expectedAlert = "Press a button!";
+						Assert.assertEquals(expectedAlert,actualAlert);
+						System.out.println("Alert message verified");
+						driver.switchTo().alert().dismiss();				
+						String text_2= "You pressed Cancel!";
+						String message_2 = text.getText();
+						Assert.assertEquals(text_2, message_2);
+						Thread.sleep(500);
+						System.out.println("Cancel Alert message has been dismissed");					
+						}else {
+					        	System.out.println("button is disabled");
 										
-										String text_2= "You pressed Cancel!";
-										String message_2 = text.getText();
-										Assert.assertEquals(text_2, message_2);
-										Thread.sleep(500);
-										System.out.println("Cancel Alert message has been dismissed");
-										
-									
-								}else {
-										System.out.println("button is disabled");
-										
-									} 
+							} 
 
 	}
 
