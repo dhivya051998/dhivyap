@@ -276,8 +276,8 @@ public class WebPage {
 //-------------------------------------Generate alert box check------------------------------------------//				
 	            Thread.sleep(500);
                 Actions act = new Actions(driver);
-				WebElement box = driver.findElement(By.xpath("/html/body/div/div[11]/div/p/button"));
-				driver.manage().timeouts().implicitlyWait(3000, TimeUnit.MILLISECONDS);
+		WebElement box = driver.findElement(By.xpath("/html/body/div/div[11]/div/p/button"));
+		driver.manage().timeouts().implicitlyWait(3000, TimeUnit.MILLISECONDS);
 	              if( box.isEnabled() ) {
 	            	 System.out.println("Generate alert box button is enabled");
 	                 action.click(box).perform();
@@ -296,34 +296,57 @@ public class WebPage {
 				     
 	              }          		     		    
 //-----------------------------------Generate confirm box check----------------------------------------//
-                Actions confirm = new Actions(driver);
-				WebElement generate_confirm = driver.findElement(By.xpath("/html/body/div/div[12]/div/p[1]/button"));
-				WebElement confirm_box = driver.findElement(By.xpath("//*[@id=\"demo\"]"));
-				
-				driver.manage().timeouts().implicitlyWait(3000, TimeUnit.MILLISECONDS);
-	              if( generate_confirm.isEnabled() ) {
-	            	  generate_confirm.click();
-	            	 System.out.println("Generate confirm box button is enabled");	
-					 Thread.sleep(500);
-					 String ext_4 ="Press a button!";
-					 String act_4 = driver.switchTo().alert().getText();
-					 Thread.sleep(500);
-					 Assert.assertEquals(ext_4, act_4);
-					 System.out.println("Generate confirm alert box  message is verified");
-					 driver.switchTo().alert().dismiss();
-					 
-					 String actual_5 = "You pressed OK!";
-					 String expect_5 = confirm_box.getText();
-					 Assert.assertEquals(actual_5, expect_5);
-					 driver.switchTo().alert().accept();
-					 Thread.sleep(500);
-					 System.out.println("alert message is accepted");	
-					 
-	              }
-	              else {
-	                 System.out.println("Generate confirm box button is disabled");
-				    
-	              }			       
+                         WebElement confirm_alert_1 = driver.findElement(By.xpath("/html/body/div/div[12]/div/p[1]/button"));
+	                 driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		         WebElement text    = driver.findElement(By.cssSelector("#demo"));
+			
+				Thread.sleep(200);
+			
+						if (confirm_alert_1.isEnabled()) {
+								confirm_alert_1.click();
+								String actualAlert   = driver.switchTo().alert().getText();
+								String expectedAlert = "Press a button!";
+								Assert.assertEquals(expectedAlert,actualAlert);
+								driver.switchTo().alert().accept();
+								System.out.println("Alert message verified");
+								
+								String text_1 = "You pressed OK!";
+								String message_1 = text.getText();
+								Assert.assertEquals(text_1, message_1);
+								Thread.sleep(500);
+								System.out.println("Confirm Alert message has been accepted");
+								
+							
+						}else {
+			
+								System.out.println("button is disabled");
+								}
+						
+						
+						
+						WebElement confirm_alert_2 = driver.findElement(By.xpath("/html/body/div/div[12]/div/p[1]/button"));
+						text    = driver.findElement(By.cssSelector("#demo"));
+						Thread.sleep(200);
+						
+								if (confirm_alert_2.isEnabled()) {
+										confirm_alert_2.click();
+										String actualAlert   = driver.switchTo().alert().getText();								
+										String expectedAlert = "Press a button!";
+										Assert.assertEquals(expectedAlert,actualAlert);
+										System.out.println("Alert message verified");
+										driver.switchTo().alert().dismiss();
+										
+										String text_2= "You pressed Cancel!";
+										String message_2 = text.getText();
+										Assert.assertEquals(text_2, message_2);
+										Thread.sleep(500);
+										System.out.println("Cancel Alert message has been dismissed");
+										
+									
+								}else {
+										System.out.println("button is disabled");
+										
+									} 
 
 	}
 
