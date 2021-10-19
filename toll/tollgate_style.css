@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+.container{
+    height:720px;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+}
+.box{
+    height: 720px;
+    width: 50%;
+    border: 3px solid black;
+    border-top: none;
+    border-bottom: none;
+}
+.move{
+    height: 150px;
+    width: 300px;
+    background-image:url(tollgate_img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 280px;
+}
+.move1{
+    height: 150px;
+    width: 300px;
+    background-image:url(tollgate_img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 280px;
+    margin-left: 1230px;
+}
+.car{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:gray;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0px;
+}
+
+.box2{
+    bottom: 43%;
+    transition-duration: 2s;
+}
+.box3{
+    bottom: 85%;
+    left: 0;
+    transition-delay: 1s;    
+    
+}
+.box4{
+    left: 93%;   
+}
+.box5{
+    bottom: 43%;
+    transition-duration: 2s; 
+
+}
+.box6{
+    bottom: 3%;
+    transition-duration: 2s;
+}
+
+
