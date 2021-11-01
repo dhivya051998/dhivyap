@@ -7,133 +7,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="tollgate_style.css">
+    <script src="tollgate.js"></script>
 </head>
 
 <body>
     <div class="container">
-        <div class="box">
-            <div class="move">
-                <div class="car" onclick="move()"></div>
-                <div class="move1"></div>
-            </div>
+        <div class="toll_road3" id="first">
+            <div id="V001" class="car" onclick="move(this)">v001</div>
+            <div id="V002" class="car" onclick="move(this)">v002</div>
+            <div id="V003" class="car" onclick="move(this)">v003</div>
+        </div>
+        <div class="toll_road1">
+            <!-- <div class="tollbooth1">
+                <div class="toll1"></div>
+            </div> -->
+        </div>
+        <div class="toll_road2">
+            <!-- <div class="tollbooth2">
+                <div class="toll2"></div>
+            </div> -->
+        </div>
+        <div class="toll_road4">
+            <!-- <div id="V001" class="car3" onclick="move1(this)">v0011</div>
+            <div id="V002" class="car3" onclick="move1(this)">v0012</div> -->
 
         </div>
     </div>
-    <script>
-        var vehicle1 = {
-            id: "V001",
-            type: "car"
-        }
-        var vehicle2 = {
-            id: "V002",
-            type: "car"
-        }
-        var vehicle3 = {
-            id: "V003",
-            type: "car"
-        }
-        var tolltime = new Date().getTime();
-        var tollbooths = {
-            "Tb011": {
-                id: "Tb011",
-                pairboothId: "Tb012",
-                passedvehicles: {
-                    "V001": { time: tolltime - (10 * 1000 * 60 * 60) },
-                    "V002": { time: tolltime - (40 * 1000 * 60 * 60) },
-
-                }
-
-            },
-            "Tb012": {
-                id: "Tb012",
-                pairboothId: "Tb011",
-                passedvehicles: {
-                    "V001": { time: tolltime - (20 * 1000 * 60 * 60) },
-                    "V002": { time: tolltime - (20 * 1000 * 60 * 60) },
-
-                }
-            }
-
-        }
-        function myFunction(tollbooth, vehicle) {
-            var v = vehicle.id;
-            var currentTime = new Date().getTime();
-            if ((tollbooths[tollbooth].passedvehicles[v] != null)) {
-                var billingTime = tollbooths[tollbooth].passedvehicles[v].time;
-                var diff = Math.round((currentTime - billingTime) / (1000 * 60 * 60));
-                // console.log(diff);
-                if (diff < 24) {
-                    return charges = 0;
-
-                }
-                else {
-                    var pairbooth = tollbooths[tollbooth].pairboothId;
-                    if ((tollbooths[pairbooth].passedvehicles[v] != null)) {
-                        var billing = tollbooths[pairbooth].passedvehicles[v].time;
-                        var currentTime = new Date().getTime();
-                        var diff1 = Math.round((currentTime - billing) / (1000 * 60 * 60));
-                        // console.log(diff1);
-                        var total = Math.abs(diff1 - diff);
-                        // console.log(total);
-                        if (total < 24) {
-                            return charges = 30;
-
-                        } else {
-                            return charges = 50;
-
-                        }
-                    } else {
-                        return charges = 50;
-
-                    }
-                }
-            } else {
-                var pairbooth = tollbooths[tollbooth].pairboothId;
-                var billing = tollbooths[pairbooth].passedvehicles[v].time;
-                var currentTime = new Date().getTime();
-                var diff1 = Math.round((currentTime - billing) / (1000 * 60 * 60));
-                console.log(diff1);
-                if (diff1 < 24) {
-                    return charges = 30;
-                } else {
-                    return charges = 50;
-                }
-
-            }
-        }
-        function move() {
-            document.querySelector(".car").classList.add("box2");
-            document.querySelector(".car").addEventListener("transitionend", display);
-        }
-        function display() {
-            myFunction("Tb012", vehicle2);
-            document.querySelector(".car").innerText = charges;
-            document.querySelector(".car").classList.add("box3");
-            document.querySelector(".car").addEventListener("transitionend", boxmove);
-        }
-        function boxmove() {
-            document.querySelector(".car").classList.add("box4");
-            document.querySelector(".car").addEventListener("transitionend", move_right);
-
-        }
-        function move_right(){
-            document.querySelector(".car").classList.add("box5");
-            document.querySelector(".car").addEventListener("transitionend", move_centre);
-        }
-        function move_centre(){
-            myFunction("Tb011", vehicle2);
-            document.querySelector(".car").innerText = charges;
-            document.querySelector(".car").classList.add("box6");
-        }
-        
-           
-
-
-
-    </script>
-
-
-
+   
 </body>
 
 </html>

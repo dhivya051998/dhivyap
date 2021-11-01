@@ -3,24 +3,98 @@
     margin: 0;
     padding: 0;
     color: white;
+    font-weight: bold;
+   
 }
 .container{
     height:720px;
     width: 100%;
-    /* border: 1px solid black; */
+    display: flex;
+   align-items: center;
+   justify-content: center;
+    
+}
+
+.toll_road1{
+    height: 720px;
+    width: 300px;
+    background-color: black;
+    border: 3px solid white;
+    display: flex;
+    flex-direction: column-reverse;
+    border-top: none;
+    border-bottom: none;
+}
+.toll_road2{
+    height: 720px;
+    width: 300px;
+    background-color: black;
+    border: 3px solid white;
+    display: flex;
+    justify-content: flex-end;
+    border-top: none;
+    border-bottom: none;
+}
+.toll_road3{
+    height: 720px;
+    width: 135px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction:column-reverse;
+    align-items: center;
+    justify-content: end;
+    
+}
+.toll_road4{
+    height: 720px;
+    width: 135px;
+    border: 1px solid black;
     display: flex;
     flex-direction: column;
+    align-items: center;
+   
+}
+
+.tollbooth1{
+    height: 70px;
+    width: 300px;
+    background-color: white;
+    margin-bottom: 330px;
+   
+    
+}
+.toll1{
+    height: 70px;
+    width: 80px;
+    margin-left: -70px;
+    background-image:url(toll_image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.tollbooth2{
+    height: 70px;
+    width: 300px;
+    background-color: white;
+    margin-top: 320px;
+    
+}
+.toll2{
+    height: 70px;
+    width: 80px;
+    margin-left: 290px;
+    background-image:url(toll_image2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .box{
     height: 720px;
     width: 50%;
-    border: 3px solid black;
     border-top: none;
     border-bottom: none;
 }
 .move{
     height: 150px;
-    width: 300px;
+    width: 250px;
     background-image:url(tollgate_img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -28,46 +102,47 @@
 }
 .move1{
     height: 150px;
-    width: 300px;
+    width: 250px;
     background-image:url(tollgate_img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 280px;
-    margin-left: 1230px;
+    margin-left: 1280px;
 }
 .car{
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 90px;
+    background-image:url(car_image2.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
-    background:gray;
     cursor: pointer;
-    position: absolute;
-    bottom: 0px;
+    position: relative;
+    bottom: 0%;
+   
 }
-
+.car3{
+    width: 70px;
+    height: 90px;
+    background-image:url(car_image2.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* top: 0; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box1{
+    bottom: 46%;
+    transition-duration: 3s;
+    transition-delay: 3s;  
+}
 .box2{
-    bottom: 43%;
-    transition-duration: 2s;
-}
-.box3{
     bottom: 85%;
-    left: 0;
-    transition-delay: 1s;    
+    transition-duration: 3s;
+    transition-delay: 3s;     
     
 }
-.box4{
-    left: 93%;   
-}
-.box5{
-    bottom: 43%;
-    transition-duration: 2s; 
-
-}
-.box6{
-    bottom: 3%;
-    transition-duration: 2s;
-}
-
 
