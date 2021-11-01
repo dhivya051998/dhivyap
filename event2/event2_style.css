@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+.container{
+    height: 500px;
+    width: 100vw;
+    border: 1px solid black;
+}
+#color{
+    padding: 20px;
+}
+#size{
+    padding: 20px;
+}
+.circle{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    /* background-color: cadetblue; */
+}
+#remove{
+    display: none;
+}
