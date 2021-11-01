@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+}
+.container{
+    height: 500px;
+    width: 500px;
+    border: 1px solid black;
+    transform: translate(100%,20%);
+    position: absolute;
+}
+.circle{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-shadow: yellowgreen 0 0 50px 15pt;
+
+}
