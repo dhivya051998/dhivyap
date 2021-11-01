@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="calendar_style.css">
+</head>
+
+<body>
+    <div class="header">
+        <div id="lessthen" onclick="display1()"><span class="material-icons">
+                chevron_left
+            </span></div>
+        <p id="month"></p>
+        <div id="greaterthen" onclick="display2()"><span class="material-icons">
+                chevron_right
+            </span></div>
+    </div>
+    <div class="box">
+        <div class="days change">S</div>
+        <div class="days">M</div>
+        <div class="days">T</div>
+        <div class="days">W</div>
+        <div class="days">T</div>
+        <div class="days">F</div>
+        <div class="days change">S</div>
+        <div class="date one" onclick="display(this)">1</div>
+        <div class="date" onclick="display(this)">2</div>
+        <div class="date jan" onclick="display(this)">3</div>
+        <div class="date" onclick="display(this)">4</div>
+        <div class="date" onclick="display(this)">5</div>
+        <div class="date" onclick="display(this)">6</div>
+        <div class="date" onclick="display(this)">7</div>
+        <div class="date" onclick="display(this)">8</div>
+        <div class="date" onclick="display(this)">9</div>
+        <div class="date" onclick="display(this)">10</div>
+        <div class="date" onclick="display(this)">11</div>
+        <div class="date" onclick="display(this)">12</div>
+        <div class="date" onclick="display(this)">13</div>
+        <div class="date" onclick="display(this)">14</div>
+        <div class="date" onclick="display(this)">15</div>
+        <div class="date" onclick="display(this)">16</div>
+        <div class="date" onclick="display(this)">17</div>
+        <div class="date" onclick="display(this)">18</div>
+        <div class="date" onclick="display(this)">19</div>
+        <div class="date" onclick="display(this)">20</div>
+        <div class="date" onclick="display(this)">21</div>
+        <div class="date" onclick="display(this)">22</div>
+        <div class="date" onclick="display(this)">23</div>
+        <div class="date" onclick="display(this)">24</div>
+        <div class="date" onclick="display(this)">25</div>
+        <div class="date" onclick="display(this)">26</div>
+        <div class="date" onclick="display(this)">27</div>
+        <div class="date" onclick="display(this)">28</div>
+        <div class="date  date29" onclick="display(this)">29</div>
+        <div class="date  date30" onclick="display(this)">30</div>
+        <div class="date  date31" onclick="display(this)">31</div>
+    </div>
+    <!-- <p id="demo"></p> -->
+    <script>
+        function display(el) {
+            if (document.querySelector(".select")) {
+                document.querySelector(".select").classList.remove("select");
+            }
+            el.classList.add('select');
+            // var x = document.querySelector("#demo");
+            // x.innerHTML = el.innerHTML;
+
+        }
+        // var days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+        var month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        var x = 0;
+        document.querySelector("#month").innerHTML = month[x] + " 2021";
+
+        var days = [6, 2, 2, 5, 7, 3, 5, 1, 4, 6, 2, 4];
+        var y = 0;
+        document.querySelector(".one").style.gridColumnStart = days[y];
+       
+        function display1() {
+            x = x-1;
+            if (x < 0) {
+                x = 11;
+            }
+            document.querySelector("#month").innerHTML = month[x] + " 2021";
+            y = y-1;
+            if (y < 0) {
+                y = 11;
+            }
+            document.querySelector(".one").style.gridColumnStart = days[y];
+            if (x == 1) {
+                document.querySelector(".date29").style.display = "none";
+                document.querySelector(".date30").style.display = "none";
+                document.querySelector(".date31").style.display = "none";
+            } else {
+                document.querySelector(".date29").style.display = "block";
+                document.querySelector(".date30").style.display = "block";
+                document.querySelector(".date31").style.display = "block";
+                document.querySelector(".date29").style.display = "flex";
+                document.querySelector(".date30").style.display = "flex";
+                document.querySelector(".date31").style.display = "flex";
+                
+            }
+            if (document.querySelector(".select")){
+                document.querySelector(".select").classList.remove("select");
+            }
+            if (x == 3 || x == 5 || x == 8 || x == 10) {
+                document.querySelector(".date31").style.display = "none";
+            }
+           
+           
+        };
+        function display2() {
+            x = x+1;
+            if (x > 11) {
+                x = 0;
+            }
+            document.querySelector("#month").innerHTML = month[x] + " 2021";
+
+            y = y+1;
+            if (y > 11) {
+                y = 0;
+            }
+            document.querySelector(".one").style.gridColumnStart = days[y];  
+            if (x == 1) {
+                document.querySelector(".date29").style.display = "none";
+                document.querySelector(".date30").style.display = "none";
+                document.querySelector(".date31").style.display = "none";
+            }
+            else {
+                document.querySelector(".date29").style.display = "block";
+                document.querySelector(".date30").style.display = "block";
+                document.querySelector(".date31").style.display = "block";
+                document.querySelector(".date29").style.display = "flex";
+                document.querySelector(".date30").style.display = "flex";
+                document.querySelector(".date31").style.display = "flex";
+            }
+            if (x == 3 || x == 5 || x == 8 || x == 10) {
+                document.querySelector(".date31").style.display = "none";
+            }
+            if (document.querySelector(".select")){
+                document.querySelector(".select").classList.remove("select");
+            }
+            
+
+        };
+
+    </script>
+</body>
+
+</html>
