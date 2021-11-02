@@ -1,3 +1,15 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
 .box{
     display: grid;
     height: auto;
@@ -32,7 +44,8 @@
     display: grid;
     grid-template-columns: repeat(3 , 1fr);
     grid-template-rows: repeat(5,1fr);
-    grid-gap: 10px;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
     grid-template-areas: "a1 a2 a3"
                          "a4 a5 a6" 
                          "a7 a8 a9"
@@ -40,16 +53,6 @@
     
  }
  
- .a1{
-     grid-area: a1;
-     background-color: #fff;
-     cursor: pointer;
-     padding: 10px;
-     position: relative;
-     text-align: center;
-     
-    
- }
  .img{ 
      height: 180px;
      width: 85%;
@@ -106,84 +109,6 @@
      justify-content: center;
      margin-left: -120px;
  }
- .a2{
-     grid-area: a2;
-     background-color: #fff;
-     cursor: pointer;
-     padding: 10px;
-     position: relative;
-     text-align: center;
-    
- }
- .a3{
-     grid-area: a3;
-     background-color: #fff;
-     cursor: pointer;
-     padding: 10px;
-     position: relative;
-     text-align: center;
-    
- }
- .a4{
-     grid-area: a4;
-     background-color: #fff;
-     cursor: pointer;
-     padding: 10px;
-     position: relative;
-     text-align: center;
- }
- .a5{
-     grid-area: a5;
-     background-color: #fff;
-     cursor: pointer;
-     padding: 10px;
-     position: relative;
-     text-align: center;
-    
- }
- .a6{
-     grid-area: a6;
-     background-color: #fff;
-     cursor: pointer;
-     padding: 10px;
-     position: relative;
-     text-align: center;
-    
- }
- .a7{
-     grid-area: a7;
-     background-color: #fff;
-     cursor: pointer;
-     padding: 10px;
-     position: relative;
-     text-align: center;
-    
- }
- .a8{
-     grid-area: a8;
-     background-color: #fff;
-     cursor: pointer;
-     padding: 10px;
-     position: relative;
-     text-align: center;
- }
- .a9{
-     grid-area: a9;
-     background-color: #fff;
-     cursor: pointer;
-     padding: 10px;
-     position: relative;
-     text-align: center;
- }
- .a10{
-     grid-area: a10;
-     background-color: #fff;
-     cursor: pointer;
-     padding: 10px;
-     position: relative;
-     text-align: center;
- }
- 
  
  @media screen and (max-width:900px) {
      .child1{
