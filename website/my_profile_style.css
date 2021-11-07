@@ -4,6 +4,10 @@
     padding: 0;
     font-family: sans-serif;
 }
+body{
+    background: #e2e1e0;
+    text-align: center;
+}
 .heading{
     display: flex;
     justify-content: center;
@@ -11,8 +15,7 @@
 }
 
 .box{
-    display: grid;
-    height: auto;
+    height: 200px;
     max-width: 1000px;
     padding: 40px 0;
     margin: auto;
@@ -41,6 +44,7 @@
      margin-top: -40px;
  }
  .child1{
+     height: 300px;
     display: grid;
     grid-template-columns: repeat(3 , 1fr);
     grid-template-rows: repeat(5,1fr);
@@ -52,49 +56,29 @@
                          "a10 .  ."  ;
     
  }
+ .a1{
+    margin: auto;
+    width: 300px;
+    display: flex;
+    height: 300px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+a{
+     text-decoration: none;
+ }
  
  .img{ 
-     height: 180px;
+     height: 290px;
      width: 85%;
      border-radius: 10px;
-     border: 3px solid gray;
-     background-repeat: no-repeat;
-     background-size: cover;   
+     background-color:  #fff;
+     row-gap: 20px;
  }
- 
- .img:hover{
-     opacity: 0.3;
- }
- .img1{
-    background-image: url("image/zoho.png");
- }
- .img2{
-    background-image: url("image/expense.jpg");   
- }
- .img3{
-    background-image: url("image/bill.jpg");   
- }
- .img4{
-    background-image: url("image/webmag-13.jpg");   
- }
- .img5{
-    background-image: url("image/chat.png");   
- }
- .img6{
-    background-image: url("image/day findar.jfif");   
- }
- .img7{
-    background-image: url("image/navigation.gif");   
- }
- .img8{
-    background-image: url("image/flex.jpg");   
- }
- .img9{
-    background-image: url("image/calendar.jpg");   
- }
- .img10{
-    background-image: url("image/calculator.jpg");   
- }
+ .img:hover {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  }
  .c{
      margin-top: -65px;
      display: flex;
@@ -109,6 +93,59 @@
      justify-content: center;
      margin-left: -120px;
  }
+ .eff-1{
+     height: 170px;
+     width: 200px;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-size: 239px;
+    background-position: -18px 0px;
+     background-image: url("image/zoho.png"); 
+ }
+
+.eff01{
+    background-image: url("image/expense.jpg");  
+}
+
+.eff02{
+    background-image: url("image/webmag-13.jpg");  
+}
+.eff03{
+    background-image: url("image/chat.png");  
+}
+.eff04{
+    background-image: url("image/flex.jpg");  
+}
+.eff05{
+    background-image: url("image/navigation.gif");  
+}
+html, body {
+    height: 100%;
+  }
+  
+  
+  
+  .eff-2 {
+    width: 120px;
+    height: 45px;
+    padding: 12PX;
+    background-color: #fff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    
+    } 
+    .eff-2:hover {
+    background-color:#a972cb;
+    color: #fff;
+  }
+
+
+
+  
  
  @media screen and (max-width:900px) {
      .child1{
