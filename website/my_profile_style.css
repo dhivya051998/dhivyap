@@ -12,6 +12,7 @@ body{
     display: flex;
     justify-content: center;
     padding: 20px;
+    font-size: 30px;
 }
 
 .box{
@@ -100,8 +101,15 @@ a{
      background-size: cover;
      background-size: 239px;
     background-position: -18px 0px;
-     background-image: url("image/zoho.png"); 
+     background-image: url("image/zoho.png");
+     /* transition: box-shadow, 1s;   */
+     transition: all 1s ease;
+   
  }
+ .eff-1:hover {
+    /* box-shadow: 0px 4px 8px 0 #333; */
+    transform: scale(0.5);
+  }
 
 .eff01{
     background-image: url("image/expense.jpg");  
@@ -119,12 +127,6 @@ a{
 .eff05{
     background-image: url("image/navigation.gif");  
 }
-html, body {
-    height: 100%;
-  }
-  
-  
-  
   .eff-2 {
     width: 120px;
     height: 45px;
@@ -142,10 +144,8 @@ html, body {
     background-color:#a972cb;
     color: #fff;
   }
-
-
-
   
+
  
  @media screen and (max-width:900px) {
      .child1{
