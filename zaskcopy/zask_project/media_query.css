@@ -1,0 +1,333 @@
+
+@media only screen and (max-width: 1320px){
+     
+    .number_title2{
+        display: none;
+    }
+    .ask_button{
+        padding: 12px;
+    }
+    
+}
+@media only screen and (max-width: 1280px){
+    .newDiv{
+       width: 98%;
+    }
+    
+}
+
+ @media only screen and (max-width: 1200px){
+    .article_links{
+        margin-left: 0;
+    }
+    .search_box{
+        justify-content: start;
+    }
+    
+}
+
+@media only screen and (max-width:1170px){
+    .article{
+        padding: 6px 20px;
+    }
+    .question_button{
+        padding: 17px 15px 17px 15px;
+    }
+    .input{
+        margin-left: 0;
+    }
+    .search_box{
+        justify-content: center;
+    }
+    .textName{
+        padding: 6px 35px 6px 6px;
+    }
+}
+        
+ 
+@media only screen and (max-width:1100px){
+    .article{
+        padding: 6px 17px;
+    }
+}
+
+@media only screen and (max-width:1060px){
+    .article{
+        padding: 6px 17px;
+    }
+    .textName{
+        padding: 6px 0px 6px 6px;
+    }
+}
+@media only screen and (max-width:1050px){
+    .zaskQuestions1{
+        padding-left: 40px;
+    }
+
+}
+@media only screen and (max-width:1020px){
+    .textName{
+        padding: 6px 0px 6px 0px;
+    }
+    .profile_image{
+        margin: 8px 25px 8px 0px;
+    }
+}
+
+@media only screen and (max-width: 980px){
+    .button{
+        display: none;
+    }
+    .icons{
+        justify-content: end;
+    }
+   .mainDiv_2{
+       grid-template-columns: 1fr;
+    }
+    .zaskQuestions1{
+        display: none;
+     }
+     .zaskQuestions{
+       width: 100%;
+     }
+     .profile12{
+         display: none;
+     }
+     .images_icon{
+         display: block;
+         top: 75%;
+         left: 91%;
+     }
+     .contentBox{
+         width: 98%;
+     }
+     .filter_image{
+         width: 98%;
+     }
+     .line1{
+         display: block;
+         margin-top: -57px;
+         left: 10px;
+       
+     }
+     .profile_image{
+        margin: 8px 25px 8px 0px;
+    }
+    .header{
+        grid-template-columns: 2fr 1fr;
+    }
+    .textName{
+        padding: 6px 80px 6px 0px;
+    }
+    .search_box{
+        justify-content: end;
+    }
+     
+     
+    
+} 
+ @media only screen and (max-width: 900px){
+    .button{
+        display: none;
+    }
+    .newDiv{
+       width: 31%;
+    }
+    .icons{
+        padding-left: 105px;
+    }
+    .zaskQuestions1{
+        display: none;
+     }
+     .zaskQuestions{
+       width: 100%;
+     }
+     .profile12{
+         display: none;
+     }
+     .line1{
+         margin-left: 13px;
+     }
+     
+    
+}
+@media only screen and (max-width: 750px){
+    .button{
+        display: none;
+    }
+    .newDiv{
+       width: 31%;
+    }
+    .profile1{
+        display: none;
+    }
+    .icons{
+        padding-left: 52px;
+    }
+    .title{
+        width: 96%;
+    }
+   .mainDiv_2{
+        width: 96%;
+    }
+    .zaskQuestions1{
+        display: none;
+     }
+     .zaskQuestions{
+       width: 100%;
+     }
+     .profile12{
+         display: none;
+     }
+     .images_icon{
+        display: block;
+        top: 75%;
+        left: 85%;
+    }
+    
+}
+@media only screen and (max-width: 730px){
+    .button{
+        display: none;
+    }
+    .newDiv{
+       width: 42%;
+    }
+    .profile1{
+        display: none;
+    }
+    .icons{
+        padding-left: 35px;
+    }
+    .title{
+        width: 96%;
+    }
+   .mainDiv_2{
+        width: 96%;
+    }
+    .zaskQuestions1{
+        display: none;
+     }
+     .zaskQuestions{
+       width: 100%;
+     }
+     .profile12{
+         display: none;
+     }
+     
+    
+}
+@media only screen and (max-width: 680px){
+    .button{
+        display: none;
+    }
+    .newDiv{
+       width: 50%;
+    }
+    .profile1{
+        display: none;
+    }
+    .icons{
+        padding-left: 35px;
+    }
+    .title{
+        width: 96%;
+    }
+   .mainDiv_2{
+        width: 96%;
+    }
+    .zaskQuestions1{
+        display: none;
+     }
+     .zaskQuestions{
+       width: 100%;
+     }
+     .profile12{
+         display: none;
+     }
+     
+    
+}
+
+
+@media only screen and (max-width: 665px){
+    .zaskContent1 {
+        display: none;
+    }
+    .button{
+        display: none;
+    }
+    .new_text{
+        font-size: 13px;
+    }
+    .textName{
+        border-radius: 0 28px 28px 0;
+        padding: 6px 7px 6px 0;
+    }
+    .input{
+        width:218px;
+    }
+    .profile1{
+        display: none;
+    }
+    .icons{
+        padding-left: 92px;
+    }
+    .zaskQuestions1{
+        display: none;
+     }
+     .zaskQuestions{
+       width: 100%;
+     }
+     .profile12{
+         display: none;
+     }
+      .contentBox{
+         flex-direction: column;
+         height: 200px;
+         margin-top: 25px;
+     }
+     .left_content{
+        width: 100%;
+        flex-direction: row;
+    }
+    .right_content{
+        width: 100%;
+    }
+    .score{
+        border-bottom:1px solid #cccccc !important;
+        border-left: 1px solid #dedede !important;
+     }
+     .score21{
+         border-bottom: 1px solid #2bc3a1 !important;
+     }
+     .p_image{
+         display: none;
+     }
+     .mail_id{
+         margin-left: 30px;
+     }
+     .line1{
+         margin-left: 0;
+     }
+     
+     
+     
+}
+@media only screen and (max-width: 560px){
+    .icons{
+        padding-left: 42px;
+    }
+}
+@media only screen and (max-width: 490px){
+    
+    .icons{
+        padding-left: 30px;
+    }
+}
+@media only screen and (max-width: 440px){
+    
+    .icons{
+        padding-left: 0px;
+    }
+}

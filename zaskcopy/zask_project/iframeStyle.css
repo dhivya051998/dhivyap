@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+
+}
+.container{
+    height: 300px;
+    width: 231px;
+    border-left: 1px solid rgb(199, 196, 196);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #ffffff;
+    
+  
+}
+.auditplus{
+    height: 50px;
+    display: flex;
+    cursor: pointer;
+}
+.auditplus:hover .home{
+    display: block;
+   
+    
+}
+.auditplus:hover{
+     background-color: #e7e9eb;
+}
+.box1{
+    flex:  4 0 0;
+    /* border: 1px solid black; */
+    display: flex;
+}
+.box2{
+    flex:  1 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.home{
+    height: 30px;
+    width: 30px;
+    background-image:url(images/icon.b.svg);
+    background-repeat: no-repeat;
+    background-size:auto 357px;
+    background-position:-61px -121px;
+    display: none;
+   
+}
+.home:hover{
+    /* display: block; */
+}
+.image{
+    height: 50px;
+    width: 50px;
+    /* border: 1px solid black; */
+}
+.img1{
+    background-image:url(images/icon.b.svg);
+    background-repeat: no-repeat;
+    background-size:auto 582px;
+    background-position:-485px 1px;
+}
+.img2{
+    background-image:url(images/icon.b.svg);
+    background-repeat: no-repeat;
+    background-size:auto 582px;
+    background-position:-485px -98px;
+}
+.img3{
+    background-image:url(images/zask-favicon.png);
+    background-repeat: no-repeat;
+    background-size:auto 32px;
+    background-position:9px 8px;
+}
+.img4{
+    background-image:url(images/icon.b.svg);
+    background-repeat: no-repeat;
+    background-size:auto 582px;
+    background-position:-140px -91px;
+}
+.img5{
+    background-image:url(images/icon.b.svg);
+    background-repeat: no-repeat;
+    background-size:auto 582px;
+    background-position:-146px -195px;
+}
+.img6{
+    background-image:url(images/zask-favicon.png);
+    background-repeat: no-repeat;
+    background-size:auto 32px;
+    background-position:9px 8px;
+}
+.text{
+    display: flex;
+    align-items: center;
+    color: #2fb7fb;
+}

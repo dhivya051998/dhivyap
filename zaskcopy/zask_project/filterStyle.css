@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13PX;
+}
+.filter{
+    height: 800px;
+    width: 302px;
+    border-bottom: 1px solid #CCCCCC;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+.category{
+    height: 110px;
+    border-bottom: 1px solid #CCCCCC;
+    display: flex;
+    
+}
+.category11{
+    height: 50px;
+    border-bottom: 1px solid #CCCCCC;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: #2fb7fb;
+    font-size: 10px;
+    padding-right: 20px;
+}
+.category1{
+    flex:  4 0 0;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.image{
+    display: flex;
+    flex:  1 0 0;
+    /* border: 1px solid black; */
+    align-items: center;
+    justify-content: center;
+}
+.image1{
+    height: 16px;
+    width: 16px;
+    /* border: 1px solid black; */
+    background-image: url(images/lyte_ui_sprite.6.svg);
+    background-repeat: no-repeat;
+    background-size: auto 451px;
+    background-position: -37px 3px;
+    cursor: pointer;
+}
