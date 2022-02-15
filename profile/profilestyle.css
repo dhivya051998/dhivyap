@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:serif;
+    outline: none;
+    text-decoration: none;
+    margin: auto;
+    gap: 50px;
+    
+}
+body{
+    background-color: #e2e1e0;
+}
+.header{
+    width: 330px;
+    height: 470px;
+    background-color:burlywood;
+    text-align: center;
+    padding: 10px;
+    border-radius:30px;
+    margin-top: 100px;
+
+}
+.header:hover {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  }
+.header .user{
+    padding-top: 15px;
+
+}
+img{
+    margin:25px;
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 10px rgba(255, 255, 255, .2);
+    
+}
+.name{
+    font-size:20px;
+    padding: 10px;
+    margin-top: -10px;
+}
+img:hover{
+    opacity: 0.8;
+    cursor: pointer;  
+   
+}
+.navbar{
+    padding:10px 30px;
+}
+.link{
+    margin:20px;
+    list-style: none;
+    display: block;
+    padding: 7px;
+    font-size: 20px;
+    background: rgba(255, 255, 255, .2);
+    box-shadow:rgba(0,0,0, .2);
+    border-radius:10px;
+    cursor: pointer;
+}
+.link:hover{
+    background: rgba(255, 255, 255, .3);
+    color:#555 ;
+    
+}
+
+.top{
+    height: 400px;
+    width: 75%;
+    margin: auto;
+    background-image: url(image/nature.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.button-1{
+    width:140px;
+    height:50px;
+    border:2px solid gray;
+    float:left;
+    text-align:center;
+    cursor:pointer;
+    position:relative;
+    box-sizing:border-box;
+    overflow:hidden;
+    border-radius: 20px;
+    margin:20px 0 14px 60px;
+  }
+  .button-1 a{
+    font-size:16px;
+    /* color:white; */
+    text-decoration:none;
+    line-height:45px;
+    transition:all .5s ease;
+    z-index:2;
+    position:relative;
+  }
+  .eff-1{
+    width:140px;
+    height:50px;
+    left:-140px;
+    background:#34495e;
+    position:absolute;
+    transition:all .5s ease;
+    z-index:1;
+  }
+  .button-1:hover .eff-1{
+    left:0;
+  }
+  .button-1:hover a{
+    color:#fff;
+    
+  }
+
+
+
+ 
+
+  
+  
