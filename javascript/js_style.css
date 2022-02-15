@@ -16,7 +16,6 @@ body{
 }
 
 .box{
-    height: 200px;
     max-width: 1000px;
     padding: 40px 0;
     margin: auto;
@@ -45,7 +44,7 @@ body{
      margin-top: -40px;
  }
  .child1{
-    height: 1200px;
+    height: 800px;
     display: grid;
     grid-template-columns: repeat(3 , 1fr);
     grid-template-rows: repeat(5,1fr);
@@ -135,10 +134,13 @@ a{
     background-position:-67% 75%;   
 }
 .eff07{
-    background-image: url("image/day\ findar.jfif");  
+    background-image: url("image/timeline1.webp");  
 }
 .eff08{
     background-image: url("image/add_even.png");  
+}
+.eff09{
+    background-image: url("image/zask_image.jpg");  
 }
 html, body {
     height: 100%;
