@@ -67,7 +67,7 @@ body{
     align-items: center;
 }
 .a8{
-    grid_area:a8;
+    grid-area:a8;
 }
 a{
      text-decoration: none;
