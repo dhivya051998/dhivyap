@@ -53,8 +53,8 @@ body{
     grid-row-gap: 30px;
     grid-template-areas: "a1 a2 a3"
                          "a4 a5 a6" 
-                         "a7 a8 a9"
-                         "a10 . ."  ;
+                         "a7 a8 a9";
+                 
     
  }
  .a1{
@@ -65,6 +65,9 @@ body{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+}
+.a8{
+    grid_area:a8;
 }
 a{
      text-decoration: none;
