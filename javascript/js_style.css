@@ -53,7 +53,7 @@ body{
     grid-template-areas: "a1 a2 a3"
                          "a4 a5 a6" 
                          "a7 a8 a9"
-                         "a10 .  ."  ;
+                         "a11 a10 a12"  ;
     
  }
  .a1{
@@ -64,6 +64,9 @@ body{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+}
+.a10{
+    grid-area:a10;
 }
 a{
      text-decoration: none;
