@@ -927,6 +927,9 @@ i
     #input1{
         width: 110px;
     }
+    .user_mainIcon{
+        display: none;
+    }
 
 }
 @media only screen and (max-width:970px){
