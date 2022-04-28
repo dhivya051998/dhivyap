@@ -1107,6 +1107,10 @@ i
     }
     .image{
         height: 450px;
+        margin-top:100px;
+    }
+    .website{
+        padding: 75px 0 0 0;
     }
     #text01{
         font-size: 39px;
