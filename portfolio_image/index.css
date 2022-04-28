@@ -982,7 +982,7 @@ i
         font-size: 24px;
     }
 }
-@media only screen and (max-width:767px){
+@media only screen and (max-width:768px){
     .container1{
         grid-template-rows: repeat(6,1fr);
         grid-template-columns: 1fr;
