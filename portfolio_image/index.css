@@ -772,6 +772,7 @@ i
     position: fixed;
     top: 70px;
     right: 255px;
+    cursor:pointer;
 }
 
 .user_mainIcon1 {
