@@ -194,7 +194,6 @@
 }
 
 .website {
-    /* height: 850px; */
     height: auto;
     width: 1150px;
     margin: auto;
@@ -207,10 +206,8 @@
 }
 
 .text {
-    /* height: 700px; */
     height: auto;
     display: flex;
-    /* align-items: center; */
     justify-content: flex-end;
 }
 
@@ -452,7 +449,6 @@ button {
 
 .paraText {
     height: auto;
-    /* width: 600px; */
     padding: 30px;
     display: flex;
     flex-direction: column;
@@ -743,8 +739,6 @@ i
 }
 
 .footerImages {
-    /* height: 60px;
-    width: 60px; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -808,6 +802,11 @@ i
     font-size: 30px;
     font-weight: 400;
 }
+.textMrg{
+    font-size: 30px;
+    font-weight: 400;
+}
+
 
 .serviceMain {
     background-color: #eff1f4;
@@ -820,6 +819,12 @@ i
     display:none;
     font-size: 32px;
     cursor: pointer;
+}
+@media only screen and (max-width:1440px){
+    .user_mainIcon{
+        right: 230px;
+    }
+
 }
 
 @media only screen and (max-width:1200px) {
@@ -913,6 +918,13 @@ i
         width: 100%;
         gap: 25px;
     }
+    .model{
+        height: 160px;
+        width: 280px;
+    }
+    .user_mainIcon{
+        right: 78px;
+    }
    
 }
 
@@ -988,10 +1000,13 @@ i
         grid-template-columns: 1fr;
     }
     .size1{
-        font-size: 22px;
+        font-size: 21px;
     }
     .col1{
-        padding: 0 60px 0 60px;
+        padding: 10px 60px 10px 60px;
+    }
+    .col1 > p{
+        width: 63%;
     }
     .testimonal{
         flex-direction: column;
@@ -1014,7 +1029,8 @@ i
         width: 100%;
     }
     .model{
-        width: 95%;
+        width: 90%;
+        height: 225px;
     }
     .contactus{
         flex-direction: column;
@@ -1027,6 +1043,10 @@ i
         width: 100%;
     }
     #text05{
+        font-size: 25px;
+        padding: 10px;
+    }
+    .textMrg{
         font-size: 25px;
         padding: 10px;
     }
@@ -1069,9 +1089,11 @@ i
     }
     .website{
         grid-template-columns:1fr;
+        padding: 75px 0 0 0;
     }
     .image{
         justify-content: center;
+        height: 560px;
     }
     .img{
         width: 550px;
@@ -1107,7 +1129,7 @@ i
     }
     .image{
         height: 450px;
-        margin-top:100px;
+        margin-top: 100px;
     }
     .website{
         padding: 75px 0 0 0;
@@ -1134,4 +1156,78 @@ i
     .inputBox{
         width: 50%;
     }
+    
 }
+@media screen and (min-device-width: 425px) and (max-device-width:500px) {
+    .main_slider{
+        height: 110px;
+    }
+    .size1{
+        display: none;
+    }
+    #para{
+        font-size: 33px;
+    }
+    .image{
+        margin-top: 0;
+    }
+    .img{
+        height: 340px;
+        width: 360px;
+    }
+    .paraText{
+        padding: 0;
+    }
+    #text02{
+        font-size: 18px;
+    }
+    #text001{
+        font-size: 17px;
+        line-height: 1.5;
+    }
+    .socialIcon{
+        width: 40%;
+        justify-content: center;
+    }
+    .footerContent{
+        justify-content: center;
+        align-items: center;
+    }
+    .footerContent1{
+        width: 100%;
+        padding: 0 80px 0 30px;
+    }
+    #text05{
+        margin-left:100px;
+    }
+    .line{
+       display: none;
+    }
+    .textMrg{
+        margin-left: 150px;
+    }
+    .inputBox{
+        width: 44%;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+    #input1{
+        width: 330px;
+        border-radius: 50px;
+    }
+    #input2{
+        width: 330px;
+        padding: 17px 5px;
+        border-radius: 50px;
+    }
+    .footerIcon{
+        flex-direction: column;
+    }
+    .footerImg{
+        padding-left: 30px;
+    }
+}
+
+
+    
