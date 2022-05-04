@@ -39,11 +39,14 @@
 }
 .input{
     padding: 10px;
-    border: none;
+    border:1px solid transparent;
     background-color: #b9bfbd29;
     border-radius: 5px;
     text-indent: 20px;
     outline: none;
+}
+.input:hover{
+    border: 1px solid #c3bebe70;
 }
 .btn{
     padding: 8px 40px 8px 40px;
@@ -63,7 +66,6 @@ label{
 .content{
     height: 495px;
     width: 375px;
-    gap: 30px;
     border:none;
     background-color: #fff;
     border-radius: 50px;
@@ -71,7 +73,7 @@ label{
     display:flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 .mail{
     margin-top: -20px;
@@ -82,6 +84,8 @@ label{
 }
 .gmail{
     padding: 4px 0 0 25px;
+    color: #4688f1;
+    font-weight: 600;
 }
 .detail{
     display: flex;
@@ -89,7 +93,7 @@ label{
     align-items: center;
     justify-content: center;
     gap: 15px;
-    padding: 15px 0 15px 0;
+    padding: 15px 0 0 0;
 }
 #date{
     width: 175px;
@@ -110,8 +114,7 @@ select{
     display: flex;
     width: 175px;
     justify-content: space-between;
-    margin: auto;
-    margin-top: -15px;
+   
 }
 #btn1{
     padding: 7px 20px 7px 20px;
@@ -122,6 +125,7 @@ select{
 #btn1:hover{
     background-color: #ca4f81;
 }
+
 button{
     border: none;
     background: none;
@@ -142,14 +146,22 @@ button{
 }
 .input1{
     padding: 10px;
-    border: none;
+    border:1px solid transparent;
     background-color: #b9bfbd29;
     border-radius: 5px;
     outline: none;
 }
+.input1:hover{
+    border: 1px solid #c3bebe70;
+}
+#gender{
+    border: 1px solid transparent;
+}
+#gender:hover{
+    border: 1px solid #c3bebe70;
+}
 #para1{
-    font-size: 25px;
-    padding-top: 30px;
+    font-size: 28px;
     width: 100%;
     text-align: center;
     color: #fe3989;
