@@ -58,7 +58,7 @@ label{
     height: 20px;
 }
 .content{
-    height: 465px;
+    height: 495px;
     width: 375px;
     gap: 30px;
     border:none;
@@ -144,7 +144,7 @@ button{
 }
 #para1{
     font-size: 25px;
-    padding-top: 20px;
+    padding-top: 30px;
     width: 100%;
     text-align: center;
     color: #fe3989;
@@ -169,7 +169,7 @@ button{
     color: black;
     margin-top: -3px;
     padding-left: 10px;
-    cursor:pointer;
+    cursor: pointer;
 }
 #btn01{
     padding: 7px 20px 7px 20px;
