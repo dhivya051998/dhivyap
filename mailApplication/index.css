@@ -53,6 +53,9 @@
     color: #fff;
     border:none;
 }
+.btn:hover{
+    background-color: #ca4f81;
+}
 label{
     color: red;
     height: 20px;
@@ -116,7 +119,9 @@ select{
     background-color: #fe3989;
     color: #fff;
 }
-
+#btn1:hover{
+    background-color: #ca4f81;
+}
 button{
     border: none;
     background: none;
