@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="cls" class="container">
+        <div class="box1">
+            <div class="parentEle">
+                <p class="heading">Create Account</p>
+                <div class="nameDiv">
+                    <span class="material-symbols-outlined">
+                        person
+                    </span>
+                    <input type="text" id="fname" placeholder="Name" onblur="validate1()" class="input"
+                        autocomplete="off">
+                </div>
+
+                <label id="tooltip1" class="tooltip"></label>
+                <div class="nameDiv">
+                    <span class="material-symbols-outlined">
+                        mail
+                    </span>
+                    <input type="mail" id="mail01" placeholder="Mail Id" onblur="validate3()" class="input"
+                        autocomplete="off">
+                </div>
+                <label id="tooltip2" class="tooltip"></label>
+                <div class="nameDiv">
+                    <span class="material-symbols-outlined">
+                        lock
+                    </span>
+                    <input type="password" id="password" onblur="validate4()" placeholder="password" class="input">
+                </div>
+                <label id="tooltip3" class="tooltip"></label>
+                <div class="nameDiv">
+                    <span class="material-symbols-outlined">
+                        lock
+                    </span>
+                    <input type="password" id="cpwd" onblur="validate5()" placeholder="confirm" class="input">
+                </div>
+                <label id="tooltip4" class="tooltip"></label>
+               <div class="checkin">
+                <input type="checkbox" name="show" id="checkbox" onclick="show1()">
+                <label for="show" id="label">Show Password</label>
+               </div><br>
+                <button onclick="submitvalidation()" class="btn">Next</button>
+            </div>
+        </div>
+
+        <div class="mainContainer">
+            <div class="content">
+                <p id="para1">WELCOME</p>
+                <div class="mail">
+                    <span class="material-symbols-outlined" id="person">
+                        person
+                    </span>
+                    <p class="gmail"></p>
+                </div>
+                <div class="detail">
+                    <input type="number" id="num" placeholder="Phone Number" min="1" max="10" class="input1"
+                        onblur="check01()">
+                    <label class="numlabel"></label>
+                    <input type="date" id="date" onblur="check02()" class="input1">
+                    <label class="datelabel"></label>
+                    <select id="gender" onblur="check03()">
+                        <option value="">Select your gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                    <label class="selectlabel"></label>
+                </div>
+                <div class="footer">
+                    <button id="btn01" onclick="back()">Back</button>
+                    <button id="btn1" onclick="display()">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function validate1() {
+            var Fname = document.getElementById("fname").value;
+            var reg = /^[A-Za-z]+$/;
+            if (Fname == "") {
+                document.querySelector("#tooltip1").innerHTML = "please enter the firstname";
+            }
+            else if (reg.test(Fname) == false) {
+                document.querySelector("#tooltip1").innerHTML = "Please enter valid Username.";
+            }
+            else {
+                document.querySelector("#tooltip1").innerHTML = "";
+            }
+        }
+
+        function validate3() {
+            var Mail = document.getElementById("mail01").value;
+            var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+            if (Mail == "") {
+                document.querySelector("#tooltip2").innerHTML = "please enter the Mail Id";
+
+            }
+            else if (reg.test(Mail) == false) {
+                document.querySelector("#tooltip2").innerHTML = "Please enter valid Mail Id.";
+
+            }
+            else {
+                document.querySelector("#tooltip2").innerHTML = "";
+            }
+        }
+
+        function validate4() {
+            var pwd = document.getElementById("password").value;
+            var reg = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}/;
+            if (pwd == "") {
+                document.querySelector("#tooltip3").innerHTML = "please enter the password";
+
+            }
+            else if (reg.test(pwd) == false) {
+                document.querySelector("#tooltip3").innerHTML = "please enter the valid password";
+
+            }
+            else {
+                document.querySelector("#tooltip3").innerHTML = "";
+            }
+        }
+
+        function validate5() {
+            var pwd = document.getElementById("password").value;
+            var cpwd = document.getElementById("cpwd").value;
+            var reg = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}/;
+            if (cpwd == "") {
+                document.querySelector("#tooltip4").innerHTML = "please enter the password";
+            }
+            else if (reg.test(cpwd) == false) {
+                document.querySelector("#tooltip4").innerHTML = "please enter the valid password";
+
+            }
+            else {
+                if (pwd == cpwd) {
+                    document.querySelector("#tooltip4").innerHTML = "";
+                }
+                else {
+                    alert("password mismatched");
+                }
+            }
+        }
+
+        function submitvalidation() {
+            var Fname = document.getElementById("fname").value;
+            var Mail = document.getElementById("mail01").value;
+            var pwd = document.getElementById("password").value;
+            var cpwd = document.getElementById("cpwd").value;
+
+            if (Fname == "" || Mail == "" || pwd == "" || cpwd == "") {
+                alert("please fillup the fields")
+            }
+            else {
+                document.querySelector(".box1").style.display = "none";
+                document.querySelector(".mainContainer").style.display = "flex";
+                document.querySelector(".gmail").innerHTML = Mail;
+            }
+        }
+        function show1(){
+            var x = document.getElementById("checkbox");
+            var y = document.getElementById("password");
+            var z = document.getElementById("cpwd");
+            if(x.checked){
+                y.type = "text";
+                z.type="text";
+            }else{
+                y.type =  "password"
+                z.type = "password";
+            }
+        }
+        function check01() {
+            var number = document.getElementById("num").value;
+            if (number == "") {
+                document.querySelector(".numlabel").innerHTML = "please Enter the Mobile number";
+
+            }
+            else if (number.length < 10) {
+                document.querySelector(".numlabel").innerHTML = "Please Enter 10 Digit Number";
+
+            }
+            else {
+                document.querySelector(".numlabel").innerHTML = "";
+            }
+        }
+        function check02() {
+            var date = document.getElementById("date").value;
+            if (date == "") {
+                document.querySelector(".datelabel").innerHTML = "please Enter the date ";
+
+            }
+            else {
+                document.querySelector(".datelabel").innerHTML = "";
+            }
+        }
+        function check03() {
+            var gender = document.getElementById("gender").value;
+            if (gender == "") {
+                document.querySelector(".selectlabel").innerHTML = "please select the Gender ";
+
+            }
+            else {
+                document.querySelector(".selectlabel").innerHTML = "";
+            }
+        }
+        function display() {
+            var number = document.getElementById("num").value;
+            var date = document.getElementById("date").value;
+            var gender = document.getElementById("gender").value;
+            if (number == "" || date == "" || gender == "") {
+                alert("Please fillup the Fields")
+            }
+            else {
+                alert("Create Mail Id Successfully")
+            }
+
+        }
+        function back() {
+            document.querySelector(".box1").style.display = "flex";
+            document.querySelector(".mainContainer").style.display = "none";
+
+        }
+    </script>
+
+
+</body>
+
+</html>
