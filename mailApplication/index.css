@@ -169,6 +169,7 @@ button{
     color: black;
     margin-top: -3px;
     padding-left: 10px;
+    cursor:pointer;
 }
 #btn01{
     padding: 7px 20px 7px 20px;
@@ -177,4 +178,7 @@ button{
     border-radius: 5px;
     background-color: #fe3989;
     color: #fff;
+}
+#checkbox{
+    cursor: pointer;
 }
