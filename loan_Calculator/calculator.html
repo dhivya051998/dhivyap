@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calStyle.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <h2>Loan Calculator</h2>
+            <div class="content">
+                <div class="input">
+                    <label>Loan Amount: $</label>&nbsp&nbsp
+                    <input type="number" id="lamount">
+                </div>
+                <div class="input">
+                    <label>Interest Rate: %</label>&nbsp&nbsp
+                    <input type="number" id="rate">
+                </div>
+                <div class="input">
+                    <label>Months to Pay:</label>&nbsp&nbsp&nbsp&nbsp
+                    <input type="number" id="month" autocomplete="off">
+                </div>
+                <button onclick="getMonth()">Click</button>
+            </div>
+            <div class="footer">
+                <p>Monthly Payment = </p>
+                <div class="amount"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function getMonth() {
+            var amount = document.getElementById("lamount").value;
+            var rate = document.getElementById("rate").value;
+            var month = document.getElementById("month").value;
+            var value1 = Number(amount) * Number(rate)/100;
+            var y = Number(amount) + value1;
+            console.log(y);
+            var z = Math.round(y/month);
+            document.querySelector(".amount").innerHTML = z;
+            document.querySelector(".footer").style.visibility = "visible";
+        }
+    </script>
+</body>
+
+</html>
