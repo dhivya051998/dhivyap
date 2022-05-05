@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calcStyle.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="title">BMI Calculator</div>
+            <div class="input">
+                <label>Height in CM:</label>&nbsp&nbsp&nbsp
+                <input type="number" id="heightInput">
+            </div>
+            <div class="input">
+                <label>Weight in KG:</label>&nbsp&nbsp&nbsp
+                <input type="number" id="weightInput">
+            </div>
+            <button id="btn" onclick="calculate()">Calculate</button>
+            <div class="number"></div>
+            <div class="footer">
+                <p id="para">BMI Weight Guide</p>
+                <p>Under Weight = Less than 18.6</p>
+                <p>Normal Range = 18.6 and 24.9</p>
+                <p>Overweight = Greater than 24.9</p>
+            </div>
+        </div>
+    </div>
+   <script>
+      
+       function calculate(){
+        var height = document.getElementById("heightInput").value;
+       console.log(height);
+       var weight = document.getElementById("weightInput").value;
+       console.log(weight);
+           document.querySelector(".number").innerHTML=((weight/height/height) * 10000).toFixed(2);
+       }
+   </script> 
+</body>
+</html>
