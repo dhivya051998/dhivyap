@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>STOPWATCH</h3>
+    <div class="container">
+        <div class="demo">
+            <span id="min">0</span>
+        </div>
+        <div class="btn">
+            <button onclick="display()" class="btn1">Start</button>
+            <button onclick="stop()" class="btn1">Stop</button>
+            <button onclick="reset()" class="btn1">Reset</button>
+        </div>
+    </div>
+
+
+    <script>
+        var x;
+        var num = 0;
+        function display() {
+            clearInterval(x);
+            x = setInterval(display, 1000);
+            document.getElementById("min").innerHTML = num++;
+
+        }
+        function stop() {
+            clearInterval(x);
+        }
+        function reset() {
+            clearInterval(x);
+            num = 0;
+            document.getElementById("min").innerHTML = num;
+
+        }
+
+    </script>
+</body>
+
+</html>
