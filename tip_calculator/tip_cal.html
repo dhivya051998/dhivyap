@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tipStyle.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="box1">
+                <p id="heading">Tip Calulator</p>
+                <div class="main">
+                    <span class="icon">$</span>
+                    <input type="number" placeholder="Total Bill" id="inputVal" onblur="myFun()">
+                </div>
+                <div class="main">
+                    <p>Tips :</p>
+                   <div class="range1"><input type="range" class="range" name="rangeinput" min="0" max="100"
+                    onchange="updateInput()" onblur="remove()"></div>
+                    <input type="text" id="textInput" value="">
+                </div>
+            </div>
+            <div class="box2">
+                <p id="heading">Result</p>
+                <div class="textbox">
+                    <div class="text">Tip amount</div>
+                    <div class="amount">0.00</div>
+                </div>
+                <div class="textbox">
+                    <div class="text1">Total Bill With Tip</div>
+                    <div class="amount1">0.00</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script>
+        function updateInput() {
+            document.querySelector(".range1").classList.add("range2");
+            document.querySelector(".box2").style.display="flex";
+            var val = document.getElementById("inputVal").value
+            var rangeval = document.querySelector(".range").value;
+            document.getElementById('textInput').value = rangeval + "%";
+            var x = val*rangeval/100;
+            document.querySelector(".amount").innerHTML=Math.round(x);
+            document.querySelector(".amount1").innerHTML=Math.round(Number(val) + Number(x));
+        }
+        function myFun(){
+           updateInput();
+        }
+        function remove(){
+            document.querySelector(".range1").classList.remove("range2");
+        }
+    </script>
+</body>
+
+</html>
