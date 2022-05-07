@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cardStyle.css">
+    <link rel="stylesheet"
+        href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h3>Flashcards</h3>
+        <button class="btn1" onclick="display1()">Add Question</button>
+        <div class="content">
+            <div class="icon" onclick="close1()">
+                <span class="material-symbols-outlined">
+                    close
+                </span>
+            </div>
+            <div id="para">Question</div>
+            <textarea class="text1"></textarea>
+            <div id="para">Answer</div>
+            <textarea class="text2"></textarea>
+            <button class="saveBtn" onclick="createBox()">Save</button>
+        </div>
+
+        <div class="output">
+            <!-- <div class="msg">
+                <div class="questionBox"></div>
+                <div class="answerBox"></div>
+                <div class="quesBox">
+                    <button class="edit" id="edit1">Edit</button>
+                    <button class="edit" id="delete1">Delete</button>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <script>
+        function display1() {
+            document.querySelector(".content").style.display = "flex";
+        }
+        function close1() {
+            document.querySelector(".content").style.display = "none";
+        }
+        function createBox() {
+            var text01 = document.querySelector(".text1").value;
+            var text02 = document.querySelector(".text2").value;
+            if (text01 == "" || text02 == "") {
+
+            }
+            else {
+                var text01 = document.querySelector(".text1").value;
+                var text02 = document.querySelector(".text2").value;
+                var card = document.createElement("div");
+                card.className = "emptyBox";
+                var text1 = document.createElement("p");
+                text1.className = "questionBox";
+                text1.innerText = text01;
+                card.appendChild(text1);
+                var text2 = document.createElement("p");
+                text2.innerText = text02;
+                text2.className = "answerBox";
+                card.appendChild(text2);
+                var createDiv = document.createElement("div");
+                createDiv.className = "newDiv";
+                card.appendChild(createDiv);
+                var btn1 = document.createElement("button");
+                btn1.innerText = "Edit";
+                btn1.className = "editBtn";
+                createDiv.appendChild(btn1);
+                btn1.addEventListener("click", function () {
+                    document.querySelector(".text1").value = text1.innerText;
+                    document.querySelector(".text2").value = text2.innerText;
+                    document.querySelector(".emptyBox").style.display = "none";
+                    
+                })
+                var btn2 = document.createElement("button");
+                btn2.innerText = "Delete";
+                btn2.className = "delBtn";
+                createDiv.appendChild(btn2);
+                btn2.addEventListener("click", function () {
+                    document.querySelector(".emptyBox").style.display = "none";
+                })
+                var x = document.querySelector(".output");
+                x.appendChild(card);
+                document.querySelector(".text1").value = "";
+                document.querySelector(".text2").value = "";
+
+            }
+
+        }
+    </script>
+</body>
+
+</html>
