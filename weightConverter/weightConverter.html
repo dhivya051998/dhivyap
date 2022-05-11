@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="mainContainer">
+        <h3>Javascript Weight Converter</h3>
+        <p>A weight converter for kilograms to pounds and pounds to kilograms</p>
+        <div class="container">
+            <div>
+                <input type="number">
+                <select>
+                    <option value="kg">kg</option>
+                    <option value="pounds">pounds</option>
+                </select>
+            </div>
+            <button onclick="convertWeight()">convert weight</button>
+            <div class="value"></div>
+        </div>
+    </div>
+    <script>
+        function convertWeight(){ 
+            var input = document.querySelector("input").value;
+            var option = document.querySelector("select").value;
+            if(input == ""){
+                alert("Please enter a weight.");
+            }
+            else{
+                if(option === "kg"){
+                    document.querySelector(".value").innerHTML=(input * 0.45).toFixed(2) + "lbs";
+                   
+                }
+                else if(option === "pounds"){
+                    document.querySelector(".value").innerHTML= (input*2.2).toFixed(2) + "kg";
+                }
+            }
+        }
+    </script>
+</body>
+</html>

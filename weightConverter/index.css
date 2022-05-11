@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #03011f;
+    color: #6cacc5;
+}
+.mainContainer{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.container{
+    height: 330px;
+    width: 400px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.value{
+    height: 30px;
+    width: 100px;
+    border: 2px solid #6cacc5;
+    border-radius: 5px;
+    background-color: rgba(42,50,113, .28);
+    color: #6cacc5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+button{
+    border: 2px solid #6cacc5;
+    border-radius: 5px;
+    padding: 5px; 
+    background-color: #03011f;
+    color: #6cacc5;
+    cursor: pointer;
+}
+input{
+    padding: 5px;
+}
+select{
+    padding: 5px;  
+}
+h3{
+    font-size: 30px;
+}
