@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.header {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+}
+
+.content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
+}
+
+.subContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title {
+    width: 500px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px;
+}
+.title > p{
+    font-weight: bold;
+}
+input {
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+.checkBox {
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+    padding: 13px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#select{
+    padding: 4px;
+    border-radius: 5px;
+    visibility: hidden;
+    background-color: #4db6ac;
+    outline: none;
+    border: none;
+    color: white;
+}
+.checkBox:hover #select{
+  visibility:visible;
+}
+#text {
+    padding: 10px;
+}
+
+.footer {
+    display: flex;
+    padding: 16px;
+    color: #4db6ac;
+    font-size: 22px;
+}
+h3{
+    font-size: 30px;
+}
