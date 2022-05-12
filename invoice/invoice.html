@@ -47,17 +47,8 @@
         </div>
     </div>
     <script>
-        function display() {
-            var add = document.querySelector(".add_description").value;
-            var value1 = document.querySelector(".add_value").value;
-            if (add == "" || value1 == '') {
-
-            }
-            else if ((document.querySelector(".add_type").options[1].selected == true) || (document.querySelector(".add_type").options[0].selected == true)) {
-                var incomeDiv = document.querySelector(".income");
-                var add = document.querySelector(".add_description").value;
-                var value1 = document.querySelector(".add_value").value;
-                var create = document.createElement("div");
+        function createEle(incomeDiv,add,value1){
+            var create = document.createElement("div");
                 create.className = "createDiv";
                 var des = document.createElement("div");
                 des.className = "desDiv";
@@ -69,13 +60,26 @@
                 create.appendChild(val);
                 var icon = document.createElement("div");
                 icon.className = "iconImage";
-                icon.addEventListener("click", function () {
-                    document.querySelector(".createDiv").remove();
+                icon.addEventListener("click", function (e) {
+                    console.log(value1);
+                    e.target.parentElement.remove();
                     document.querySelector(".budget_income").innerText = Math.round(Number(document.querySelector(".budget_income").innerText) - Number(value1))
                     document.querySelector(".budget_value").innerText = document.querySelector(".budget_income").innerText;
                 })
                 create.appendChild(icon);
                 incomeDiv.appendChild(create);
+        }
+        function display() {
+            var add = document.querySelector(".add_description").value;
+            var value1 = document.querySelector(".add_value").value;
+            if (add == "" || value1 == '') {
+
+            }
+            else if ((document.querySelector(".add_type").options[1].selected == true) || (document.querySelector(".add_type").options[0].selected == true)) {
+                var incomeDiv = document.querySelector(".income");
+                var add = document.querySelector(".add_description").value;
+                var value1 = document.querySelector(".add_value").value;
+                createEle(incomeDiv,add,value1);
                 document.querySelector(".add_description").value = "";
                 document.querySelector(".add_value").value = "";
                 document.querySelector(".budget_income").innerText = Math.round(Number(document.querySelector(".budget_income").innerText) + Number(value1));
@@ -98,7 +102,6 @@
                 var icon = document.createElement("div");
                 icon.className = "iconImage";
                 icon.addEventListener("click", function (e) {
-                    console.log(e);
                     e.target.parentElement.remove();
                     document.querySelector(".budget_expense").innerText = Math.round(Number(document.querySelector(".budget_expense").innerText) - Number(value1));
                     document.querySelector(".budget_value").innerText = document.querySelector(".budget_income").innerText - document.querySelector(".budget_expense").innerText;
