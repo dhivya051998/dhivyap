@@ -89,6 +89,9 @@ h3{
     outline: none;
     font-size: 18px;
 }
+.desDiv{
+    font-size: 18px;
+}
 .add_value:hover{
     border: 1px solid #28b9b5;
 }
@@ -101,9 +104,7 @@ h3{
 
 #income {
     background-color: #fecede;
-   
 }
-
 #expense {
     background-color: #ffab86;
 }
@@ -141,12 +142,9 @@ select{
 
 .text1 {
     color: #28b9b5;
-
 }
-
 .text2 {
     color: #ff5049;
-
 }
 
 .model {
@@ -156,12 +154,10 @@ select{
 }
 
 .budget_income {
-    color: #fff;
     font-size: 18px;
 }
 
 .budget_expense {
-    color: #fff;
     font-size: 18px;
 }
 .iconImage{
