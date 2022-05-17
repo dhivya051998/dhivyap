@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    height:720px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end ;
+    background-color: #ddeefc;
+    flex-direction: column;
+   
+}
+.empty{
+    height: 70px;
+}
+.card{
+    height: 250px;
+    width: 400px;
+    border-radius: 10px;
+    background-image:url(./images/2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 0 20px 60px 0 rgb(14 42 90 / 55%);
+    position: absolute;
+    top:-155px;
+    left:50px;
+    
+}
+.card_list{
+    display: flex;
+    padding: 0 20px 0 20px;
+    gap: 20px;
+}
+.card_list1{
+    display: flex;
+    padding: 0 20px 0 20px;
+    justify-content: space-between;
+}
+.card_icon{
+    height: 50px;
+    width: 60px;
+    border-radius: 5px;
+    background-image: url(./images/chip.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card_type{
+    height: 60px;
+    width: 112px;
+    background-image: url(./images/visa.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card_number{
+    height: 50px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    padding: 0 20px 0 20px;
+    color: #fff;
+    border: 1px solid transparent;
+    word-spacing: 20px;
+    letter-spacing: 2px;
+  
+}
+.detail{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 3px 10px;
+    border: 1px solid transparent;
+}
+.detail1{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 10px;
+    border: 1px solid transparent;
+}
+.textColor{
+    opacity: 0.7;
+    font-size: 13px;
+    color: #fff;
+    padding-bottom: 6px
+}
+.name{
+    color: #fff;
+}
+.date{
+    color: #fff; 
+}
+.card_form{
+    height: 550px;
+    width: 500px;
+    background-color: #fff;
+    box-shadow: 0 30px 60px 0 rgb(90 116 148 / 40%);
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.input{
+    height: 50px;
+    border-radius: 5px;
+    box-shadow: none;
+    border: 1px solid #ced6e0;
+    width: 100%;
+    padding: 10px;
+}
+.card_input{
+    padding: 0 25px 0 25px;
+}
+.text_label{
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #1a3b5d;
+}
+.card_group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#card_input01{
+    display: flex;
+    justify-content: space-between;
+}
+select{
+    padding:4px 29px 3px 12px;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #ced6e0;
+}
+select:hover{
+    border:1px solid #3d9cff;
+    transition: all 0.3s ease-in-out;
+}
+.num{
+    padding: 12px;
+    border: 1px solid #ced6e0;
+    border-radius: 5px;
+}
+.btn{
+    height: 55px;
+    width: 90%;
+    background: #2364d2;
+    border: none;
+    border-radius: 5px;
+    font-size: 22px;
+    font-weight: 500;
+    box-shadow: 3px 10px 20px 0px rgb(35 100 210 / 30%);
+    color: #fff;
+    margin-top: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn01{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#model{
+    margin-top: 20px;
+}
+input:hover{
+    border:1px solid #3d9cff;
+    transition: all 0.3s ease-in-out;
+    
+}
+input{
+    outline: none;
+}
+.card_itemDate{
+    display: flex;
+    color: #fff;
+}
+.input_add{
+    border: 1px solid white;
+    border-radius: 5px;
+   
+}
+.rotateCard{
+      transform: rotateY(180deg);
+      transition-duration: 1s;
+}
+.newDiv1{
+    height: 50px;
+    width: 100%;
+    background-color: black;
+}
+.newDiv2{
+    height: 40px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+}
+.newDiv3{
+    height: 40px;
+    width: 100%;
+    background-color: #fff;
+}
