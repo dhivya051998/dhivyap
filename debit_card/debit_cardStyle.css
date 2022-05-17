@@ -33,6 +33,7 @@
     left:50px;
     
 }
+
 .card_list{
     display: flex;
     padding: 0 20px 0 20px;
@@ -192,6 +193,10 @@ input{
 .rotateCard{
       transform: rotateY(180deg);
       transition-duration: 1s;
+}
+.rotateCard1{
+    transform: rotateY(0deg);
+    transition-duration: 1s;
 }
 .newDiv1{
     height: 50px;
