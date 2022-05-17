@@ -17,10 +17,10 @@
                     <div class="card_icon"></div>
                     <div class="card_type"></div>
                 </div>
-               <div class="btn01">
-                <div class="card_number">#### #### #### ####
+                <div class="btn01">
+                    <div class="card_number">#### #### #### ####
+                    </div>
                 </div>
-               </div>
                 <div class="card_list">
                     <div class="detail">
                         <p class="textColor">Card Holder</p>
@@ -32,23 +32,26 @@
                             <p class="date">MM</p>/
                             <p class="year">YY</p>
                         </div>
-                       
+
                     </div>
                 </div>
             </div>
             <div class="empty"></div>
             <div class="card_input">
                 <label class="text_label">Card Number</label><br>
-                <input type="number" min="1" max="16" id="card_num" class="input" onkeyup="getValue()" onfocus="focusNumber()" onmouseout="mouseoutFunction()">
+                <input type="number" min="1" max="16" id="card_num" class="input" onkeyup="getValue()"
+                    onfocus="focusNumber()" onmouseout="mouseoutFunction()">
             </div>
             <div class="card_input">
                 <label class="text_label">Card Holders</label><br>
-                <input type="text" id="card_text" class="input" onkeyup=" getValue1()" onfocus="focusHoldername()" onmouseout="mouseoutFunction1()">
+                <input type="text" id="card_text" class="input" onkeyup=" getValue1()" onfocus="focusHoldername()"
+                    onmouseout="mouseoutFunction1()">
             </div>
             <div class="card_input" id="card_input01">
                 <div class="card_group">
                     <label class="text_label">Expiration Date</label>
-                    <select name="" id="selectDate" onchange="getValueDisplay()" onfocus="focusMonth()" onmouseout="mouseoutFunction2()">
+                    <select name="" id="selectDate" onchange="getValueDisplay()" onfocus="focusMonth()"
+                        onmouseout="mouseoutFunction2()">
                         <option value="Month">Month</option>
                         <option value="01">01</option>
                         <option value="02">02</option>
@@ -60,12 +63,13 @@
                         <option value="08">08</option>
                         <option value="09">09</option>
                         <option value="10">10</option>
-                        <option value="11">11</option>  
+                        <option value="11">11</option>
                         <option value="12">12</option>
                     </select>
                 </div>
                 <div class="card_group">
-                    <select name="" id="model" onchange="getValueDisplay()" onfocus="focusMonth()" onmouseout="mouseoutFunction2()">
+                    <select name="" id="model" onchange="getValueDisplay()" onfocus="focusMonth()"
+                        onmouseout="mouseoutFunction2()">
                         <option value="Year">Year</option>
                         <option value="2022">2022</option>
                         <option value="2023">2023</option>
@@ -83,11 +87,12 @@
                 </div>
                 <div class="card_group">
                     <label class="text_label">Cvv</label>
-                    <input type="number" class="num" onfocus="Cardrotate()" onblur="display()" onkeyup="getcvvValue()">
+                    <input type="text" class="num" maxlength="4" onfocus="Cardrotate()" onblur="display()"
+                        onkeyup="getcvvValue()">
                 </div>
             </div>
             <div class="btn01">
-                <div class="btn">Submit</div>
+                <div class="btn" onclick="createCard()">Submit</div>
             </div>
 
         </div>
@@ -95,10 +100,19 @@
     <script>
         function getValue() {
             var inputVal = document.getElementById("card_num").value;
-            document.querySelector(".card_number").innerHTML = inputVal;
+            var final = "  ";
+            for (var i = 0; i < inputVal.length; i++) {
+                if (i % 4 === 0) {
+                    final += "   " + inputVal[i];
+                }
+                else {
+                    final += inputVal[i];
+                }
+            }
+            document.querySelector(".card_number").innerHTML = final;
 
         }
-        function getValue1(){
+        function getValue1() {
             var inputVal1 = document.getElementById("card_text").value;
             document.querySelector(".name").innerHTML = inputVal1;
         }
@@ -108,60 +122,73 @@
             var select2 = document.getElementById("model").value;
             document.querySelector(".year").innerHTML = select2;
         }
-        function getcvvValue(){
+        function getcvvValue() {
             var whiteCard = document.querySelector('.newDiv2');
-            whiteCard.innerText = document.querySelector(".num").value;
+            var val = document.querySelector(".num").value;
+            for (var i = 1; i <=val.length; i++) {
+                var starVal = "* ".repeat(i);
+            }
+            whiteCard.innerText = starVal;
         }
         function focusNumber() {
             document.querySelector(".card_number").classList.add("input_add");
-           
+
         }
         function mouseoutFunction() {
             document.querySelector(".card_number").classList.remove("input_add");
-            
+
         }
-        function focusHoldername(){
-             document.querySelector(".detail").classList.add("input_add");
+        function focusHoldername() {
+            document.querySelector(".detail").classList.add("input_add");
         }
-        function mouseoutFunction1(){
+        function mouseoutFunction1() {
             document.querySelector(".detail").classList.remove("input_add");
-        } 
-        function focusMonth(){
+        }
+        function focusMonth() {
             document.querySelector(".detail1").classList.add("input_add");
         }
-        function mouseoutFunction2(){
+        function mouseoutFunction2() {
             document.querySelector(".detail1").classList.remove("input_add");
         }
-       function Cardrotate(){
-           document.querySelector(".card").classList.add("rotateCard");
-           document.querySelector(".card_list").style.display="none";
-           document.querySelector(".btn01").style.display="none";
-           document.querySelector(".card_list1").style.display="none";
-           var blockCard = document.createElement("div");
-           blockCard.className="newDiv1";
-           document.querySelector(".card").appendChild(blockCard);
-           var whiteCard = document.createElement("div");
-           whiteCard.className="newDiv2";
-           whiteCard.innerText = document.querySelector(".num").value;
-           document.querySelector(".card").appendChild(whiteCard);
-        //    var cardIcon = document.createElement("div");
-        //    cardIcon.className="newDiv3";
-        //    var icon =  document.createElement("div");
-        //    icon.className="card_type";
-        //    cardIcon.appendChild(icon);
-        //    document.querySelector(".card").appendChild(CardIcon);
+        function Cardrotate() {
+            document.querySelector(".card").classList.add("rotateCard");
+            document.querySelector(".card_list").style.display = "none";
+            document.querySelector(".btn01").style.display = "none";
+            document.querySelector(".card_list1").style.display = "none";
+            var blockCard = document.createElement("div");
+            blockCard.className = "newDiv1";
+            document.querySelector(".card").appendChild(blockCard);
+            var parentEle = document.createElement("div");
+            parentEle.className = "para";
+            var whiteCard = document.createElement("div");
+            whiteCard.className = "newDiv2";
+            //    whiteCard.innerText = document.querySelector(".num").value;
+            parentEle.appendChild(whiteCard);
+            document.querySelector(".card").appendChild(parentEle);
+            var cardIcon = document.createElement("div");
+            cardIcon.className = "newDiv3";
+            var icon = document.createElement("div");
+            icon.className = "card_type1";
+            cardIcon.appendChild(icon);
+            document.querySelector(".card").appendChild(cardIcon);
 
-       }
-       function display(){
-        document.querySelector(".card").classList.add("rotateCard1");
-        document.querySelector(".card_list").style.display="flex";
-        document.querySelector(".card_list1").style.display="flex";
-        var ele = document.querySelector(".newDiv1");
-        ele.parentNode.removeChild(ele);
-        var element = document.querySelector(".newDiv2");
-        element.parentNode.removeChild(element);
-       
-       }
+        }
+        function display() {
+            document.querySelector(".card").classList.add("rotateCard1");
+            document.querySelector(".card_list").style.display = "flex";
+            document.querySelector(".btn01").style.display = "flex";
+            document.querySelector(".card_list1").style.display = "flex";
+            var ele = document.querySelector(".newDiv1");
+            ele.parentNode.removeChild(ele);
+            var element = document.querySelector(".newDiv2");
+            element.parentNode.removeChild(element);
+            var element1 = document.querySelector(".newDiv3");
+            element1.parentNode.removeChild(element1);
+
+        }
+        function createCard() {
+            display();
+        }
     </script>
 
 </body>
