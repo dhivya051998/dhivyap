@@ -39,7 +39,7 @@
             <div class="empty"></div>
             <div class="card_input">
                 <label class="text_label">Card Number</label><br>
-                <input type="number" min="1" max="16" id="card_num" class="input" onkeyup="getValue()"
+                <input type="number" min="1" maxlength="16" id="card_num" class="input" onkeyup="getValue()"
                     onfocus="focusNumber()" onmouseout="mouseoutFunction()">
             </div>
             <div class="card_input">
@@ -100,6 +100,7 @@
     <script>
         function getValue() {
             var inputVal = document.getElementById("card_num").value;
+            if(inputVal.length<=16){
             var final = "  ";
             for (var i = 0; i < inputVal.length; i++) {
                 if (i % 4 === 0) {
@@ -110,6 +111,11 @@
                 }
             }
             document.querySelector(".card_number").innerHTML = final;
+        }
+        else{
+            document.querySelector(".card_number").innerHTML="";
+        }
+            
 
         }
         function getValue1() {
@@ -175,12 +181,13 @@
         }
         function display() {
             document.querySelector(".card").classList.add("rotateCard1");
+            document.querySelector(".card").classList.remove("rotateCard");
             document.querySelector(".card_list").style.display = "flex";
             document.querySelector(".btn01").style.display = "flex";
             document.querySelector(".card_list1").style.display = "flex";
             var ele = document.querySelector(".newDiv1");
             ele.parentNode.removeChild(ele);
-            var element = document.querySelector(".newDiv2");
+            var element = document.querySelector(".para");
             element.parentNode.removeChild(element);
             var element1 = document.querySelector(".newDiv3");
             element1.parentNode.removeChild(element1);
