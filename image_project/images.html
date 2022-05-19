@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0" />
+    <link rel="stylesheet" type="text/css" href="imgStyle.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="mainContainer">
+            <h1>Projects</h1>
+            <div class="allDiv">
+                <div class="imgDiv">
+                    <div class="item" id="img_1">
+                        <div class="sub_container1 top_container">
+                            <h3>PROJECT 1</h3>
+                            <p class="text">Short Description</p>
+                        </div>
+                        <div class="sub_container2 bottom_container">
+                            <button onclick="showImage('show1')"  class="btn">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="item" id="img_2">
+                        <div class="sub_container1 top_container">
+                            <h3>PROJECT 2</h3>
+                            <p class="text">Short Description</p>
+                        </div>
+                        <div class="sub_container2 bottom_container">
+                            <button onclick="showImage('show2')" class="btn">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="imgDiv">
+                    <div class="item" id="img_3">
+                        <div class="sub_container1 top_container">
+                            <h3>PROJECT 3</h3>
+                            <p class="text">Short Description</p>
+                        </div>
+                        <div class="sub_container2 bottom_container">
+                            <button onclick="showImage('show3')"  class="btn">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="item" id="img_4">
+                        <div class="sub_container1 top_container">
+                            <h3>PROJECT 4</h3>
+                            <p class="text">Short Description</p>
+                        </div>
+                        <div class="sub_container2 bottom_container">
+                            <button onclick="showImage('show4')"  class="btn">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="imgDiv">
+                    <div class="item" id="img_5">
+                        <div class="sub_container1 top_container">
+                            <h3>PROJECT 5</h3>
+                            <p class="text">Short Description</p>
+                        </div>
+                        <div class="sub_container2 bottom_container">
+                            <button onclick="showImage('show5')"  class="btn">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="item" id="img_6">
+                        <div class="sub_container1 top_container">
+                            <h3>PROJECT 6</h3>
+                            <p class="text">Short Description</p>
+                        </div>
+                        <div class="sub_container2 bottom_container">
+                            <button onclick="showImage('show6')"  class="btn">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scale1">
+                <div onclick="closeDiv()"><span class="material-symbols-outlined">
+                        close
+                    </span></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function showImage(img_class){
+            document.querySelector(".allDiv").style.opacity = "0.2";
+            document.querySelector(".scale1").style.display = "flex";
+            var comment_fields = document.querySelector(".scale1");
+            comment_fields.classList.add(img_class);
+        }
+        function closeDiv() {
+            document.querySelector(".scale1").style.display = "none";
+            document.querySelector(".allDiv").style.opacity = "";
+        }
+    </script>
+</body>
+
+</html>

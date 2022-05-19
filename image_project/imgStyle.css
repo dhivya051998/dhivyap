@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+.container{
+    height:1000px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+h1{
+    text-align: center;
+    padding: 30px;
+    margin-top: 60px;
+}
+.mainContainer{
+    display: flex;
+    flex-direction: column ;
+}
+.allDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+}
+.imgDiv{
+    display: flex;
+    gap: 20px;
+    height: 310px;
+    position: relative;
+    overflow: hidden;
+}
+.item{
+    height: 310px;
+    width: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+   
+}
+#img_1{
+    background-image: url(./images/img_1.avif);  
+}
+#img_2{
+    background-image: url(./images/img_2.avif);  
+}
+#img_3{
+    background-image: url(./images/img_3.avif);  
+}
+#img_4{
+    background-image: url(./images/img_4.avif);  
+}
+#img_5{
+    background-image: url(./images/img_5.avif);  
+}
+#img_6{
+    background-image: url(./images/img_6.avif);  
+}
+
+.text01{
+    background-color: gray;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    position: absolute;
+    display: none;
+}
+button{
+    padding:10px 20px ;
+    border-radius: 5px;
+    border: 3px solid #01A2AC;
+    background-color:#fff;
+    cursor: pointer;
+    
+}
+button:hover{
+    background-color: #01A2AC;
+    color: #F5F5F5;
+}
+.text02{
+    background-color: gray;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    position: absolute;
+    left: 370px;
+    display: none;
+}
+.createEle{
+    transform: scale(1.5);
+    margin-left: 0px;
+    z-index: 1;
+    position: absolute;
+    left: 170px;
+    top: 75px;
+}
+.sub_container1{
+    height: 55%;
+    width:350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+.sub_container2{
+    height: 45%;
+    width:350px;
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    position: absolute;
+}
+.top_container{
+    top:-186px;
+    background-color: #fff;
+}
+.bottom_container{
+    bottom:-154px;
+    background-color: #fff;
+}
+#img_1:hover .top_container{
+    top: 0;
+    transform:rotateY(0deg);
+    transition: all 0.35s ease-in-out;
+}
+#img_1:hover .bottom_container{
+    bottom: 0;
+    transform:rotateY(0deg);
+    transition: all 0.35s ease-in-out;
+}
+.text{
+    padding-top: 20px;
+    font-size: 18px;
+    color:#01A2AC;
+}
+#img_2:hover .top_container{
+    top: 0;
+    transform:rotateY(0deg);
+    transition: all 0.35s ease-in-out;
+}
+#img_2:hover .bottom_container{
+    bottom: 0;
+    transform:rotateY(0deg);
+    transition: all 0.35s ease-in-out;
+}
+#img_3:hover .top_container{
+    top: 0;
+    transform:rotateY(0deg);
+    transition: all 0.35s ease-in-out;
+}
+#img_3:hover .bottom_container{
+    bottom: 0;
+    transform:rotateY(0deg);
+    transition: all 0.35s ease-in-out;
+}
+#img_4:hover .top_container{
+    top: 0;
+    transform:rotateY(0deg);
+    transition: all 0.35s ease-in-out;
+}
+#img_4:hover .bottom_container{
+    bottom: 0;
+    transform:rotateY(0deg);
+    transition: all 0.35s ease-in-out;
+}
+#img_5:hover .top_container{
+    top: 0;
+    transform:rotateY(0deg);
+    transition: all 0.35s ease-in-out;
+}
+#img_5:hover .bottom_container{
+    bottom: 0;
+    transform:rotateY(0deg);
+    transition: all 0.35s ease-in-out;
+}
+#img_6:hover .top_container{
+    top: 0;
+    transform:rotateY(0deg);
+    transition: all 0.35s ease-in-out;
+}
+#img_6:hover .bottom_container{
+    bottom: 0;
+    transform:rotateY(0deg);
+    transition: all 0.35s ease-in-out;
+}
+.scale1{
+    height: 450px;
+    width: 500px;
+    display: none; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 210px;
+    left: 520px;
+    animation: scale 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes scale{
+    from{transform: scale(0);}
+    to{transform: scale(1);}
+  }
+.show1{
+    background-image: url(./images/img_1.avif); 
+}
+.material-symbols-outlined{
+    right: 0;
+    position: absolute;
+    background-color: #fff;
+    color:black;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+.show2{
+    background-image: url(./images/img_2.avif); 
+}
+.show3{
+    background-image: url(./images/img_3.avif); 
+}
+.show4{
+    background-image: url(./images/img_4.avif); 
+}
+.show5{
+    background-image: url(./images/img_5.avif); 
+}
+.show6{
+    background-image: url(./images/img_6.avif); 
+}
+
+
+
