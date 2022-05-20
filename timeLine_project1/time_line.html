@@ -26,16 +26,16 @@
                 </div>
                 <div class="bottom_heading">
                     <div class="allTaskbtn">
-                        <span class="material-symbols-outlined" id="circleIcon" onclick="display1()">
+                        <span class="material-symbols-outlined" id="circleIcon" onclick="display1('1')">
                             check_circle
                             </span>
-                            <span class="material-symbols-outlined" id="alarmIcon"onclick="display2()" >
+                            <span class="material-symbols-outlined" id="alarmIcon"onclick="display1('2')" >
                                 alarm
                                 </span>
-                            <span class="material-symbols-outlined" id="favoriteIcon" onclick="display3()">
+                            <span class="material-symbols-outlined" id="favoriteIcon" onclick="display1('3')">
                                 favorite
                                 </span>
-                                <span class="material-symbols-outlined" id="gardeIcon" onclick="display4()">
+                                <span class="material-symbols-outlined" id="gardeIcon" onclick="display1('4')">
                                     grade
                                     </span>
                     </div>
@@ -64,7 +64,7 @@
                         <p class="para">MAY 20,2022</p>
                     </div>
                     <div class="content">
-                        <div class="task1">
+                        <div id="task1">
                             <div class="task01">
                                 <div class="content1">
                                     <span class="task_title">Make New Icon</span>
@@ -84,7 +84,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="task2">
+                        <div id="task2">
                             <div class="task01">
                                 <div class="content1">
                                     <span class="task_title">Design Explorations</span>
@@ -95,7 +95,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="task3">
+                        <div id="task3">
                             <div class="task01">
                                 <div class="content1">
                                     <span class="task_title">New Projects</span>
@@ -124,7 +124,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="task4">
+                        <div id="task4">
                             <div class="task01">
                                 <div class="content1">
                                     <span class="task_title">Team Meeting</span>
@@ -150,35 +150,12 @@
             document.getElementById("listIcon").style.display="flex";
             document.querySelector(".allTaskbtn").style.display="none";
         }
-        function display1(){
-            document.querySelector(".task1").style.display="block";
-            document.querySelector(".task2").style.display="none";
-            document.querySelector(".task3").style.display="none";
-            document.querySelector(".task4").style.display="none";
-            document.querySelector(".allTaskbtn").style.display="none";
-            document.getElementById("listIcon").style.display="flex";
-        }
-        function display2(){
-            document.querySelector(".task1").style.display="none";
-            document.querySelector(".task2").style.display="block";
-            document.querySelector(".task3").style.display="none";
-            document.querySelector(".task4").style.display="none";
-            document.querySelector(".allTaskbtn").style.display="none";
-            document.getElementById("listIcon").style.display="flex";
-        }
-        function display3(){
-            document.querySelector(".task1").style.display="none";
-            document.querySelector(".task2").style.display="none";
-            document.querySelector(".task3").style.display="block";
-            document.querySelector(".task4").style.display="none";
-            document.querySelector(".allTaskbtn").style.display="none";
-            document.getElementById("listIcon").style.display="flex";
-        }
-        function display4(){
-            document.querySelector(".task1").style.display="none";
-            document.querySelector(".task2").style.display="none";
-            document.querySelector(".task3").style.display="none";
-            document.querySelector(".task4").style.display="block";
+        function display1(num){
+            document.getElementById("task1").style.display="none";
+            document.getElementById("task2").style.display="none";
+            document.getElementById("task3").style.display="none";
+            document.getElementById("task4").style.display="none";
+            document.getElementById('task'+num).style.display='block'
             document.querySelector(".allTaskbtn").style.display="none";
             document.getElementById("listIcon").style.display="flex";
         }
