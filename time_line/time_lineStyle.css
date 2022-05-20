@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.overlay{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(./images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main_container{
+    height: 550px;
+    width: 330px;
+    background-color: #fff;
+    overflow: hidden;
+}
+.bg_img{
+    background-image: url(./images/header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+/* .bgcolor{
+     background: rgba(71, 32, 84, 0.5); 
+    opacity: 0.5; 
+} */
+.top_heading{
+    display: flex;
+    padding: 20px;
+    background: rgba(71, 32, 84, 0.5); 
+    
+}
+.menu_icon1{
+    display: flex;
+    width: 32%;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu_icon2{
+    display: flex;
+    width: 68%;
+    align-items: center;
+    justify-content: flex-end;
+}
+.material-symbols-outlined{
+    color: #fff;
+    font-size: 20px;
+}
+.text{
+    color: #fff;
+}
+.bottom_heading{
+    display: flex;
+    align-items: center;
+    padding:40px 20px 70px 20px ;
+    background: rgba(71, 32, 84, 0.5); 
+    height: 170px;
+    position: relative;
+}
+.image{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-image: url(./images/ntsXEB2r_400x400.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.title{
+    padding-left:15px;
+    color: #fff;
+}
+.title>p{
+    font-size: 11px;
+    padding-top: 5px;
+}
+.skewDiv{
+    width: 100%;
+    background-color: #fff;
+    transform: skewY(8deg);
+    margin-left: 0px;
+    margin-top: -31px;
+    display: flex;
+}
+.toggle_btn1{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #DE3963;
+    position: absolute;
+    bottom: -7px;
+    right: 20px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.allTaskbtn{
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    position: absolute;
+    right: -40px;
+    bottom: -80px;
+    z-index: 1;
+    /* transition: all 0.5s ease-in-out 0s; */
+    background-color: #FA396B;
+    display: none;
+    animation: scale 0.5s;
+    animation-fill-mode:both;
+
+}
+@keyframes scale{
+    from{transform: scale(0);}
+    to{transform: scale(1);}
+  }
+#gardeIcon{
+    position: absolute;
+    bottom: 16px;
+    right: 67px;
+}
+#favoriteIcon{
+    position: absolute;
+    bottom: 50px;
+    left: 22px;
+}
+#alarmIcon{
+    position: absolute;
+    top: 35px;
+    left: 25px;
+}
+#circleIcon{
+    position: absolute;
+    top: 8px;
+    left: 80px;
+}
+/* #circleIcon{
+    bottom: 63px;
+    position: absolute;
+    transition:all 0.5s ease-in-out 0s ;
+} */
+.line{
+    width: 30px;
+    margin-right: 8px;
+    height: 370px;
+    border-right: 1px solid #e4dddd;
+}
+.headingDiv{
+    padding: 20px 20px 35px 0;
+    transform: skewY(-8deg);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.para{
+    color: #888;
+    font-size: 10px;
+    padding-top: 5px;
+}
+.box1{
+    width: 100%;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.content{
+    transform: skewY(-8deg);
+}
+.task1{
+    display:flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+.task01{
+    display: flex;
+    padding: 5px 5px 5px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+.task_title{
+    font-size: 13px;
+}
+.task_subtitle{
+    font-size: 10px;
+    color: #888;
+}
+.content1{
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+.material-symbols-outlined{
+    cursor: pointer;
+}
+.content2{
+    padding: 10px;
+}
+.task2{
+    display:none;
+    flex-direction: column;
+    gap: 15px;
+}
+.task3{
+    display:none;
+    flex-direction: column;
+    gap: 15px;
+}
+.task4{
+    display:none;
+    flex-direction: column;
+    gap: 15px;
+}
+.line:before {
+    content: "";
+    background: #DE3963;
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius:50%;
+    position: absolute;
+    top: 130px;
+    left: 23px;
+  }
