@@ -1,0 +1,144 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    gap: 35px;
+    background-image: url(./images/Slide\ 16_9\ -\ 2\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.link{
+    display: flex;
+    gap: 20px;
+   
+}
+button{
+    background-color: #623cea;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 18%);
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.employee_container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 20px;
+}
+
+.box_rotate{
+    transform: rotateY(180deg);
+    transition-duration: 1s;
+}
+.box_rotate1{
+    transform: rotateY(0deg);
+    transition-duration: 1s;
+}
+.employee_photo{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 25px;
+}
+#photo1{
+    background-image: url(./images/57.jpg);
+}
+#photo2{
+    background-image: url(./images/60.jpg);
+}
+#photo3{
+    background-image: url(./images/45.jpg);
+}
+#photo4{
+    background-image: url(./images/17.jpg);
+}
+#photo5{
+    background-image: url(./images/52.jpg);
+}
+#photo6{
+    background-image: url(./images/91.jpg);
+}
+#photo7{
+    background-image: url(./images/23.jpg);
+}
+#photo8{
+    background-image: url(./images/77.jpg);
+}
+#photo9{
+    background-image: url(./images/9.jpg);
+}
+.employee_title{
+    padding: 20px;
+}
+.content{
+    display:none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    height: 250px;
+    padding: 20px;
+    font-size: 14px;
+    color:#777777 ;
+    position: absolute;
+    top: 0;
+}
+.innerBox{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    
+}
+.box{
+    display: flex;
+    gap: 10px;
+}
+.flip_card:hover{
+    transform: rotateY(180deg);  
+}
+.flip_card:hover > .innerBox{
+    display: none;
+  
+}
+.flip_card:hover > .content{
+    display:flex;
+    transform:rotateY(180deg);
+    
+}
+.innerBox, .content{
+   width: 100%;
+   height: 100%;
+ 
+   
+}
+.Front-EndDeveloper,.Back-EndDeveloper,.ProjectManager{
+    height: 250px;
+    width: 290px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:start;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
+    color: black;
+    border-radius: 10px;
+    cursor: pointer;
+    transition:1s ease all;
+    position: relative;
+    background: #fff;
+}
+
+
