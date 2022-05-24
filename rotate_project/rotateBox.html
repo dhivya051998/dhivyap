@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" type="text/css" href="rotateStyle.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="link">
+            <button onclick="displayAll()">All Staff</button>
+            <button onclick="showEmployees('Front-EndDeveloper')">Front-End Developers</button>
+            <button onclick="showEmployees('Back-EndDeveloper')">Back-End Developers</button>
+            <button onclick="showEmployees('ProjectManager')">Project Managers</button>
+        </div>
+        <div class="employee_container">
+            <div class="flip_card Front-EndDeveloper">
+                <div class="innerBox">
+                    <div class="employee_photo" id="photo1"></div>
+                    <h3 class="employee_title">Storm Johansen</h3>
+                    <p class="employee_description">Front-End Developer</p>
+                </div>
+                <div class="content">
+                    <div class="box">
+                        <span class="material-symbols-outlined">
+                            mail
+                        </span>
+                        <div class="mail">storm.johansen@example.com</div>
+
+                    </div>
+                    <div class="box">
+                        <span class="material-symbols-outlined">
+                            add_location
+                        </span>
+                        <div class="location">Denmark</div>
+
+                    </div>
+                    <div class="box">
+                        <span class="material-symbols-outlined">
+                            call
+                        </span>
+                        <div class="number">08649722</div>
+                    </div>
+                </div>
+            </div>
+            <div class="flip_card Front-EndDeveloper">
+                <div class="innerBox">
+                    <div class="employee_photo" id="photo2"></div>
+                    <h3 class="employee_title">Dan Fernandez</h3>
+                    <p class="employee_description">Front-End Developer</p>
+                </div>
+                <div class="content">
+                    <div class="box">
+                        <span class="material-symbols-outlined">
+                            mail
+                        </span>
+                        <div class="mail">dan.fernandez@example.com</div>
+
+                    </div>
+                    <div class="box">
+                        <span class="material-symbols-outlined">
+                            add_location
+                        </span>
+                        <div class="location">United Kingdom</div>
+
+                    </div>
+                    <div class="box">
+                        <span class="material-symbols-outlined">
+                            call
+                        </span>
+                        <div class="number">0787-510-735</div>
+                    </div>
+                </div>
+            </div>
+            <div class="flip_card Back-EndDeveloper">
+                <div class="innerBox">
+                    <div class="employee_photo" id="photo3"></div>
+                    <h3 class="employee_title">Nurdan Çevik</h3>
+                    <p class="employee_description">Back-End Developer</p>
+                </div>
+                <div class="content">
+                    <div class="box">
+                        <span class="material-symbols-outlined">
+                            mail
+                        </span>
+                        <div class="mail">nurdan.cevik@example.com</div>
+
+                    </div>
+                    <div class="box">
+                        <span class="material-symbols-outlined">
+                            add_location
+                        </span>
+                        <div class="location">Turkey</div>
+
+                    </div>
+                    <div class="box">
+                        <span class="material-symbols-outlined">
+                            call
+                        </span>
+                        <div class="number">(641)-992-6553</div>
+                    </div>
+                </div>
+            </div>
+            <div class="flip_card ProjectManager">
+                <div class="innerBox">
+                    <div class="employee_photo" id="photo4"></div>
+                    <h3 class="employee_title">Christine Kverneland</h3>
+                    <p class="employee_description">Project Manager</p>
+                </div>
+                <div class="content">
+                    <div class="box">
+                        <span class="material-symbols-outlined">
+                            mail
+                        </span>
+                        <div class="mail">christine.kverneland@example.com</div>
+
+                    </div>
+                    <div class="box">
+                        <span class="material-symbols-outlined">
+                            add_location
+                        </span>
+                        <div class="location">Norway</div>
+
+                    </div>
+                    <div class="box">
+                        <span class="material-symbols-outlined">
+                            call
+                        </span>
+                        <div class="number">92465761</div>
+                    </div>
+                </div>
+            </div>
+            <div class="flip_card Front-EndDeveloper">
+                <div class="innerBox">
+                    <div class="employee_photo" id="photo5"></div>
+                    <h3 class="employee_title">Hans-Theo Weißmann</h3>
+                    <p class="employee_description">Front-End Developer</p>
+                </div>
+                <div class="content">
+                    <div class="box">
+                        <span class="material-symbols-outlined">
+                            mail
+                        </span>
+                        <div class="mail">hans-theo.weissmann@example.com</div>
+
+                    </div>
+                    <div class="box">
+                        <span class="material-symbols-outlined">
+                            add_location
+                        </span>
+                        <div class="location">Germany</div>
+
+                    </div>
+                    <div class="box">
+                        <span class="material-symbols-outlined">
+                            call
+                        </span>
+                        <div class="number">0179-4233048</div>
+                    </div>
+                </div>
+            </div>
+            <div class="flip_card Back-EndDeveloper">
+                <div class="innerBox">
+                    <div class="employee_photo" id="photo6"></div>
+                    <h3 class="employee_title">Barb Snyder</h3>
+                    <p class="employee_description">Back-End Developer</p>
+                </div>
+                <div class="content">
+                    <div class="box">
+                        <span class="material-symbols-outlined">
+                            mail
+                        </span>
+                        <div class="mail">barb.snyder@example.com</div>
+
+                    </div>
+                    <div class="box">
+                        <span class="material-symbols-outlined">
+                            add_location
+                        </span>
+                        <div class="location">Ireland</div>
+
+                    </div>
+                    <div class="box">
+                        <span class="material-symbols-outlined">
+                            call
+                        </span>
+                        <div class="number">081-497-3988</div>
+                    </div>
+                </div>
+            </div>
+            <div class="flip_card ProjectManager">
+                <div class="innerBox">
+                    <div class="employee_photo" id="photo7"></div>
+                    <h3 class="employee_title">Christian Pedersen</h3>
+                    <p class="employee_description">Project Manager</p>
+                </div>
+                <div class="content">
+                    <div class="box">
+                        <span class="material-symbols-outlined">
+                            mail
+                        </span>
+                        <div class="mail">christian.pedersen@example.com</div>
+
+                    </div>
+                    <div class="box">
+                        <span class="material-symbols-outlined">
+                            add_location
+                        </span>
+                        <div class="location">Denmark</div>
+
+                    </div>
+                    <div class="box">
+                        <span class="material-symbols-outlined">
+                            call
+                        </span>
+                        <div class="number">01972201</div>
+                    </div>
+                </div>
+            </div>
+            <div class="flip_card Back-EndDeveloper">
+                <div class="innerBox">
+                    <div class="employee_photo" id="photo8"></div>
+                    <h3 class="employee_title">Osman Scheurer</h3>
+                    <p class="employee_description">Back-End Developer</p>
+                </div>
+                <div class="content">
+                    <div class="box">
+                        <span class="material-symbols-outlined">
+                            mail
+                        </span>
+                        <div class="mail">osman.scheurer@example.com</div>
+
+                    </div>
+                    <div class="box">
+                        <span class="material-symbols-outlined">
+                            add_location
+                        </span>
+                        <div class="location">Germany</div>
+
+                    </div>
+                    <div class="box">
+                        <span class="material-symbols-outlined">
+                            call
+                        </span>
+                        <div class="number">
+                            0178-6606652</div>
+                    </div>
+                </div>
+            </div>
+            <div class="flip_card ProjectManager">
+                <div class="innerBox">
+                    <div class="employee_photo" id="photo9"></div>
+                    <h3 class="employee_title">Simon Madsen</h3>
+                    <p class="employee_description">Project Manager</p>
+                </div>
+                <div class="content">
+                    <div class="box">
+                        <span class="material-symbols-outlined">
+                            mail
+                        </span>
+                        <div class="mail">simon.madsen@example.com</div>
+
+                    </div>
+                    <div class="box">
+                        <span class="material-symbols-outlined">
+                            add_location
+                        </span>
+                        <div class="location">Denmark</div>
+
+                    </div>
+                    <div class="box">
+                        <span class="material-symbols-outlined">
+                            call
+                        </span>
+                        <div class="number">
+                            36207387</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function showEmployees(ele){
+            var element = document.querySelectorAll(".Front-EndDeveloper,.Back-EndDeveloper,.ProjectManager");
+            element.forEach(box => {
+                box.style.display="none";
+                var x = document.querySelectorAll("." + ele);
+                x.forEach(y=>{
+                    y.style.display ="flex";
+                }) 
+            });
+        }
+        function displayAll(){
+            var element = document.querySelectorAll(".Front-EndDeveloper,.Back-EndDeveloper,.ProjectManager");
+            element.forEach(box => {
+                box.style.display="flex";
+            })
+        }
+    </script>
+</body>
+
+</html>
