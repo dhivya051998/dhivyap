@@ -13,7 +13,7 @@
     <title>Document</title>
 </head>
 
-<body >
+<body onload="darkTheme()" >
     <div class="container">
         <div class="mainDiv">
             <div class="menu" onclick="resize()">
@@ -91,6 +91,9 @@
     <script>
         function resize() {
             document.querySelector(".mainDiv").classList.toggle("sizeBox");
+        }
+        function darkTheme() {
+            document.querySelector("#dark_mode").setAttribute("disabled", true);
         }
         function myFun() {
             document.querySelector("#dark_mode").removeAttribute("disabled");
