@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: #eeeeee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mainDiv{
+    height: 550px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0px 6px 10px rgb(0 0 0 / 25%);
+    border-radius:10px ;
+}
+.header{
+    height: 100px;
+    background-color: #184245;
+    display: flex;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+}
+.material-symbols-outlined{
+    font-size: 26px !important
+    
+}
+.title{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    
+}
+.title >p{
+    font-size: 25px;
+    font-weight: 600;
+}
+.name{
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+}
+.icon{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.iconColor{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    padding-top: 10px;  
+    font-size: 20px;  
+}
+.iconColor1{
+    color: #ff591b ;
+}
+.iconColor2{
+    color: #007380;
+}
+.name1{
+    font-size: 25px;
+    font-weight: 400px;
+}
+.gameType{
+    height: 320px;
+    width: 100%;
+    background-color: #f3f3f3;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+}
+.scrollDiv{
+    height: 200px;
+    width:100%;
+    white-space: nowrap;
+    display: flex;
+    overflow-x:auto;
+    align-items: center;
+}
+.active{
+    padding: 15px;
+    margin-right: 10px;
+    border-radius: 20px;
+    min-height: 150px;
+    min-width: 150px;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 10px rgb(0 0 0 / 5%);
+    transition: all 0.3s;
+   
+}
+.active:hover{
+    box-shadow: 0px 5px 10px rgb(0 0 0 / 10%);
+    transform: scale(1.02);
+}
+.gameImg{
+    height: 50px;
+    width: 50px;
+    border: 3px solid #e8e8e8;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.text1{
+    font-size: 10px;
+}
+.text2{
+    padding: 10px;
+    padding-left:0;
+    font-size: 20px;
+    font-weight: 700;
+}
+#img1{
+    background-image: url(./images/chess.webp);
+}
+#img2{
+    background-image: url(./images/checkers.jpg);
+}
+#img3{
+    background-image: url(./images/dominos.jpg);
+}
+#img4{
+    background-image: url(./images/go.webp);
+}
+#close_btn{
+    display: none;
+    position: absolute;
+    color: #fff;
+    top: -60px;
+    right: 20px;
+    cursor: pointer;
+    
+}
+#menu_btn{
+    cursor: pointer;
+}
+.profile{
+    height: 460px;
+    width:100%;
+    border-radius: 0 0 10px 10px;
+    background-color: #184245;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display:none;
+    flex-direction: column;
+    
+}
+.profile > a{
+    color: #fff;
+    text-decoration: none;
+    margin: 16px 0px;
+    transition: all 0.2s;
+    font-size: 20px;
+    padding-left: 20px;
+}
+a:hover{
+    color: #86bbbf;
+}
