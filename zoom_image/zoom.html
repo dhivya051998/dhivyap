@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="zoomStyle.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="box">
+        <div class="profileDiv">
+           <div class="parentDiv">
+            <div class="icon" id="less" onclick="decrease()">
+                <span class="material-symbols-outlined">
+                    remove
+                </span>
+            </div>
+            <div class="icon" id="add" onclick="increase()">
+                <span class="material-symbols-outlined">
+                    add
+                </span>
+            </div>
+
+           </div>
+            <div class="picture"></div>
+            <div class="text">
+                <p id="fsize1">FELIX LEE <span id="fsize2">@im_felix</span></p>
+                <p>Thanks to <span id="fsize2">@dev_coffee</span> for the <span id="fsize2"> react tutorial.</span></p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function increase() {
+            var content = document.querySelector(".picture");
+                var width1 = content.offsetWidth;
+                content.style.width = (width1 + 20) + "px";
+                content.style.height = (width1 + 20) + "px";
+        }
+        function decrease(){
+            var content = document.querySelector(".picture");
+                var width1 = content.offsetWidth;
+                content.style.width = (width1 - 20) + "px";
+                content.style.height = (width1 - 20) + "px";
+        }
+    </script>
+</body>
+
+</html>
