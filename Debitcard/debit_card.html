@@ -39,7 +39,7 @@
             <div class="empty"></div>
             <div class="card_input">
                 <label class="text_label">Card Number</label><br>
-                <input type="number" min="1" maxlength="16" id="card_num" class="input" onkeyup="getValue()"
+                <input type="number"  id="card_num" class="input"  onkeyup="getValue()"
                     onfocus="focusNumber()" onmouseout="mouseoutFunction()">
             </div>
             <div class="card_input">
@@ -100,18 +100,18 @@
     <script>
         function getValue() {
             var inputVal = document.getElementById("card_num").value;
-            if(inputVal.length<=16){
-            var final = "  ";
-            for (var i = 0; i < inputVal.length; i++) {
-                if (i % 4 === 0) {
-                    final += "   " + inputVal[i];
+            if (inputVal.length <= 16) {
+                var final = "  ";
+                for (var i = 0; i < inputVal.length; i++) {
+                    if (i % 4 === 0) {
+                        final += "   " + inputVal[i]; 
+                    }
+                    else {
+                        final += inputVal[i];
+                    }
                 }
-                else {
-                    final += inputVal[i];
-                }
+                document.querySelector(".card_number").innerHTML = final;
             }
-            document.querySelector(".card_number").innerHTML = final;
-        }
         }
         function getValue1() {
             var inputVal1 = document.getElementById("card_text").value;
@@ -126,7 +126,7 @@
         function getcvvValue() {
             var whiteCard = document.querySelector('.newDiv2');
             var val = document.querySelector(".num").value;
-            for (var i = 1; i <=val.length; i++) {
+            for (var i = 1; i <= val.length; i++) {
                 var starVal = "* ".repeat(i);
             }
             whiteCard.innerText = starVal;
@@ -189,8 +189,33 @@
             element1.parentNode.removeChild(element1);
 
         }
+        function empty() {
+            document.querySelector("#card_num").value = "";
+            document.querySelector("#card_text").value = "";
+            document.querySelector("#selectDate").value = "Month";
+            document.querySelector("#model").value= "Year";
+            document.querySelector(".num").value = "";
+            document.querySelector(".card_number").innerText="#### #### #### ####";
+            document.querySelector(".name").innerText="FULL NAME";
+            document.querySelector(".date").innerText="MM";
+            document.querySelector(".year").innerText="YY";
+            document.querySelector(".newDiv3").innerText="";
+
+        }
         function createCard() {
-            display();
+           
+            var num = document.querySelector("#card_num").value; 
+            var name = document.querySelector("#card_text").value;
+            var month = document.querySelector("#selectDate").value;
+            var year = document.querySelector("#model").value;
+            var cvvNum = document.querySelector(".num").value;
+            // debugger;
+            if (num == " " || name == " " || month == "Month" || year == "Year" || cvvNum == " ") {
+                alert("please fill the field");
+            }else{
+                alert("create debit card successfully");
+                empty();
+            }
         }
     </script>
 
