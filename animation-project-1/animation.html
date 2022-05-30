@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="animation-style.css">
-    <title>Document</title>
+    <title>Navigation</title>
 </head>
 <body>
-   <div class="container">
+    <div class="container">
         <div class="m-content" id="leases">
             <div class="mm">
                 
@@ -19,7 +19,7 @@
            <div class="a" id="z-2" onclick="myFunction()"></div>
            <div class="a" id="z-3" onclick="myFunction()"></div>
            <div class="nav-2" id="field-10">
-            <span class="material-icons" style="display: flex; justify-content: flex-end;  onclick="close_btn()"">
+            <span class="material-icons" style="display: flex; justify-content: flex-end;" onclick="close_btn()">
                 close
                 </span>
            </div>
@@ -167,8 +167,8 @@
            <div class="a" id="z-2" onclick="myFunction()"></div>
            <div class="a" id="z-3" onclick="myFunction()"></div>
           
-            <div class="nav-2" id="field-10">
-                <span class="material-icons" style="display: flex; justify-content: flex-end;">
+            <div class="nav-2" id="field-10" >
+                <span class="material-icons" style="display: flex; justify-content: flex-end;" >
                     close
                     </span>
                </div>
@@ -322,27 +322,22 @@
             document.getElementById("field-1").style.display = "block";
             document.getElementById("field-4").style.display = "block";
             document.getElementById("field-10").style.display = "block";
-            document.getElementById("ans").style.display = "none";
-           
-            
+            document.getElementById("ans").style.display = "none";     
 
         }
         function front(){
             document.getElementById("like").style.display = "block";
             document.getElementById("leases").style.display = "none";
-            
-
+        
         }
 
         function back(){
             document.getElementById("like").style.display = "none";
             document.getElementById("leases").style.display = "block";
            
-            
-            
-
         }
-      function close_btn(){
+        
+        function close_btn(){
             document.getElementById("field-4").style.display = "none";
             document.getElementById("field-1").style.display = "none";
             document.getElementById("field-10").style.display = "none";
@@ -351,7 +346,6 @@
         
        
     </script>
-    
     
 </body>
 </html>
