@@ -19,7 +19,7 @@
            <div class="a" id="z-2" onclick="myFunction()"></div>
            <div class="a" id="z-3" onclick="myFunction()"></div>
            <div class="nav-2" id="field-10">
-            <span class="material-icons" style="display: flex; justify-content: flex-end;">
+            <span class="material-icons" style="display: flex; justify-content: flex-end;  onclick="close_btn()"">
                 close
                 </span>
            </div>
@@ -342,13 +342,12 @@
             
 
         }
-        // function close(){
-        //     alert("hi");
-        //     document.getElementById("field-1").style.display = "none";
-        //     document.getElementById("field-4").style.display = "none";
-        //     document.getElementById("field-10").style.display = "none";
+      function close_btn(){
+            document.getElementById("field-4").style.display = "none";
+            document.getElementById("field-1").style.display = "none";
+            document.getElementById("field-10").style.display = "none";
            
-        // }
+        }
         
        
     </script>
