@@ -127,12 +127,12 @@ button:hover{
     bottom:-154px;
     background-color: #fff;
 }
-#img_1:hover .top_container{
+.item:hover .top_container{
     top: 0;
     transform:rotateY(0deg);
     transition: all 0.35s ease-in-out;
 }
-#img_1:hover .bottom_container{
+.item:hover .bottom_container{
     bottom: 0;
     transform:rotateY(0deg);
     transition: all 0.35s ease-in-out;
@@ -141,56 +141,6 @@ button:hover{
     padding-top: 20px;
     font-size: 18px;
     color:#01A2AC;
-}
-#img_2:hover .top_container{
-    top: 0;
-    transform:rotateY(0deg);
-    transition: all 0.35s ease-in-out;
-}
-#img_2:hover .bottom_container{
-    bottom: 0;
-    transform:rotateY(0deg);
-    transition: all 0.35s ease-in-out;
-}
-#img_3:hover .top_container{
-    top: 0;
-    transform:rotateY(0deg);
-    transition: all 0.35s ease-in-out;
-}
-#img_3:hover .bottom_container{
-    bottom: 0;
-    transform:rotateY(0deg);
-    transition: all 0.35s ease-in-out;
-}
-#img_4:hover .top_container{
-    top: 0;
-    transform:rotateY(0deg);
-    transition: all 0.35s ease-in-out;
-}
-#img_4:hover .bottom_container{
-    bottom: 0;
-    transform:rotateY(0deg);
-    transition: all 0.35s ease-in-out;
-}
-#img_5:hover .top_container{
-    top: 0;
-    transform:rotateY(0deg);
-    transition: all 0.35s ease-in-out;
-}
-#img_5:hover .bottom_container{
-    bottom: 0;
-    transform:rotateY(0deg);
-    transition: all 0.35s ease-in-out;
-}
-#img_6:hover .top_container{
-    top: 0;
-    transform:rotateY(0deg);
-    transition: all 0.35s ease-in-out;
-}
-#img_6:hover .bottom_container{
-    bottom: 0;
-    transform:rotateY(0deg);
-    transition: all 0.35s ease-in-out;
 }
 .scale1{
     height: 450px;
