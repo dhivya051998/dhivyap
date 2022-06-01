@@ -72,20 +72,18 @@
                 btn1.innerText = "Edit";
                 btn1.className = "editBtn";
                 createDiv.appendChild(btn1);
-                btn1.addEventListener("click", function () {
-                    document.querySelector(".text1").value = text1.innerText;
-                    document.querySelector(".text2").value = text2.innerText;
-                    let removeElement = document.querySelector(".emptyBox");
-                    document.querySelector('.output').removeChild(removeElement);
+                btn1.addEventListener("click", function (e) {
+                    document.querySelector(".text1").value = e.target.parentElement.parentElement.children[0].innerText;
+                    document.querySelector(".text2").value = e.target.parentElement.parentElement.children[1].innerText;
+                    e.target.parentElement.parentElement.remove();
                     
                 })
                 var btn2 = document.createElement("button");
                 btn2.innerText = "Delete";
                 btn2.className = "delBtn";
                 createDiv.appendChild(btn2);
-                btn2.addEventListener("click", function () {
-                     let removeElement = document.querySelector(".emptyBox");
-                     document.querySelector('.output').removeChild(removeElement);
+                btn2.addEventListener("click", function (e) {
+                     e.target.parentElement.parentElement.remove(); 
                 })
                 var x = document.querySelector(".output");
                 x.appendChild(card);
