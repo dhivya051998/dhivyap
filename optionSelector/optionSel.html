@@ -18,39 +18,39 @@
                 <input type="checkbox" onclick="display(this)" class="selectHover">
                 <button id="select">Select All</button>
             </div>
-            <div class="subContent">
+            <div class="subContent" onclick="getValue(event)">
                 <div class="title">
                     <p>Selection</p>
                     <p>Item Name</p>
                     <p>Item Price</p>
                 </div>
                 <div class="title">
-                    <input type="checkbox" class="productName1" onclick="getValue(this)" value="1000.87">
+                    <input type="checkbox" class="productName1"  value="1000.87">
                     <div>Eclair</div>
                     <label for="productName1" id="labelVal1">1000.87</label>
                 </div>
                 <div class="title">
-                    <input type="checkbox" class="productName1" onclick="getValue(this)" value="30.76">
+                    <input type="checkbox" class="productName1"  value="30.76">
                     <div>Jellybean</div>
                     <label for="productName2" id="labelVal2">30.76</label>
                 </div>
                 <div class="title">
-                    <input type="checkbox" class="productName1" onclick="getValue(this)" value="7.00">
+                    <input type="checkbox" class="productName1"  value="7.00">
                     <div>Lollipop</div>
                     <label for="productName3" id="labelVal3">7.00</label>
                 </div>
                 <div class="title">
-                    <input type="checkbox" class="productName1" onclick="getValue(this)" value="10.00">
+                    <input type="checkbox" class="productName1"  value="10.00">
                     <div>KitKat</div>
                     <label for="productName4" id="labelVal4">10.00</label>
                 </div>
                 <div class="title">
-                    <input type="checkbox" class="productName1" onclick="getValue(this)" value="-7.00">
+                    <input type="checkbox" class="productName1"  value="-7.00">
                     <div>Coupon</div>
                     <label for="productName5" id="labelVal5">-7.00</label>
                 </div>
                 <div class="title">
-                    <input type="checkbox" class="productName1" onclick="getValue(this)" value="-5.00">
+                    <input type="checkbox" class="productName1"  value="-5.00">
                     <div>Discount</div>
                     <label for="productName5" id="labelVal6">-5.00</label>
                 </div>
@@ -61,11 +61,13 @@
     </div>
     <script>
         function getValue(e) {
-            var x = e;
+            var x = e.target;
+            console.log(x.checked)
             if (x.checked) {
                 document.querySelector(".display").innerHTML = Math.round(Number(document.querySelector(".display").innerHTML) + Number(x.value));
             }
             else {
+                console.log("false");   
                 document.querySelector(".display").innerHTML = Math.round(Number(document.querySelector(".display").innerHTML) - Number(x.value));
             }
 
@@ -78,7 +80,6 @@
                 });
                 array.forEach(ele =>{
                     ele.value;
-                    console.log(ele);
                     document.querySelector(".display").innerHTML =Math.round(Number(document.querySelector(".display").innerHTML) + Number(ele.value));
                 })
             }
