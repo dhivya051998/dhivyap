@@ -205,6 +205,12 @@ a{
 .eff23{
     background-image: url("image/zoom.png"); 
 }
+.eff24{
+    background-image: url("image/redbus.jfif"); 
+}
+.eff25{
+    background-image: url("image/cursorPointer.png"); 
+}
 html, body {
     height: 100%;
   }
@@ -257,6 +263,16 @@ html, body {
     background-color: #01A2AC;
     color: #F5F5F5;
 }
+.child2{
+    height:auto;
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    grid-template-rows: repeat(1,1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    grid-template-areas: "a25 a26 a27";
+    
+ }
 
  @media screen and (max-width:900px) {
      .child1{
@@ -272,7 +288,9 @@ html, body {
                               "a17 a18"
                               "a19 a20"
                               "a21 a22"
-                              "a23";
+                              "a23 a24"
+                              "a25 a26"
+                              "a27";
         margin-left: 20px;
      }
      
@@ -301,7 +319,11 @@ html, body {
                               "a20"
                               "a21"
                               "a22"
-                              "a23";
+                              "a23"
+                              "a24"
+                              "a25"
+                              "a26"
+                              "a27";
  
      }
      .img{
