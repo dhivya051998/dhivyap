@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    height: 720px;
+    width: 100%;
+    background-color: blanchedalmond;
+    position: relative;
+    
+}
+.box{
+    height: 100px;
+    width: 600px;
+    display: flex;
+    margin-left: 500px;
+    background-color:burlywood;
+    margin-top: 10%;
+    
+}
+.box1{
+    height: 40px;
+    width: 60px;
+    margin-top: -40px;
+    margin-left: -30px;
+    position: absolute;
+    text-align: center;
+    background-color: #995879;
+    color: white;
+    border-radius: 5px;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box2{
+    height: 100px;
+    background-color: red;
+    width: 2px;
+    position: absolute;
+
+}
+.createDiv1{
+    height: 100px;
+    width: 1px;
+    background-color: blue;
+    position: absolute;
+    left: 0px; 
+    top: 276px; 
+   
+}
+#remove1{
+    display: none;
+}
+.createDiv2{
+    height: 40px;
+    width: 60px;
+    position: absolute;
+    margin-left: -28px;
+    background-color: #995879;
+    color: white;
+    text-align: center;
+    pointer-events: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+#remove2{
+    display: none;
+}
+#time{
+    padding: 15px;
+    margin-left: 500px;
+    margin-top: 5%;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+.change{
+    background-color: red;
+}
+button{
+    padding: 13px;
+    margin-left: 20px;
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+
