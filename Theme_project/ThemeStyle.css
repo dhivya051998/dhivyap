@@ -4,6 +4,27 @@
     box-sizing: border-box;
     color: var(--text-color);
 }
+body{
+     --container-color: #f5f4fd;
+  --main-div: #fff;
+  --border-top: #f9f8fb;
+  --bg-color: #f5f4fd;
+  --text-color: black;
+  --theme-color: #fff;
+  --hover-color: #f9f8fb;
+  --circle-color: #251d33;
+}
+.dark {
+  --container-color: #00071d;
+  --main-div: #131c31;
+  --border-top: #1c2339;
+  --bg-color: #00071d;
+  --text-color: #fff;
+  --theme-color: #131c31;
+  --hover-color: #1c2339;
+  --circle-color: #36415e;
+}
+
 .container{
     width: 100vw;
     height: 100vh;
@@ -134,69 +155,92 @@
     background-color:var(--bg-color);
 }
 #move1 {
-    position: relative; 
-    right: 0;
-    top: 0;
-    animation: 0.25s ease-in-out 1 alternate View;
+  position: relative;
+  animation: 0.25s ease-in-out 1 alternate View;
+}
+
+@keyframes View {
+  from {
+    right: 150px;
   }
-  
-  @keyframes View {
-    from { right:150px; top:0px;}
-    to   { right:0px; top:0px;}
-    
+
+  to {
+    right: 0px;
   }
-  #move2 {
-    position: relative; 
-    right: 0;
-    top: 0;
-    animation: 0.50s ease-in-out 1 alternate View;
+
+}
+
+#move2 {
+  position: relative;
+  animation: 0.50s ease-in-out 1 alternate View;
+}
+
+@keyframes View {
+  from {
+    right: 150px;
   }
-  
-  @keyframes View {
-    from { right:150px; top:0px;}
-    to   { right:0px; top:0px;}
+
+  to {
+    right: 0px;
   }
-  #move3 {
-    position: relative; 
-    right: 0;
-    top: 0;
-    animation: 0.75s ease-in-out 1 alternate View;
+}
+
+#move3 {
+  position: relative;
+  animation: 0.75s ease-in-out 1 alternate View;
+}
+
+@keyframes View {
+  from {
+    right: 120px;
   }
-  
-  @keyframes View {
-    from { right:120px; top:0px;}
-    to   { right:0px; top:0px;}
+
+  to {
+    right: 0px;
   }
-  #move4 {
-    position: relative; 
-    right: 0;
-    top: 0;
-    animation: 1s ease-in-out 1 alternate View;
+}
+
+#move4 {
+  position: relative;
+  animation: 1s ease-in-out 1 alternate View;
+}
+
+@keyframes View {
+  from {
+    right: 90px;
   }
-  
-  @keyframes View{ 
-    from { right:90px; top:0px;}
-    to   { right:0px; top:0px;}
+
+  to {
+    right: 0px;
   }
-  #move5 {
-    position: relative; 
-    right: 0;
-    top: 0;
-    animation: 1.25s ease-in-out 1 alternate View;
+}
+
+#move5 {
+  position: relative;
+  animation: 1.25s ease-in-out 1 alternate View;
+}
+
+@keyframes View {
+  from {
+    right: 60px;
   }
-  
-  @keyframes View {
-    from { right:60px; top:0px;}
-    to   { right:0px; top:0px;}
+
+  to {
+    right: 0px;
   }
-  #move6 {
-    position: relative; 
-    right: 0;
-    top: 0;
-    animation: 1s ease-in-out 1 alternate View;
+}
+
+#move6 {
+  position: relative;
+  animation: 1s ease-in-out 1 alternate View;
+}
+
+@keyframes View {
+  from {
+    right: 30px;
   }
-  
-  @keyframes View {
-    from { right:30px; top:0px;}
-    to   { right:0px; top:0px;}
+
+  to {
+    right: 0px;
   }
+}
