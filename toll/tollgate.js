@@ -16,8 +16,8 @@ var tollbooths = {
         id: "Tb011",
         pairboothId: "Tb012",
         passedvehicles: {
-            "V001": { time: tolltime - (10 * 1000 * 60 * 60) },
-            // "V002": { time: tolltime - (10 * 1000 * 60 * 60) },
+//             "V001": { time: tolltime - (10 * 1000 * 60 * 60) },
+            "V002": { time: tolltime - (10 * 1000 * 60 * 60) },
             // "V003": { time: tolltime - (40 * 1000 * 60 * 60) }, 
         }
 
@@ -26,8 +26,8 @@ var tollbooths = {
         id: "Tb012",
         pairboothId: "Tb011",
         passedvehicles: {
-            "V001": { time: tolltime - (10 * 1000 * 60 * 60) },
-            // "V002": { time: tolltime - (10 * 1000 * 60 * 60) },
+//             "V001": { time: tolltime - (10 * 1000 * 60 * 60) },
+            "V002": { time: tolltime - (10 * 1000 * 60 * 60) },
             // "V003": { time: tolltime - (10 * 1000 * 60 * 60) },
 
         },
