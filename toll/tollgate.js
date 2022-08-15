@@ -34,14 +34,6 @@ var tollbooths = {
 
     }
 }
-// var road = document.querySelector("#first");
-// for(var i=0; i<3; i++){
-//     var element = document.createElement("div");
-//     element.className="car";
-//     road.appendChild(element);
-//     element.setAttribute("onclick", "move(this);");
-// }
-
 function myFunction(tollbooth, vehicle, total) {
     var charges = 0;
     var v = vehicle;
@@ -150,34 +142,3 @@ function move(el) {
     };
 
 };
-
-
-// function move1(element) {
-//     document.querySelector(".toll_road2").appendChild(element);
-//     setTimeout(() => {
-//         element.style.marginTop = '100%';
-//         element.style.transitionDuration = '2s';
-//         element.style.transitionDelay = "1s";
-//     }, 1000);
-//     setTimeout(() => {
-//         var vehicle = element.getAttribute("id");
-//         element.innerText = myFunction("Tb012", vehicle);
-//         element.style.marginTop = "210%";
-//         element.style.transitionDuration = "2s";
-
-//     }, 4000);
-//     setTimeout(() => {
-//         element.style.top = "0%";
-//         document.querySelector(".toll_road3").appendChild(element);
-//     }, 7000);
-//     element.addEventListener("click", newDiv6);
-//     function newDiv6() {
-//         document.querySelector(".toll_road1").appendChild(element);
-//         setTimeout(() => {
-//             element.style.marginTop = "0%";
-//             element.style.marginBottom = "100%";
-//         }, 1000);
-//     }
-
-
-// }
