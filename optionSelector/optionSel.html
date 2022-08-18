@@ -74,7 +74,7 @@
         }
         function display(ele) {
             if (ele.checked) {
-                let array = Array.from(document.querySelectorAll(".productName1"))
+                let array =document.querySelectorAll(".productName1");
                 array.forEach(element => {
                     element.checked = true;
                 });
@@ -84,7 +84,7 @@
                 })
             }
             else{
-                let array = Array.from(document.querySelectorAll(".productName1"))
+                let array =document.querySelectorAll(".productName1");
                 array.forEach(element => {
                     element.checked = false;
                     document.querySelector(".display").innerHTML = 0;
