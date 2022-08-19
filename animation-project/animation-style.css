@@ -120,22 +120,16 @@ body{
     background-image: url(image/images\ \(6\).jfif);
     background-repeat: no-repeat;
     background-size: cover;
-    /* z-index: 3; */
-    /* margin-left: -8px; */
 }
 #z-2{
     background-image: url(image/images\ \(5\).jfif);
     background-repeat: no-repeat;
     background-size: cover;
-    /* z-index: 2; */
-    /* margin-left: -8px; */
 }
 #z-3{
     background-image: url(image/ntsXEB2r_400x400.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    /* z-index: 1; */
-    /* margin-left: -8px; */
 }
 .a:hover{
     opacity: 0.8;
@@ -155,59 +149,49 @@ body{
 }
 #cont-1 {
     position: relative; 
-    left: 0;
-    top: 0;
     animation: 0.25s ease-in-out 1 alternate View;
   }
   
   @keyframes View {
-    from { left:150px; top:0px;}
-    to   { left:0px; top:0px;}
+    from { left:150px;}
+    to   { left:0px;}
     
   }
   #cont-2 {
     position: relative; 
-    left: 0;
-    top: 0;
     animation: 0.50s ease-in-out 1 alternate View;
   }
   
   @keyframes View {
-    from { left:150px; top:0px;}
-    to   { left:0px; top:0px;}
+    from { left:150px;}
+    to   { left:0px;}
   }
   #cont-3 {
     position: relative; 
-    left: 0;
-    top: 0;
     animation: 0.75s ease-in-out 1 alternate View;
   }
   
   @keyframes View {
-    from { left:120px; top:0px;}
-    to   { left:0px; top:0px;}
+    from { left:120px;}
+    to   { left:0px;}
   }
   #cont-4 {
     position: relative; 
-    left: 0;
-    top: 0;
     animation: 1s ease-in-out 1 alternate View;
   }
   
   @keyframes View{ 
-    from { left:90px; top:0px;}
-    to   { left:0px; top:0px;}
+    from { left:90px;}
+    to   { left:0px;}
   }
   #cont-5 {
     position: relative; 
-    left: 0;
-    top: 0;
     animation: 1.25s ease-in-out 1 alternate View;
   }
   
   @keyframes View {
-    from { left:60px; top:0px;}
-    to   { left:0px; top:0px;}
+    from { left:60px;}
+    to   { left:0px;}
   }
 
   
@@ -320,59 +304,49 @@ body{
 
 #move-1 {
     position: relative; 
-    left: 0;
-    top: 0;
     animation: 0.25s ease-in-out 1 alternate demo;
   }
   
   @keyframes demo {
-    from { left:150px; top:0px;}
-    to   { left:0px; top:0px;}
+    from { left:150px;}
+    to   { left:0px;}
     
   }
   #move-2 {
     position: relative; 
-    left: 0;
-    top: 0;
     animation: 0.50s ease-in-out 1 alternate demo;
   }
   
   @keyframes demo {
-    from { left:150px; top:0px;}
-    to   { left:0px; top:0px;}
+    from { left:150px;}
+    to   { left:0px;}
   }
   #move-3 {
     position: relative; 
-    left: 0;
-    top: 0;
     animation: 0.75s ease-in-out 1 alternate demo;
   }
   
   @keyframes demo {
-    from { left:120px; top:0px;}
-    to   { left:0px; top:0px;}
+    from { left:120px;}
+    to   { left:0px;}
   }
   #move-4 {
     position: relative; 
-    left: 0;
-    top: 0;
     animation: 1s ease-in-out 1 alternate demo;
   }
   
   @keyframes demo{ 
-    from { left:90px; top:0px;}
-    to   { left:0px; top:0px;}
+    from { left:90px;}
+    to   { left:0px;}
   }
   #move-5 {
     position: relative; 
-    left: 0;
-    top: 0;
     animation: 1.25s ease-in-out 1 alternate demo;
   }
   
   @keyframes demo {
-    from { left:60px; top:0px;}
-    to   { left:0px; top:0px;}
+    from { left:60px;}
+    to   { left:0px;}
   }
   #btn{
     padding: 5px;
