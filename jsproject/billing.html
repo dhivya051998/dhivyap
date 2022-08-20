@@ -9,116 +9,108 @@
 </head>
 <body>
     <div class="box">
-     <div class="sbill">  
-    <div class="container">
-    <div class="frm"> 
-    <h1> Rajalakshmi Super Market </h1>
+        <div class="sbill">
+            <div class="container">
+                <div class="frm">
+                    <h1> Rajalakshmi Super Market </h1>
+                </div>
+                <form>
+                    <label>Customer ID</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input id="cid" type="number" required /><br><br>
+
+                    <label>Customer Name</label>&nbsp;&nbsp;&nbsp;
+                    <input id="cname" type="text" required /><br><br><br><br>
+
+                    <label>Product Code</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input id="code" type="text" oninput="getItemCode(event)" required /><br><br><br>
+
+                    <label>Product Name</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input id="name" type="text" oninput="getItemName(event)" required /><br><br><br>
+
+                    <label>Quantity</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input id="quantity" type="number" oninput="getQuantity(event)" required /><br><br><br>
+
+                    <label>Per_Unit_Price</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input id="per_piece_price" type="numer" oninput="getPrice(event)" required /><br><br><br>
+
+                    <label>Total Amount</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input id="amount" type="number" disabled><br><br>
+
+                    <button onclick="addItem()">Add Item</button>
+
+                </form>
+            </div>
+            <div class="grid">
+                <div class="frm">
+                    <h1> Rajalakshmi Super Market </h1><br>
+                    <h1>Invoice</h1>
+                </div><br><br><br><br>
+                <table>
+                    <tbody id="output">
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
-    <form  action="/action_page.php" method="post">
-    <label>Customer ID</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <input id="cid" type="number" required /><br><br>
-   
-    <label>Customer Name</label>&nbsp;&nbsp;&nbsp;
-    <input id="cname" type="text" required /><br><br><br><br>
-  
-    <label>Product Code</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <input id="code" type="text"  oninput = "getItemCode(event)" required /><br><br><br>
-   
-    <label>Product Name</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <input id="name" type="text"  oninput = "getItemName(event)" required /><br><br><br>
-    
-    <label>Quantity</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <input id="quantity" type="number"  oninput = "getQuantity(event)" required /><br><br><br>
-  
-    <label>Per_Unit_Price</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <input id="per_piece_price" type="numer"  oninput = "getPrice(event)" required /><br><br><br>
-   
-    <label>Total Amount</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <input id="amount" type="number" disabled><br><br>
-   
-    <button onclick="addItem()">Add Item</button>
-   
-    </form>
-</div>
-<div class="grid">
-    <div class="frm">
-        <h1> Rajalakshmi Super Market </h1><br>
-        <h1>Invoice</h1>
-    </div><br><br><br><br>
-    <table>
-        <tbody id="output">
-        </tbody>   
-    </table>
-</div>
-</div>
-</div>
-<script>
+    <script>
+        let item = {
+            code: 0,
+            name: "",
+            quantity: 0,
+            per_unit_price: 0,
+            amount: 0,
+        }
 
-    
-    let item = {
-          code:0,
-          name:"",
-          quantity :0,
-          per_unit_price: 0,
-          amount:0,
-}
-// let total_amount = 0;
+        let items = [];
+        function getItemCode(e) {
+            item.code = e.target.value;
+        }
 
+        function getItemName(e) {
+            item.name = e.target.value;
+        }
+        function getQuantity(e) {
+            item.quantity = e.target.value;
+        }
+        function getPrice(e) {
+            item.per_unit_price = e.target.value;
+            document.getElementById("amount").value = item.per_unit_price * item.quantity;
+            item.amount = item.per_unit_price * item.quantity;
+        }
+        function addItem() {
+            items.push(item);
+            item = {
+                code: 0,
+                name: "",
+                quantity: 0,
+                per_unit_price: 0,
+                amount: 0,
+            };
+            if (document.getElementById('code').value !== "" && document.getElementById('name').value !== "" && document.getElementById('quantity').value !== "" && document.getElementById('per_piece_price').value !== "" && document.getElementById('amount').value !== "") {
+                updateItems();
+                document.getElementById('code').value = "";
+                document.getElementById('name').value = "";
+                document.getElementById('quantity').value = "";
+                document.getElementById('per_piece_price').value = "";
+                document.getElementById('amount').value = "";
+            }
 
+        }
+        function deleteItem(i) {
+            items.splice(i, 1);
+            updateItems();
+        }
+        function updateItems() {
 
-let items = [];
-function getItemCode(e){
-    item.code = e.target.value;
-    console.log("code is ------ ", e.target.value);
-}
-
-function getItemName(e){
-  item.name = e.target.value;
-  console.log("name is ------ ", e.target.value);
-}
-function getQuantity(e){
-  item.quantity = e.target.value;
-    console.log("Quantity  is ------ ", e.target.value);
-}
-function getPrice(e){
-  item.per_unit_price = e.target.value; 
-  document.getElementById("amount").value = item.per_unit_price* item.quantity;
-  item.amount = item.per_unit_price* item.quantity;
-}
-function addItem(){
-    items.push(item);
-    item = {
-        code:0,
-        name:"",
-        quantity :0,
-        per_unit_price: 0,
-        amount:0,
-    };
-    
-   
-       
-
-    document.getElementById('code').value="";
-    document.getElementById('name').value="";
-    document.getElementById('quantity').value="";
-    document.getElementById('per_piece_price').value="";
-    document.getElementById('amount').value="";  
-    updateItems();
-}
-function deleteItem(i){
-    items.splice(i,1);
-    updateItems();
-}
-function updateItems(){
-    total_amount =0;
-    let table = "<tr><th>Code</th><th>Item</th><th>Quantity</th><th>Per_Piece_Price</th><th>Amount</th><th></th></tr>";
-    for(let i =0; i< items.length; i++){
-        table+=`<tr> <td>${items[i].code}</td><td>${items[i].name}</td><td>${items[i].quantity}</td><td>${items[i].per_unit_price}</td><td>Rs ${items[i].amount}</td><td><button onclick="deleteItem(${i})">Delete</button></td></tr>`
-        total_amount+= items[i].amount;
-    }
-         table+=`<tr><td>Total amount without GST</td><td>Rs/- ${total_amount}</td></tr><tr><td>GST (12%)</td><td>Rs/- ${(total_amount/100)*12}</td></tr><tr><td>Total amount with GST </td><td>Rs/- ${total_amount+(total_amount/100)*12}</td></tr>`;
-        document.getElementById('output').innerHTML = table;  
-}
-</script>
+            total_amount = 0;
+            let table = "<tr><th>Code</th><th>Item</th><th>Quantity</th><th>Per_Piece_Price</th><th>Amount</th><th></th></tr>";
+            for (let i = 0; i < items.length; i++) {
+                table += `<tr> <td>${items[i].code}</td><td>${items[i].name}</td><td>${items[i].quantity}</td><td>${items[i].per_unit_price}</td><td>Rs ${items[i].amount}</td><td><button onclick="deleteItem(${i})">Delete</button></td></tr>`
+                total_amount += items[i].amount;
+            }
+            table += `<tr><td>Total amount without GST</td><td>Rs/- ${total_amount}</td></tr><tr><td>GST (12%)</td><td>Rs/- ${((total_amount / 100) * 12).toFixed()}</td></tr><tr><td>Total amount with GST </td><td>Rs/- ${(total_amount + (total_amount / 100) * 12).toFixed()}</td></tr>`;
+            document.getElementById('output').innerHTML = table;
+        }
+    </script>
 </body>
 </html>
