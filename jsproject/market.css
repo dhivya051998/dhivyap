@@ -75,10 +75,7 @@ input:hover{
 td{
     border-bottom: 1px solid black;
 }
-
-@media screen and (max-width: 480px) {
-    .sbill {
-    flex-direction: column;
-    }
-  }
+button{
+    margin-left: 20px;
+}
 
