@@ -11,8 +11,8 @@
     width: 100%;
     display: flex;
     align-items: center;
-    border: 1px solid black;
-    background-image: url(https://tobuz-dev-bkt.s3.amazonaws.com/15196404536401519640453638ztjo1626818380149708726.jpg);
+    background-image: url(image/1624848.jpg);
+    
    
 }
 
@@ -21,7 +21,7 @@
     width: 60%;
     background-color:#e7e9eb;
     margin-right: 3px;
-    border-radius: 90px 0px;
+    border-radius: 30px;
    
 
 }
@@ -42,7 +42,7 @@
     width: 60%;
     background-color:#e7e9eb;
     margin-right: 3px;
-    border-radius:0px 90px;
+    border-radius:30px;
 }
 label{
     padding: 20px;
@@ -75,4 +75,10 @@ input:hover{
 td{
     border-bottom: 1px solid black;
 }
+
+@media screen and (max-width: 480px) {
+    .sbill {
+    flex-direction: column;
+    }
+  }
 
