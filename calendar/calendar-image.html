@@ -107,14 +107,15 @@
                 document.querySelector(".date30").style.display = "none";
                 document.querySelector(".date31").style.display = "none";
             }
+            else if (x == 3 || x == 5 || x == 8 || x == 10) {
+                document.querySelector(".date31").style.display = "none";
+            }
             else {
                 document.querySelector(".date29").style.display = "flex";
                 document.querySelector(".date30").style.display = "flex";
                 document.querySelector(".date31").style.display = "flex";
             }
-            if (x == 3 || x == 5 || x == 8 || x == 10) {
-                document.querySelector(".date31").style.display = "none";
-            }
+            
         }
     </script>
 </body>
