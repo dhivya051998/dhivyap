@@ -60,15 +60,12 @@
         <div class="date  date30" onclick="display(this)">30</div>
         <div class="date  date31" onclick="display(this)">31</div>
     </div>
-    <!-- <p id="demo"></p> -->
     <script>
         function display(el) {
             if (document.querySelector(".select")) {
                 document.querySelector(".select").classList.remove("select");
             }
             el.classList.add('select');
-            // var x = document.querySelector("#demo");
-            // x.innerHTML = el.innerHTML;
 
         }
         // var days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
