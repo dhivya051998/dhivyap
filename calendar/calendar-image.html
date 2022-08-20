@@ -61,7 +61,7 @@
         <div class="date  date31" onclick="display(this)">31</div>
     </div>
     <script>
-        function display(el) {
+       function display(el) {
             if (document.querySelector(".select")) {
                 document.querySelector(".select").classList.remove("select");
             }
@@ -82,55 +82,32 @@
             if (x < 0) {
                 x = 11;
             }
-            document.querySelector("#month").innerHTML = month[x] + " 2021";
             y = y-1;
             if (y < 0) {
                 y = 11;
             }
-            document.querySelector(".one").style.gridColumnStart = days[y];
-            if (x == 1) {
-                document.querySelector(".date29").style.display = "none";
-                document.querySelector(".date30").style.display = "none";
-                document.querySelector(".date31").style.display = "none";
-            } else {
-                document.querySelector(".date29").style.display = "block";
-                document.querySelector(".date30").style.display = "block";
-                document.querySelector(".date31").style.display = "block";
-                document.querySelector(".date29").style.display = "flex";
-                document.querySelector(".date30").style.display = "flex";
-                document.querySelector(".date31").style.display = "flex";
-                
-            }
-            if (document.querySelector(".select")){
-                document.querySelector(".select").classList.remove("select");
-            }
-            if (x == 3 || x == 5 || x == 8 || x == 10) {
-                document.querySelector(".date31").style.display = "none";
-            }
-           
-           
+            date();
         };
         function display2() {
             x = x+1;
             if (x > 11) {
                 x = 0;
             }
-            document.querySelector("#month").innerHTML = month[x] + " 2021";
-
             y = y+1;
             if (y > 11) {
                 y = 0;
             }
+            date();
+        };
+        function date(){
+            document.querySelector("#month").innerHTML = month[x] + " 2021";
             document.querySelector(".one").style.gridColumnStart = days[y];  
-            if (x == 1) {
+             if (x == 1) {
                 document.querySelector(".date29").style.display = "none";
                 document.querySelector(".date30").style.display = "none";
                 document.querySelector(".date31").style.display = "none";
             }
             else {
-                document.querySelector(".date29").style.display = "block";
-                document.querySelector(".date30").style.display = "block";
-                document.querySelector(".date31").style.display = "block";
                 document.querySelector(".date29").style.display = "flex";
                 document.querySelector(".date30").style.display = "flex";
                 document.querySelector(".date31").style.display = "flex";
@@ -141,10 +118,7 @@
             if (document.querySelector(".select")){
                 document.querySelector(".select").classList.remove("select");
             }
-            
-
-        };
-
+        }
     </script>
 </body>
 
