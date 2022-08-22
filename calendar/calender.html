@@ -8,80 +8,60 @@
     <title>Calender</title>
 </head>
 <body>
-    
-        <div class="container">
-            <div class="picture">
-                <label for="month">Enter a Month</label><br><br>
-                <input type="number" min="1" max="12" id="month"><br><br>
-                <input type="button" value="Displaymonth"  onclick="datemonth()">
-               
 
-            </div>
-            <div class="calendar" >
-                <h1 class="title"></h1>
-               
-            </div>
-            <div class="m-days"></div>
-            <div class="m-dates"></div>
+    <div class="container">
+        <div class="picture">
+            <label for="month">Enter a Month</label><br><br>
+            <input type="number" min="1" max="12" id="month"><br><br>
+            <input type="button" value="Displaydates" onclick="datemonth()">
         </div>
-        <script>
-            function datemonth(){
-                // alert("hai");
-           
-                var month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
-                var days  = ["Sunday" , "Monday" , "Tuesday" , "Wednesday" , "Thursday", "Friday" , "Saturday"];
-                var no    =  [31,28,31,30,31,30,31,31,30,31,30,31];
-                var year  = 2021;
-                var date  = 1;
-                var monthValue = document.getElementById("month").value ;
-                var total = 0; 
-                for (var i = 0; i < monthValue; i++) {
-                    total += no[i];
-                   
-                }
-                console.log(total);
-               
-                if( (monthValue == 1) || (monthValue == 5) ||  (monthValue == 7) ||  (monthValue == 10) ||  (monthValue == 12)){
-                    var nday = ((total -1) %7)+3;
-                console.log(nday);
-                var a = days[nday];
-                alert(a);
+    </div>
+    <script>
+        function datemonth() {
+            var month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+            var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            var no = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+            var year = 2021;
+            var date = 1;
+            var monthValue = document.getElementById("month").value;
+            var total = 0;
 
-                }
-                if (monthValue == 2){
-                    var nday = ((total -1) %7)-1;
-                console.log(nday);
-                var a = days[nday];
-                alert(a);
+            for (var i = 0; i < monthValue; i++) {
+                total += no[i];
 
-                }
-                if( (monthValue == 3) || (monthValue == 8)){
-                    var nday = ((total -1) %7)-4;
-                console.log(nday);
-                var a = days[nday];
-                alert(a);
-
-                }
-                if (monthValue == 4){
-                    var nday = ((total -1) %7)+4;
-                console.log(nday);
-                var a = days[nday];
-                alert(a);
-
-                }
-                if ((monthValue == 6) ||  (monthValue == 9) ||  (monthValue == 11)){
-                    var nday = ((total -1) %7)-3;
-                console.log(nday);
-                var a = days[nday];
-                alert(a);
-
-                }
-                
             }
-        </script>
-        
-    
+            if ((monthValue == 1) || (monthValue == 5) || (monthValue == 7) || (monthValue == 10) || (monthValue == 12)) {
+                var nday = ((total - 1) % 7) + 3;
+                var a = days[nday];
+                alert(a);
 
-    
+            }
+            else if (monthValue == 2) {
+                var nday = ((total - 1) % 7) - 1;
+                var a = days[nday];
+                alert(a);
+
+            }
+            else if ((monthValue == 3) || (monthValue == 8)) {
+                var nday = ((total - 1) % 7) - 4;
+                var a = days[nday];
+                alert(a);
+
+            }
+            else if (monthValue == 4) {
+                var nday = ((total - 1) % 7) + 4;
+                var a = days[nday];
+                alert(a);
+
+            }
+            else if ((monthValue == 6) || (monthValue == 9) || (monthValue == 11)) {
+                var nday = ((total - 1) % 7) - 3;
+                var a = days[nday];
+                alert(a);
+
+            }
+
+        }
+    </script>
 </body>
 </html>
