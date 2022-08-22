@@ -55,12 +55,6 @@ function myFunction(tollbooth, vehicle, total) {
                 console.log(diff1);
                 if (diff1 < 24) {
                     charges = 0;
-                    if (total == 0) {
-                        charges = 0;
-                    }
-                    else {
-                        charges = 30;
-                    }
 
                 } else {
                     charges = 50;  
