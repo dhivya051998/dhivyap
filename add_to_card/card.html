@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cardStyle.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="productItem">
+            <div class="search">
+                <h2>Products</h2>
+                <input type="text" id="filter" onblur="filter(event)" placeholder="search">
+            </div>
+            <div class="product"></div>
+        </div>
+        <div>
+            <h2>My Cart</h2>
+        <div class="myCard">
+            <div class="productList">
+                <p>ProductList</p>
+            </div>
+            <div class="cost">
+                <p>Cost</p>
+            </div>
+        </div>
+        <div class="totalDiv">
+            <div>Total</div>
+            <div class="total">0</div>
+        </div>
+        </div>
+    </div>
+    <script src="card.js"></script>
+</body>
+</html>
