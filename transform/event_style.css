@@ -20,6 +20,6 @@
     pointer-events: none;
     position: absolute;
     transform: translate(-50%,-50%);
-    box-shadow: yellowgreen 0 0 50px 15pt;
+    box-shadow: yellowgreen 0 0 50px 15px;
 
 }
