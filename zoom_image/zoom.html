@@ -35,17 +35,20 @@
         </div>
     </div>
     <script>
+        var content = document.querySelector(".picture");
+        var width1 = content.offsetWidth;
+        var height1 = content.offsetHeight;
         function increase() {
-            var content = document.querySelector(".picture");
-                var width1 = content.offsetWidth;
-                content.style.width = (width1 + 20) + "px";
-                content.style.height = (width1 + 20) + "px";
+            width1 += 20;
+            height1 += 20;
+            content.style.width = width1 + "px";
+            content.style.height = height1 + "px";
         }
-        function decrease(){
-            var content = document.querySelector(".picture");
-                var width1 = content.offsetWidth;
-                content.style.width = (width1 - 20) + "px";
-                content.style.height = (width1 - 20) + "px";
+        function decrease() {
+            width1 -= 20;
+            height1 -= 20;
+            content.style.width = width1 + "px";
+            content.style.height = height1 + "px";
         }
     </script>
 </body>
