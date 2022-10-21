@@ -49,7 +49,7 @@ body{
     height:auto;
     display: grid;
     grid-template-columns: repeat(3 ,1fr);
-    grid-template-rows: repeat(5,1fr);
+    grid-template-rows:auto;
     grid-column-gap: 40px;
     grid-row-gap: 40px;
     grid-template-areas: "a1 a2 a3"
