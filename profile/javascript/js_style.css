@@ -211,6 +211,9 @@ a{
 .eff25{
     background-image: url("image/cursorPointer.png"); 
 }
+.eff26{
+    background-image: url("image/add-to-card.jfif"); 
+}
 html, body {
     height: 100%;
   }
