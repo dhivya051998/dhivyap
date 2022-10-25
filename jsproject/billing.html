@@ -84,11 +84,9 @@ function addItem() {
     if (code && pname && quantity && per_unit_price && amount) {
         items.push(item);
         updateItems();
-        code = "";
-        pname = "";
-        quantity = "";
-        per_unit_price = "";
-        amount = "";
+        document.querySelectorAll("#code,#name,#quantity,#per_unit_price,#amount").forEach((val)=>{
+            return val.value="";
+        })
     }
 }
 function deleteItem(i) {
