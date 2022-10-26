@@ -115,13 +115,11 @@ function lessQuantity(e) {
 
 function addQuantity(e) {
     var x =e.target.nextElementSibling.innerText;
-    console.log(x);
     var quantity = e.target.previousElementSibling;
     var cost = e.target.previousElementSibling.previousElementSibling.previousElementSibling;
     quantity.innerText = Number(quantity.innerText) + 1;
     e.target.nextElementSibling.innerText= Number(cost.innerText) * Number(quantity.innerText);
     var y =e.target.nextElementSibling.innerText;
-    console.log(y);
     document.querySelector(".grossTotal").innerText = Number(document.querySelector(".grossTotal").innerText) + Number(y-x);
 }
 
