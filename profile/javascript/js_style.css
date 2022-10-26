@@ -52,15 +52,6 @@ body{
     grid-template-rows:auto;
     grid-column-gap: 40px;
     grid-row-gap: 40px;
-    grid-template-areas: "a1 a2 a3"
-                         "a4 a5 a6" 
-                         "a7 a8 a9"
-                         "a10 a11 a12" 
-                         "a13 a14 a15"
-                         "a16 a17 a18"
-                         "a19 a20 a21"
-                         "a22 a23 a24"
-                         "a26 a27 a28";
     
  }
  .a1{
@@ -98,9 +89,7 @@ a{
     
 }
  .img:hover {
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-   
-    
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);  
   }
  .c{
      margin-top: -65px;
@@ -116,87 +105,81 @@ a{
      justify-content: center;
      margin-left: -120px;
  }
- .eff-1{
+ .element{
      height: 100px;
      width: 100px;
      border-radius:10px;
      background-repeat: no-repeat;
      background-size:100px 100px;
-     background-image: url("image/bill.jpg");
      transition: all 1s ease;
    
  }
 .eff01{
-    background-image: url("image/day\ findar1.jfif");   
+    background-image: url("image/rotation.jpg");   
 }
 .eff02{
-    background-image: url("image/day findar.jfif");   
-}
-.eff03{
-    background-image: url("image/tollbooth-image.jpg");  
-}
-.eff04{
-    background-image: url("image/circle.jpg"); 
-   
-}
-.eff05{
-    background-image: url("image/color_line.png"); 
-     
-}
-.eff06{
-    background-image: url("image/person_details.gif");
-    
-}
-.eff07{
-    background-image: url("image/timeline1.webp");  
-}
-.eff08{
-    background-image: url("image/add_even.png");  
-}
-.eff09{
-    background-image: url("image/timer.png");  
-}
-.eff10{
-    background-image: url("image/loancal.jpg");  
-}
-.eff11{
-    background-image: url("image/tipcal.png");  
-}
-.eff12{
-    background-image: url("image/flashcard1.jfif"); 
-   
-}
-.eff13{
-    background-image: url("image/checkbox.jpg");  
-}
-.eff14{
-    background-image: url("image/transition.webp");  
-    
-}
-.eff15{
     background-image: url("image/timeLine1.jpg"); 
    
 }
+.eff03{
+    background-image: url("image/transition.webp");  
+}
+.eff04{
+    background-image: url("image/flashcard1.jfif"); 
+}
+.eff05{
+    background-image: url("image/invoice.jpg"); 
+}
+.eff06{
+    background-image: url("image/debitcard.webp");  
+    
+}
+.eff07{
+    background-image: url("image/day\ findar.jfif");  
+}
+.eff08{
+    background-image: url("image/bill.jpg"); 
+}
+.eff09{
+    background-image: url("image/day\ findar1.jfif");  
+}
+.eff10{
+    background-image: url("image/tollbooth-image.jpg");  
+}
+.eff11{
+    background-image: url("image/circle.jpg");  
+}
+.eff12{
+    background-image: url("image/color_line.png"); 
+}
+.eff13{
+    background-image: url("image/person_details.gif");  
+}
+.eff14{
+    background-image: url("image/add_even.png");  
+}
+.eff15{
+    background-image: url("image/timer.png");  
+   
+}
 .eff16{
-    background-image: url("image/rotation.jpg"); 
+    background-image: url("image/loancal.jpg"); 
    
 }
 .eff17{
-    background-image: url("image/invoice.jpg");  
+    background-image: url("image/tip_calc.png"); 
 }
 .eff18{
-    background-image: url("image/mail.jfif");  
+    background-image: url("image/checkbox.jpg");  
 }
 .eff19{
-    background-image: url("image/bmi\ cal.png"); 
-    background-size: 381px 170px;
-    background-position: 0 -40px; 
+    background-image: url("image/mail.jfif"); 
 }
 .eff20{
-    background-image: url("image/weight.png");  
+    background-image: url("image/bmi\ cal.png");  
 }
 .eff21{
-    background-image: url("image/debitcard.webp");  
+    background-image: url("image/weight.png");
 }
 .eff22{
     background-image: url("image/theme.png");  
@@ -206,16 +189,16 @@ a{
     background-image: url("image/zoom.png"); 
 }
 .eff24{
-    background-image: url("image/redbus.jfif"); 
-}
-.eff25{
-    background-image: url("image/cursorPointer.png"); 
-}
-.eff26{
     background-image: url("image/add-to-card.jfif"); 
 }
-.eff27{
+.eff25{
     background-image: url("image/carousel.webp"); 
+}
+.eff26{
+    background-image: url("image/redbus.jfif"); 
+}
+.eff27{
+    background-image: url("image/cursorPointer.png"); 
 }
 html, body {
     height: 100%;
@@ -276,62 +259,28 @@ html, body {
     grid-template-rows: repeat(1,1fr);
     grid-column-gap: 40px;
     grid-row-gap: 40px;
-    grid-template-areas: "a25 a26 a27";
     
  }
 
- @media screen and (max-width:900px) {
+ @media screen and (max-width:920px) {
      .child1{
          grid-template-columns:repeat(2 , 1fr);
-         grid-template-areas: "a1 a2"
-                              "a3 a4"
-                              "a5 a6"
-                              "a7 a8"
-                              "a9 a10"
-                              "a11 a12"
-                              "a13 a14"
-                              "a15 a16"
-                              "a17 a18"
-                              "a19 a20"
-                              "a21 a22"
-                              "a23 a24"
-                              "a25 a26"
-                              "a27";
-        margin-left: 20px;
+         margin-left: 20px;
      }
+     .child2{
+        grid-template-columns:repeat(2 , 1fr);
+        margin-left: 20px;
+    }
+
      
  }
  @media screen and (max-width:600px){
      .child1{
-         grid-template-rows: repeat(1 , 1fr);
-         grid-template-areas: "a1"
-                              "a2"
-                              "a3"
-                              "a4"
-                              "a5"
-                              "a6"
-                              "a7"
-                              "a8"
-                              "a9"
-                              "a10"
-                              "a11"
-                              "a13"
-                              "a14"
-                              "a15"
-                              "a16"
-                              "a17"
-                              "a18"
-                              "a19"
-                              "a20"
-                              "a21"
-                              "a22"
-                              "a23"
-                              "a24"
-                              "a25"
-                              "a26"
-                              "a27";
- 
+         grid-template-columns: repeat(1 , 1fr);
      }
+     .child2{
+        grid-template-columns: repeat(1 , 1fr);
+    }
      .img{
          width: 100%;
      }
