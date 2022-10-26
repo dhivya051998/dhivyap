@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 250px;
+    width: 250px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    margin-top: 30px;
+
+}
+.main{
+    display: flex;
+    flex-direction: row;
+}
+.childele {
+    height: 250px;
+    min-width: 250px;
+   
+}
+.previous{
+    position: absolute;
+    top: 130px;
+    left: 585px;
+}
+.next{
+    position: absolute;
+    top: 130px;
+    left: 920px;
+}
+button{
+    padding: 4px;
+    cursor: pointer;
+    background-color:#f2eeee;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+.image{
+    height: 250px;
+    width: 250px;
+}
