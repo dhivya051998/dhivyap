@@ -214,6 +214,9 @@ a{
 .eff26{
     background-image: url("image/add-to-card.jfif"); 
 }
+.eff27{
+    background-image: url("image/carousel.webp"); 
+}
 html, body {
     height: 100%;
   }
