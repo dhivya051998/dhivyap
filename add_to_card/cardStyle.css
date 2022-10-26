@@ -13,7 +13,7 @@
     align-items: center;
     justify-content: space-around;
 }
-.productList>p:first-child,.cost>p:first-child{
+.title>p:first-child{
     background-color: gray;
     color: #fff;
     padding: 12px;
@@ -54,24 +54,42 @@
 }
 
 .myCard {
-    height: 300px;
-    width: 350px;
-    display: flex;
-    border: 1px solid #8080803b;
-    box-shadow: 0 1px 1px 1px #eee;
-    margin-top: 20px;
-}
-.myCard>div{
-    flex-grow: 1;
-}
-.productList, .cost{
+    width: 450px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    border: 1px solid #8080803b;
+    box-shadow: 0 1px 1px 1px #eee;
+    margin-top: 35px;
+    flex-wrap: wrap;
 }
+.heading{
+    padding-top: 10px;
+}
+.title{
+   display:flex;
+   justify-content: space-around;
+   box-shadow: 0 1px 1px 1px #eee;
+}
+.title>span{
+    min-width: 70px;
+    text-align: center;
+    padding: 8px;
+}
+.details>p{
+    min-width: 100px;
+    text-align: center;
+    padding:12px 0 ;  
+}
+.details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .totalDiv{
     display: flex;
-    width: 350px;
+    width: 450px;
     height: 50px;
     align-items: center;
     justify-content: space-between;
@@ -82,4 +100,13 @@
 }
 input{
     padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid gray;
+}
+.less{
+    cursor: pointer;
+}
+.add{
+    cursor: pointer;
 }
