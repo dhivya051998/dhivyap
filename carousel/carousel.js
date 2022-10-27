@@ -25,7 +25,7 @@ function previous() {
     if (count == 0) {
         document.querySelector(".previous").disabled = "true";
     }
-    if (count == array - 1) {
+    else if (count == array - 1) {
         document.querySelector(".next").removeAttribute("disabled");
     }
 
@@ -38,7 +38,7 @@ function next() {
     if (count == array) {
         document.querySelector(".next").disabled = "true";
     }
-    if (count == 1) {
+    else if (count == 1) {
         document.querySelector(".previous").removeAttribute("disabled");
     }
 
