@@ -1,51 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="calStyle.css">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="cal-style.css">
+    <title>Calculator</title>
 </head>
-
 <body>
     <div class="container">
-        <h3>Calculation of two numbers</h3>
-        <div class="mainBox">
-            <div class="inputBox">
-                <input type="number" id="num1" placeholder="Enter your 1st number">
-                <input type="number" id="num2" placeholder="Enter your 2st number">
+        <div class="m-content">
+            <div class="top" id="screen">
+             <div class="box">
+             <div class="number"></div>
+             </div>
             </div>
-            <div class="inputBox">
-                <button onclick="addition()">Add</button>
-                <button onclick="subtract()">Subtract</button>
+            <div class="parent" >
+              <div onclick="getValue('1')">1</div>
+              <div onclick="getValue('2')">2</div>
+              <div onclick="getValue('3')">3</div>
+              <div id="button-col" onclick="getValue('+')">+</div>
+              <div onclick="getValue('4')">4</div>
+              <div onclick="getValue('5')">5</div>
+              <div onclick="getValue('6')">6</div>
+              <div id="button-col" onclick="getValue('*')">*</div>
+              <div onclick="getValue('7')">7</div>
+              <div onclick="getValue('8')">8</div>
+              <div onclick="getValue('9')">9</div>
+              <div id="button-col" onclick="getValue('-')">-</div>
+              <div onclick="getValue('0')">0</div>
+              <div id="button-col" onclick="result()">=</div>
+              <div id="button-col" onclick="getValue('/')">/</div>
+              <div id="button-col" class="clear" onclick="remove()">C</div>
             </div>
-            <div class="inputBox">
-                <button onclick="multiply()">Multiply</button>
-                <button onclick="divide()">Divide</button>
-            </div>
-            <p id="para">The result is:</p>
-            <div class="output"></div>
         </div>
     </div>
-    <script>
-        var firstValue = document.getElementById("num1");
-        var secondValue = document.getElementById("num2");
-        var result = document.querySelector(".output");
-        function addition() {
-            result.innerText = Number(firstValue.value) + Number(secondValue.value);
-        }
-        function subtract() {
-            result.innerText = Number(firstValue.value) - Number(secondValue.value);
-        }
-        function multiply() {
-            result.innerText = Number(firstValue.value) * Number(secondValue.value);
-        }
-        function divide() {
-            result.innerText = Number(firstValue.value) / Number(secondValue.value);
-        }
-    </script>
+    <script src="calculator.js"></script>
 </body>
-
 </html>
+
+
+
+
+
