@@ -200,6 +200,9 @@ a{
 .eff27{
     background-image: url("image/cursorPointer.png"); 
 }
+.eff28{
+    background-image: url("image/calculator.jfif"); 
+}
 html, body {
     height: 100%;
   }
