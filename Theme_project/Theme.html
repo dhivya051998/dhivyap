@@ -11,7 +11,7 @@
     <title>Document</title>
 </head>
 
-<body onload="darkTheme()">
+<body>
     <div class="container">
         <div class="mainDiv">
             <div class="menu" onclick="resize()">
@@ -22,7 +22,13 @@
             <div class="box">
                 <div class="sidebar">
                     <div class="design1 bgcolor">
-                        <div class="theme" onclick="myFun()">
+                        <div class="theme" onclick="lightTheme()" id="light">
+                            <span class="material-symbols-outlined">
+                                light_mode
+                            </span>
+                            <p>Light</p>
+                        </div>
+                        <div class="theme" onclick="darkTheme()" id="dark">
                             <span class="material-symbols-outlined">
                                 dark_mode
                             </span>
@@ -84,8 +90,15 @@
         function resize() {
             document.querySelector(".mainDiv").classList.toggle("sizeBox");
         }
-        function myFun() {
+        function darkTheme() {
            document.body.classList.toggle("dark");
+           document.querySelector("#light").style.display="flex";
+           document.querySelector("#dark").style.display="none";
+        }
+        function lightTheme() {
+           document.querySelector("#dark").style.display="flex";
+           document.querySelector("#light").style.display="none";
+           document.body.classList.remove("dark");
         }
     </script>
 </body>
