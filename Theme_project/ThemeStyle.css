@@ -82,12 +82,6 @@ body{
    
 }
 
-/* .theme1{
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-} */
 .design p{
     padding-left: 10px;
 }
@@ -99,8 +93,9 @@ body{
     width: 100%;
     display: flex;
     align-items: center; 
-    justify-content: space-between;
-    padding: 13px;  
+   justify-content:start;
+    padding: 13px; 
+     position: relative;
    
 }
 .design:hover{
@@ -139,6 +134,12 @@ body{
     border-radius: 50%;
     cursor: pointer;
    
+}
+#dark{
+  position: absolute;
+}
+#light{
+  display: none;
 }
 #icon{
     position: absolute;
