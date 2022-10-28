@@ -71,13 +71,15 @@
     background-color: #fff;
     z-index: 3;
     position: absolute;
-    left: 49%;
+    left: 48%;
     bottom: 48%;
 }
 .hours,.minutes,.seconds{
     position: absolute;
     transform: translateX(-50%) rotate(var(--rotation));
     transform-origin: bottom;
+    left: 49%;
+    bottom: 50%;
 }
 .hours{
     height: 80px;
@@ -86,20 +88,14 @@
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     z-index: 1;
-    left: 50%;
-    bottom: 50%;
 }
 .minutes{
     height: 120px;
     width: 5px;
     background-color: #fff;
-    left: 51%;
-    bottom: 50%;
 }
 .seconds{
     height: 140px;
     width: 2px;
     background-color: #fff;
-    left: 51%;
-    bottom: 51%;
 }
