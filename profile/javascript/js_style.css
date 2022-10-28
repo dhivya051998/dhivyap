@@ -110,7 +110,7 @@ a{
      width: 100px;
      border-radius:10px;
      background-repeat: no-repeat;
-     background-size:100px 100px;
+     background-size:100% 100%;
      transition: all 1s ease;
    
  }
@@ -202,6 +202,9 @@ a{
 }
 .eff28{
     background-image: url("image/calculator.jfif"); 
+}
+.eff29{
+    background-image: url("image/clock.jpg"); 
 }
 html, body {
     height: 100%;
