@@ -24,26 +24,7 @@
         </div>
     </div>
 
-    <script>
-        var x;
-        var num = 0;
-        function display() {
-            clearInterval(x);
-            x = setInterval(display, 1000);
-            document.getElementById("min").innerHTML = num++;
-
-        }
-        function stop() {
-            clearInterval(x);
-        }
-        function reset() {
-            clearInterval(x);
-            num = 0;
-            document.getElementById("min").innerHTML = num;
-
-        }
-
-    </script>
+    <script src="timer.js"></script>
 </body>
 
 </html>   
