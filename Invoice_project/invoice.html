@@ -67,7 +67,6 @@
         function addFun(e) {
             console.log(e);
             var value1 = document.querySelector(".add_value").value;
-            console.log(e.target.parentElement.childNodes[1].innerText);
             e.target.parentElement.remove();
             document.querySelector(".budget_income").innerText = Math.round(Number(document.querySelector(".budget_income").innerText) - Number(e.target.parentElement.childNodes[1].innerText));
             document.querySelector(".budget_value").innerText = document.querySelector(".budget_income").innerText-document.querySelector(".budget_expense").innerText;
@@ -81,13 +80,11 @@
         function display() {
             var add = document.querySelector(".add_description").value;
             var value1 = document.querySelector(".add_value").value;
-            if (add == "" || value1 == '') {
+            if (add == "" && value1 == "") {
 
             }
             else if ((document.querySelector(".add_type").options[1].selected == true) || (document.querySelector(".add_type").options[0].selected == true)) {
                 var incomeDiv = document.querySelector(".income");
-                var add = document.querySelector(".add_description").value;
-                var value1 = document.querySelector(".add_value").value;
                 createEle(incomeDiv, add, value1,true); 
                 document.querySelector(".add_description").value = "";
                 document.querySelector(".add_value").value = "";
@@ -96,8 +93,6 @@
             }
             else if (document.querySelector(".add_type").options[2].selected == true) {
                 var expenseDiv = document.querySelector(".expense");
-                var add = document.querySelector(".add_description").value;
-                var value1 = document.querySelector(".add_value").value;
                 createEle(expenseDiv, add, value1,false);
                 document.querySelector(".add_description").value = "";
                 document.querySelector(".add_value").value = "";
