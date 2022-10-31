@@ -141,24 +141,6 @@
             </div>
         </div>
     </div>
-    <script>
-        function showElement1(){
-            document.querySelector(".allTaskbtn").style.display="flex";
-            document.getElementById("listIcon").style.display="none";
-        }
-        function showElement2(){
-            document.getElementById("listIcon").style.display="flex";
-            document.querySelector(".allTaskbtn").style.display="none";
-        }
-        function display1(num){
-            document.getElementById("task1").style.display="none";
-            document.getElementById("task2").style.display="none";
-            document.getElementById("task3").style.display="none";
-            document.getElementById("task4").style.display="none";
-            document.getElementById('task'+num).style.display='block'
-            document.querySelector(".allTaskbtn").style.display="none";
-            document.getElementById("listIcon").style.display="flex";
-        }
-    </script>
+    <script src="timeLine.js"></script>
 </body>
 </html>
