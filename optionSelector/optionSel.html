@@ -59,39 +59,7 @@
             </div>
         </div>
     </div>
-    <script>
-        function getValue(e) {
-            var x = e.target;
-            if (x.checked) {
-                document.querySelector(".display").innerHTML = Math.round(Number(document.querySelector(".display").innerHTML) + Number(x.parentElement.lastElementChild.innerText));
-            } 
-            else { 
-                document.querySelector(".display").innerHTML = Math.round(Number(document.querySelector(".display").innerHTML) - Number(x.parentElement.lastElementChild.innerText));
-            }
-
-        }
-        function display(ele) {
-            if (ele.checked) {
-                let array =document.querySelectorAll(".productName1");
-                array.forEach(element => {
-                    element.checked = true;
-                });
-                array.forEach(ele =>{
-                    ele.parentElement.lastElementChild.innerText;
-                    document.querySelector(".display").innerHTML =Math.round(Number(document.querySelector(".display").innerHTML) + Number(ele.parentElement.lastElementChild.innerText));
-                })
-            }
-            else{
-                let array =document.querySelectorAll(".productName1");
-                array.forEach(element => {
-                    element.checked = false;
-                    document.querySelector(".display").innerHTML = 0;
-                });
-            }
-
-
-        }
-    </script>
+    <script  src="optionSelector.js"></script>
 </body>
 
 </html>
