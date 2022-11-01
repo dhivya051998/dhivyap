@@ -148,8 +148,8 @@ button:hover{
     display: none; 
     background-repeat: no-repeat;
     background-size: cover;
-    position: absolute;
-    top: 210px;
+    position:fixed;
+    top: 150px;
     left: 520px;
     animation: scale 0.5s;
     animation-fill-mode: forwards;
