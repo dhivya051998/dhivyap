@@ -50,6 +50,7 @@ textarea{
     height: 90px;
     text-indent: 10px;
     border-radius: 5px;
+    padding:5px;
 }
 .saveBtn{
     padding: 8px;
