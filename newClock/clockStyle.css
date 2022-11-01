@@ -71,14 +71,15 @@
     background-color: #fff;
     z-index: 3;
     position: absolute;
-    left: 48%;
-    bottom: 48%;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-25%, 50%);
 }
 .hours,.minutes,.seconds{
     position: absolute;
     transform: translateX(-50%) rotate(var(--rotation));
     transform-origin: bottom;
-    left: 49%;
+    left: 50%;
     bottom: 50%;
 }
 .hours{
