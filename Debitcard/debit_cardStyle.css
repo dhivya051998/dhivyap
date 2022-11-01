@@ -151,7 +151,6 @@ select:hover{
 }
 .btn{
     height: 55px;
-    width: 90%;
     background: #2364d2;
     border: none;
     border-radius: 5px;
@@ -159,7 +158,6 @@ select:hover{
     font-weight: 500;
     box-shadow: 3px 10px 20px 0px rgb(35 100 210 / 30%);
     color: #fff;
-    margin-top: 20px;
     cursor: pointer;
     display: flex;
     align-items: center;
