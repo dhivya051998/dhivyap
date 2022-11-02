@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+h1 {
+    padding-top: 15px;
+    text-align: center;
+}
+
+.input_container {
+    padding: 25px;
+    width: 70%;
+    box-shadow: 0.1px 0.1px 2px rgb(0 0 0 / 40%);
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    padding: 12px;
+    width: 60%;
+    background-color: #eee;
+    box-shadow: 0.1px 0.1px 2px rgb(0 0 0 / 30%);
+    font-size: 15px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    width: 30%;
+    color: #fff;
+    background: #a263dd;
+    box-shadow: 0.1px 0.1px 2px rgb(0 0 0 / 40%);
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.main_container {
+    padding: 10px;
+    width: 70%;
+    box-shadow: 0.1px 0.1px 2px rgb(0 0 0 / 40%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    height: auto;
+}
+
+.heading {
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    width: 75%;
+    background-color: #eee;
+}
+
+.taskList {
+    display: flex;
+    width: 75%;
+    gap: 10px;
+}
+
+.incomplete,.complete {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.title {
+    font-size: 20px;
+    text-align: center;
+    background-color: #eee;
+    padding: 10px;
+}
+
+.incompletetaskBox {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0.1px 0.1px 2px rgb(0 0 0 / 40%);
+    border-radius: 5px;
+}
+
+.material-symbols-outlined {
+    cursor: pointer;
+}
+
+#todo_incomplete {
+    border-bottom: 3px solid red;
+}
+
+#todo_complete {
+    border-bottom: 3px solid green;
+}
