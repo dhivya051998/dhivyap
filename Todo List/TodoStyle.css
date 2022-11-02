@@ -11,6 +11,9 @@
     flex-direction: column;
     align-items: center;
     gap: 30px;
+    background-image: url("./image/todo_img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 h1 {
@@ -27,6 +30,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: #ffffff47;
 }
 
 input {
@@ -63,6 +67,7 @@ button {
     align-items: center;
     gap: 20px;
     height: auto;
+    background-color: #ffffff47;
 }
 
 .heading {
@@ -106,12 +111,20 @@ button {
 
 .material-symbols-outlined {
     cursor: pointer;
+    color: #fff;
 }
 
 #todo_incomplete {
     border-bottom: 3px solid red;
+    background-color: #e1404052;
 }
-
+#todo_incomplete .material-symbols-outlined:hover{
+ color: red;
+}
 #todo_complete {
     border-bottom: 3px solid green;
+    background-color: rgba(41, 220, 157, 0.2);
 }
+#todo_complete .material-symbols-outlined:hover{
+    color:green;
+   }
