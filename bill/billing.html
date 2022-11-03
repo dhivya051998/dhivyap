@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" type="text/css" href="market.css">
+    <title>Billing</title>
+</head>
+<body>
+    <div class="container">
+        <div class="input_container">
+            <h2>SuperMarket Billing System </h2>
+            <div class="input_parent">
+                <label>Customer ID</label>
+                <input id="cid" type="number" required />
+            </div>
+            <div class="input_parent">
+                <label>Customer Name</label>
+                <input id="cname" type="text" required  autocomplete="off"/>
+            </div>
+            <div class="input_parent">
+                <label>Product Code</label>
+                <input id="code" type="number" oninput="getItemCode(event)" required  autocomplete="off" />
+            </div>
+            <div class="input_parent">
+                <label>Product Name</label>
+                <input id="name" type="text" oninput="getItemName(event)" required   autocomplete="off"/>
+            </div>
+            <div class="input_parent">
+                <label>Quantity</label>
+                <input id="quantity" type="number" oninput="getQuantity(event)" required  autocomplete="off" />
+            </div>
+            <div class="input_parent">
+                <label>Per_Unit_Price</label>
+                <input id="per_unit_price" type="numer" oninput="getPrice(event)" required   autocomplete="off"/>
+            </div>
+            <div class="input_parent">
+                <label>Total Amount</label>
+                <input id="amount" type="number" disabled>
+            </div>
+            <button onclick="addItem()" class="add_btn">Add Item</button>
+        </div>
+        <div class="output_container">
+                <h2>Invoice</h2>
+                <div class="output">
+                    <div class="title">
+                        <span>Code</span>
+                        <span>product</span>
+                        <span>Quantity</span>
+                        <span>Price</span>
+                        <span>Total</span>
+                        <span>Action</span>
+                    </div>
+                    <div class="content"></div>
+                    <div class="totalValue">Total <span class="gross">0</span></div>
+                </div>
+            </table>
+        </div>
+    </div>
+    <script src="billing.js"></script>
+</body>
+</html>
